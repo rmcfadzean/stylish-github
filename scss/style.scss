@@ -1,5 +1,13 @@
-$red: red;
+@import 'variables';
 
-body {
-  color: green;
-}
+// Mixins
+@import 'mixins/card';
+
+// Globals
+@import 'page';
+@import 'inputs';
+@import 'buttons';
+
+// Page-Specific
+@import 'pages/homepage';
+@import 'pages/login';

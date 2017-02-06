@@ -1,0 +1,10 @@
+.form-control, .form-select {
+  background-color: $darkerGrey;
+  border-color: $darkGrey;
+  color: $lightGrey;
+}
+
+.form-control.focus, .form-control:focus,
+.form-select.focus, .form-select:focus {
+  border-color: $brandColor;
+}

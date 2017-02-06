@@ -1,0 +1,21 @@
+// GitHub colors
+$ghBrand: #4078c0;
+$ghPrimary: #6cc644;
+$ghDarkPrimary: #5aad35;
+
+// Base Greys
+$darkestGrey:  #111;
+$darkerGrey:   #222;
+$darkGrey:     #333;
+$grey:         #444;
+$lightGrey:    #666;
+$lighterGrey:  #888;
+$lightestGrey: #AAA;
+
+// Base Color Assignments
+$backgroundColor: #000;
+$brandColor: darken($ghBrand, 10%);
+$borderColor: $darkGrey;
+
+$primary: darken($ghPrimary, 10%);
+$darkPrimary: darken($ghDarkPrimary, 10%);
