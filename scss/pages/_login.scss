@@ -1,0 +1,20 @@
+.session-authentication {
+  background-color: $backgroundColor;
+
+  .create-account-callout {
+    border-color: $borderColor;
+  }
+
+  .auth-form-header {
+    color: $lightGrey;
+  }
+
+  .auth-form-body {
+    @include card;
+    border-top-color: $borderColor;
+  }
+
+  .site-footer-links a {
+    color: $grey;
+  }
+}

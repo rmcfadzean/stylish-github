@@ -1,0 +1,53 @@
+body {
+  background-color: $backgroundColor;
+  color: $lighterGrey;
+}
+
+// Header
+
+.site-header {
+  background: $darkestGrey;
+
+  &-nav .nav-item {
+    color: $lighterGrey;
+
+    &:hover {
+      color: $lightestGrey;
+    }
+  }
+}
+
+.header-logo-invertocat {
+  color: $lighterGrey;
+
+  &:hover {
+    color: $brandColor;
+  }
+}
+
+// Footer
+
+.site-footer {
+  border-color: $borderColor;
+}
+
+// General Treatments
+
+.shade-gray {
+  background-color: $darkestGrey !important; // Needs !imp to override an inline !imp
+}
+
+.shade-gradient {
+  background-image: linear-gradient($darkestGrey, $backgroundColor);
+}
+
+.tile,
+.border-top, .border-bottom, .border-left, .border-right {
+  border-color: $borderColor !important;
+}
+
+// Links
+a {
+  color: $brandColor;
+  transition: all 0.1s ease-in-out;
+}

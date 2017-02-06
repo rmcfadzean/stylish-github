@@ -1,0 +1,12 @@
+.btn {
+  &-primary {
+    background-image: linear-gradient($primary, $darkPrimary);
+    border-color: $ghDarkPrimary;
+
+    &:hover, &:active,
+    &.zeroclipboard-is-hover, &.zeroclipboard-is-active {
+      background-image: linear-gradient($ghPrimary, $ghDarkPrimary);
+      border-color: $ghPrimary;
+    }
+  }
+}
