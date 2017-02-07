@@ -1,0 +1,30 @@
+.repohead {
+  &.experiment-repo-nav {
+    background-color: darken($backgroundColor, 2%);
+  }
+}
+
+.pagehead {
+  border-color: $borderColor;
+}
+
+.reponav-item {
+  color: $foregroundColor;
+  &:hover {
+    color: darken($foregroundColor, 10%);
+  }
+  &.selected {
+    background-color: $backgroundColor;
+    color: $foregroundColor;
+    border-color: $borderColor;
+  }
+
+  .octicon {
+    color: $foregroundColor;
+  }
+
+  .counter {
+    background-color: lighten($backgroundColor, 5%);
+    color: $foregroundColor;
+  }
+}
