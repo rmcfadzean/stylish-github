@@ -15,14 +15,28 @@ $lightestGrey: #AAA;
 // Base Color Assignments
 $backgroundColor: #22313f;
 $foregroundColor: #7b96a3;
-$brandColor: darken($ghBrand, 10%);
+$brandColor: lighten($ghBrand, 10%);
 $borderColor: lighten($backgroundColor, 15%);
 
 $primary: darken($ghPrimary, 10%);
 $darkPrimary: darken($ghDarkPrimary, 10%);
 
+
+$bgLighter: lighten($backgroundColor, 5%);
+$bgLight: lighten($backgroundColor, 2%);
+$bgDark: darken($backgroundColor, 2%);
+$bgDarker: darken($backgroundColor, 5%);
+$bgDarkest: darken($backgroundColor, 10%);
+
+$fgLightest: lighten($foregroundColor, 10%);
+$fgLighter: lighten($foregroundColor, 5%);
+$fgLight: lighten($foregroundColor, 2%);
+$fgDark: darken($foregroundColor, 2%);
+$fgDarker: darken($foregroundColor, 5%);
+$fgDarkest: darken($foregroundColor, 10%);
+
 // Nav
-$headerBackgroundColor: darken($backgroundColor, 5%);
+$headerBackgroundColor: $bgDarker;
 
 $navItemColor: $foregroundColor;
 $navItemHoverColor: lighten($foregroundColor, 10%);
@@ -32,6 +46,16 @@ $logoHoverColor: lighten($ghBrand, 20%);
 
 
 // Inputs
-$inputBackgroundColor: lighten($backgroundColor, 5%);
+$inputBackgroundColor: $bgLighter;
 $inputBorderColor: $borderColor;
 $inputColor: $foregroundColor;
+
+// Repos
+$repoheadBg: $bgDark;
+
+// Readme
+$readmeHeaderBg: $bgDark;
+$readmeBg: $backgroundColor;
+$readmeBorder: $borderColor;
+
+$codeBg: $bgDark;

@@ -3,7 +3,7 @@
   color: $foregroundColor;
   border-color: $borderColor;
 
-  &:hover {
+  &:hover, &:hover:focus, &.selected, &:focus, &.selected:focus {
     background-image: linear-gradient(darken($backgroundColor, 2%), darken($backgroundColor, 5%));
     color: $foregroundColor;
     border-color: $borderColor;

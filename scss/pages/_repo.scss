@@ -1,6 +1,6 @@
 .repohead {
   &.experiment-repo-nav {
-    background-color: darken($backgroundColor, 2%);
+    background-color: $repoheadBg;
   }
 }
 
@@ -11,7 +11,7 @@
 .reponav-item {
   color: $foregroundColor;
   &:hover {
-    color: darken($foregroundColor, 10%);
+    color: $fgDarkest;
   }
   &.selected {
     background-color: $backgroundColor;
@@ -25,7 +25,7 @@
   }
 
   .counter {
-    background-color: lighten($backgroundColor, 5%);
+    background-color: $bgLighter;
     color: $foregroundColor;
   }
 }
@@ -40,24 +40,33 @@
 
 .commit-tease {
   border-color: $borderColor;
-  background-color: darken($backgroundColor, 2%);
-  color: lighten($foregroundColor, 5%);
+  background-color: $bgDark;
+  color: $fgLighter;
 
   .commit-author-section, .user-mention, .team-mention {
-    color: lighten($foregroundColor, 5%);
+    color: $fgLighter;
+  }
+}
+
+.numbers-summary {
+  a {
+    color: $fgLighter;
+    &:hover {
+      color: $fgLightest;
+    }
   }
 }
 
 // Repo tags
 .topic-tag {
   border-color: $borderColor;
-  background-color: darken($backgroundColor, 2%);
-  color: lighten($foregroundColor, 5%);
+  background-color: $bgDark;
+  color: $fgLighter;
 
   &:hover {
     border-color: $borderColor;
-    background-color: darken($backgroundColor, 5%);
-    color: lighten($foregroundColor, 5%);
+    background-color: $bgDarker;
+    color: $fgLighter;
   }
 }
 
@@ -68,7 +77,7 @@
     background-color: $backgroundColor;
 
     .navigation-focus td {
-      background-color: lighten($backgroundColor, 5%);
+      background-color: $bgLighter;
     }
 
     .message, .age {
@@ -85,30 +94,31 @@
 // Readme
 .readme {
   h3 {
-    background-color: darken($backgroundColor, 2%);
-    border-color: $borderColor;
+    background-color: $readmeHeaderBg;
+    border-color: $readmeBorder;
   }
   .markdown-body, .plain {
-    background-color: $backgroundColor;
-    border-color: $borderColor;
+    background-color: $readmeBg;
+    border-color: $readmeBorder;
   }
 }
 
 .markdown-body {
-  background-color: $backgroundColor;
-  border-color: $borderColor;
-
   img {
     background-color: transparent;
   }
 
   h1,h2,h3,h4,h5 {
-    border-color: $borderColor;
+    border-color: $readmeBorder;
   }
 
   pre, code {
-    background-color: darken($backgroundColor, 2%);
+    background-color: $codeBg;
   }
+}
+
+.markdown-body h1 .octicon-link, .markdown-body h2 .octicon-link, .markdown-body h3 .octicon-link, .markdown-body h4 .octicon-link, .markdown-body h5 .octicon-link, .markdown-body h6 .octicon-link {
+  color: $foregroundColor;
 }
 
 // Select Menu
@@ -133,12 +143,26 @@
   color: $foregroundColor;
 
   &:hover {
-    color: darken($foregroundColor, 5%);
+    color: $fgDark;
   }
 
   &.selected {
-    background-color: lighten($backgroundColor, 5%);
+    background-color: $bgLighter;
     border-color: $borderColor;
-    color: darken($foregroundColor, 5%);
+    color: $fgDark;
   }
+}
+
+.select-menu-item {
+  &.navigation-focus {
+    background-color: $brandColor;
+  }
+  &.selected {
+    background-color: $bgDarker;
+    color: $brandColor;
+  }
+}
+
+.select-menu-text-filter input {
+  border: $borderColor;
 }

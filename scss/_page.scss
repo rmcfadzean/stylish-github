@@ -25,25 +25,43 @@ body {
   }
 }
 
+// Business header
+
+.site-subheader-business {
+  background-color: $headerBackgroundColor;
+
+  &.is-stuck {
+    background-color: $headerBackgroundColor;
+  }
+  .nav-item, .muted-link {
+    color: $navItemColor !important;
+
+    &:hover {
+      color: $navItemHoverColor  !important;
+    }
+  }
+}
+
 // Footer
 
 .site-footer {
   border-color: $borderColor;
+  color: $fgLight;
 }
 
 // General Treatments
 
 .shade-gray {
-  background-color: darken($backgroundColor, 5%) !important; // Needs !imp to override an inline !imp
+  background-color: $bgDarker !important; // Needs !imp to override an inline !imp
 }
 
 .shade-gradient {
-  background-image: linear-gradient($darkestGrey, $backgroundColor);
+  background-image: linear-gradient($bgDarker, $backgroundColor);
 }
 
 .tile,
 .border-top, .border-bottom, .border-left, .border-right {
-  border-color: $darkGrey !important;
+  border-color: $borderColor !important;
 }
 
 // Links
@@ -52,30 +70,68 @@ a {
   transition: all 0.1s ease-in-out;
 }
 
+// Flow (/personal & /business)
+
+.illflow-item {
+  border: 1px solid transparent;
+  &:not(.selected):hover {
+    background-color: $bgLight;
+  }
+}
+
+.illflow-purple {
+  .illflow-item {
+    .illflow-item-heading {
+      color: $fgDark;
+    }
+  }
+  .selected {
+    background-color: $bgDark;
+    border: 1px solid $borderColor;
+    &::after {
+      border-color: transparent transparent $borderColor;
+    }
+    .illflow-item-heading {
+      color: $fgDark;
+    }
+  }
+}
+
 
 // Misc
 .border-behind {
   &:before {
-    background-color: $lightestGrey;
+    background-color: $foregroundColor;
   }
 }
 
+hr {
+  border-color: $borderColor;
+}
+
+// More important!
+
 .text-gray {
-  color: $lightestGrey !important; // More important!
+  color: $fgLightest !important;
 }
 
 .text-gray-dark {
-  color: $lightestGrey !important;
+  color: $fgDarkest !important;
 }
 
 .text-emphasized {
-  color: $lightestGrey !important;
+  color: $fgLighter !important;
 }
 
 .site-text-black {
-  color: $lighterGrey !important;
+  color: $fgDarkest !important;
+}
+
+.site-text-purple {
+  // ???
+  // Currently: #7a3497 !important
 }
 
 .bg-white {
-  background-color: $backgroundColor !important; // More important!
+  background-color: $backgroundColor !important; 
 }
