@@ -1,12 +1,40 @@
 .btn {
+  background-image: linear-gradient($backgroundColor, darken($backgroundColor, 5%));
+  color: $foregroundColor;
+  border-color: $borderColor;
+
+  &:hover {
+    background-image: linear-gradient(darken($backgroundColor, 2%), darken($backgroundColor, 5%));
+    color: $foregroundColor;
+    border-color: $borderColor;
+  }
+
   &-primary {
     background-image: linear-gradient($primary, $darkPrimary);
     border-color: $ghDarkPrimary;
+    color: #fff;
 
     &:hover, &:active,
     &.zeroclipboard-is-hover, &.zeroclipboard-is-active {
       background-image: linear-gradient($ghPrimary, $ghDarkPrimary);
       border-color: $ghPrimary;
+      color: #fff;
     }
   }
+
+  &:disabled, &:disabled:hover, &.disabled, &.disabled:hover {
+    // TODO
+  }
+}
+
+.ellipsis-expander {
+  background-color: $backgroundColor;
+}
+
+// Technically part of buttons?
+
+.social-count {
+  background-color: $backgroundColor;
+  border-color: $borderColor;
+  color: $foregroundColor;
 }

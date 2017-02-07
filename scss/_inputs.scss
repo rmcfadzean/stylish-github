@@ -1,10 +1,22 @@
 .form-control, .form-select {
-  background-color: $darkerGrey;
-  border-color: $darkGrey;
-  color: $lightGrey;
+  background-color: $inputBackgroundColor;
+  border-color: $inputBorderColor;
+  color: $inputColor;
 }
 
 .form-control.focus, .form-control:focus,
 .form-select.focus, .form-select:focus {
-  border-color: $brandColor;
+  border-color: $inputBorderColor;
+}
+
+
+// Search
+.header-search-scope {
+  border-color: $inputBorderColor;
+}
+
+.scoped-search .form-control.focus .header-search-scope {
+  background-color: lighten($inputBackgroundColor, 5%);
+  border-color: $inputBorderColor;
+  color: $inputColor;
 }

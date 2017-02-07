@@ -1,27 +1,27 @@
 body {
   background-color: $backgroundColor;
-  color: $lighterGrey;
+  color: $foregroundColor;
 }
 
 // Header
 
 .site-header {
-  background: $darkestGrey;
+  background: $headerBackgroundColor;
 
   &-nav .nav-item {
-    color: $lighterGrey;
+    color: $navItemColor;
 
     &:hover {
-      color: $lightestGrey;
+      color: $navItemHoverColor;
     }
   }
 }
 
 .header-logo-invertocat {
-  color: $lighterGrey;
+  color: $logoColor;
 
   &:hover {
-    color: $brandColor;
+    color: $logoHoverColor;
   }
 }
 
@@ -34,7 +34,7 @@ body {
 // General Treatments
 
 .shade-gray {
-  background-color: $darkestGrey !important; // Needs !imp to override an inline !imp
+  background-color: darken($backgroundColor, 5%) !important; // Needs !imp to override an inline !imp
 }
 
 .shade-gradient {
@@ -43,11 +43,39 @@ body {
 
 .tile,
 .border-top, .border-bottom, .border-left, .border-right {
-  border-color: $borderColor !important;
+  border-color: $darkGrey !important;
 }
 
 // Links
 a {
   color: $brandColor;
   transition: all 0.1s ease-in-out;
+}
+
+
+// Misc
+.border-behind {
+  &:before {
+    background-color: $lightestGrey;
+  }
+}
+
+.text-gray {
+  color: $lightestGrey !important; // More important!
+}
+
+.text-gray-dark {
+  color: $lightestGrey !important;
+}
+
+.text-emphasized {
+  color: $lightestGrey !important;
+}
+
+.site-text-black {
+  color: $lighterGrey !important;
+}
+
+.bg-white {
+  background-color: $backgroundColor !important; // More important!
 }

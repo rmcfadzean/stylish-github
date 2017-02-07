@@ -3,10 +3,14 @@
 }
 
 .pricing-card {
-  background-color: $darkestGrey;
+  background-color: $darkerGrey;
+
+  .pricing-card-name {
+    border-color: $borderColor;
+  }
 }
 
 .pricing-card,
 .pricing-card-horizontal .pricing-card-cta {
-  border-color: $borderColor !important;
+  border-color: $darkGrey !important;
 }

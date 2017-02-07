@@ -13,9 +13,25 @@ $lighterGrey:  #888;
 $lightestGrey: #AAA;
 
 // Base Color Assignments
-$backgroundColor: #000;
+$backgroundColor: #22313f;
+$foregroundColor: #7b96a3;
 $brandColor: darken($ghBrand, 10%);
-$borderColor: $darkGrey;
+$borderColor: lighten($backgroundColor, 15%);
 
 $primary: darken($ghPrimary, 10%);
 $darkPrimary: darken($ghDarkPrimary, 10%);
+
+// Nav
+$headerBackgroundColor: darken($backgroundColor, 5%);
+
+$navItemColor: $foregroundColor;
+$navItemHoverColor: lighten($foregroundColor, 10%);
+
+$logoColor: $navItemColor;
+$logoHoverColor: lighten($ghBrand, 20%);
+
+
+// Inputs
+$inputBackgroundColor: lighten($backgroundColor, 5%);
+$inputBorderColor: $borderColor;
+$inputColor: $foregroundColor;

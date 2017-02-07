@@ -17,6 +17,7 @@
     background-color: $backgroundColor;
     color: $foregroundColor;
     border-color: $borderColor;
+    border-bottom-color: $backgroundColor;
   }
 
   .octicon {
@@ -26,5 +27,118 @@
   .counter {
     background-color: lighten($backgroundColor, 5%);
     color: $foregroundColor;
+  }
+}
+
+// Top Widgets
+.overall-summary {
+  border-color: $borderColor;
+}
+.repository-lang-stats-graph {
+  border-color: $borderColor;
+}
+
+.commit-tease {
+  border-color: $borderColor;
+  background-color: darken($backgroundColor, 2%);
+  color: lighten($foregroundColor, 5%);
+
+  .commit-author-section, .user-mention, .team-mention {
+    color: lighten($foregroundColor, 5%);
+  }
+}
+
+// Repo tags
+.topic-tag {
+  border-color: $borderColor;
+  background-color: darken($backgroundColor, 2%);
+  color: lighten($foregroundColor, 5%);
+
+  &:hover {
+    border-color: $borderColor;
+    background-color: darken($backgroundColor, 5%);
+    color: lighten($foregroundColor, 5%);
+  }
+}
+
+// File viewer
+.file-wrap {
+  border-color: $borderColor;
+  .files {
+    background-color: $backgroundColor;
+
+    .navigation-focus td {
+      background-color: lighten($backgroundColor, 5%);
+    }
+
+    .message, .age {
+      color: $foregroundColor;
+    }
+
+    td {
+      border-color: $borderColor;
+    }
+  }
+}
+
+
+// Readme
+.readme {
+  h3 {
+    background-color: darken($backgroundColor, 2%);
+    border-color: $borderColor;
+  }
+  .markdown-body, .plain {
+    background-color: $backgroundColor;
+    border-color: $borderColor;
+  }
+}
+
+.markdown-body {
+  background-color: $backgroundColor;
+  border-color: $borderColor;
+
+  img {
+    background-color: transparent;
+  }
+
+  h1,h2,h3,h4,h5 {
+    border-color: $borderColor;
+  }
+
+  pre, code {
+    background-color: darken($backgroundColor, 2%);
+  }
+}
+
+// Select Menu
+.select-menu-modal, .select-menu-filters, .select-menu-item, .select-menu-tabs {
+  background-color: $backgroundColor;
+  border-color: $borderColor;
+  color: $foregroundColor;
+}
+
+.select-menu-header, .select-menu-divider {
+  background-color: $backgroundColor;
+  border-color: $borderColor;
+  color: $foregroundColor;
+  .select-menu-title {
+    color: $foregroundColor;
+  }
+}
+
+.select-menu-tabs a, .select-menu-tabs .select-menu-tab-nav {
+  background-color: $backgroundColor;
+  border-color: $borderColor;
+  color: $foregroundColor;
+
+  &:hover {
+    color: darken($foregroundColor, 5%);
+  }
+
+  &.selected {
+    background-color: lighten($backgroundColor, 5%);
+    border-color: $borderColor;
+    color: darken($foregroundColor, 5%);
   }
 }
