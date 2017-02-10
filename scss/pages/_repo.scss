@@ -10,7 +10,7 @@
 
 .reponav-item {
   color: $foregroundColor;
-  &:hover {
+  &:hover, &:focus {
     color: $fgDarkest;
   }
   &.selected {
