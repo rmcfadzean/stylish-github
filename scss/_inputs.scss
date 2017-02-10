@@ -9,7 +9,6 @@
   border-color: $inputBorderColor;
 }
 
-
 // Search
 .header-search-scope {
   border-color: $inputBorderColor;
@@ -19,4 +18,22 @@
   background-color: lighten($inputBackgroundColor, 5%);
   border-color: $inputBorderColor;
   color: $inputColor;
+}
+
+// Placeholders
+
+::-webkit-input-placeholder { // Chrome/Opera/Safari
+  color: $fgColor;
+}
+
+::-moz-placeholder { // FF 19+
+  color: $fgColor;
+}
+
+:-ms-input-placeholder { // IE 10+
+  color: $fgColor;
+}
+
+:-moz-placeholder { // FF 18-
+  color: $fgColor;
 }

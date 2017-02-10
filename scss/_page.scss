@@ -66,9 +66,25 @@ body {
 }
 
 // Links
+
 a {
   color: $brandColor;
   transition: all 0.1s ease-in-out;
+}
+
+// Filters (/personal)
+
+.filter-item {
+  color: $fgDarkest;
+
+  &:hover {
+    background: $bgLight;
+  }
+
+  &.selected {
+    background: $bgLighter;
+    color: $fgLightest;
+  }
 }
 
 // Flow (/personal & /business)
@@ -102,8 +118,8 @@ a {
   }
 }
 
-
 // Misc
+
 .border-behind {
   &:before {
     background-color: $foregroundColor;
@@ -112,6 +128,11 @@ a {
 
 hr {
   border-color: $borderColor;
+}
+
+.counter {
+  background-color: $bgLighter;
+  color: $foregroundColor !important; // !imp to override on repo pages
 }
 
 // More important!
