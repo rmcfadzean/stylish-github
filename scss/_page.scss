@@ -43,11 +43,24 @@ body {
   }
 }
 
+// Boxed Groups
+
+.boxed-group {
+  & > h3, .heading {
+    border-color: $borderColor;
+    background: $bgDarker;
+  }
+}
+
 // Footer
 
 .site-footer {
   border-color: $borderColor;
   color: $fgLight;
+
+  .octicon-mark-github {
+    color: $bgDarker;
+  }
 }
 
 // General Treatments
