@@ -6,7 +6,7 @@
   }
 
   .auth-form-header {
-    color: $lightGrey;
+    color: $fgLightest;
   }
 
   .auth-form-body {
@@ -14,7 +14,11 @@
     border-top-color: $borderColor;
   }
 
+  .header-logo {
+    color: $logoColor;
+  }
+
   .site-footer-links a {
-    color: $grey;
+    color: $foregroundColor;
   }
 }

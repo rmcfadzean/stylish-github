@@ -1,7 +1,23 @@
+// Nav
+
 .user-profile-nav,
 .user-profile-sticky-bar::after {
   background: $backgroundColor;
   border-color: $borderColor;
+}
+
+.underline-nav-item {
+  color: $navItemColor;
+
+  &:hover {
+    color: $navItemHoverColor;
+  }
+
+  &.selected {
+    color: $navItemHoverColor;
+    font-weight: bold;
+    border-bottom-color: $accentBorderColor;
+  }
 }
 
 // Timeline
@@ -59,4 +75,10 @@ $contribColorMap: (
   .contrib-legend .legend li[style="background-color: #{$gh-color}"] {
     background-color: #{$replacement-color} !important;
   }
+}
+
+// Misc
+
+.pinned-repo-item {
+  background: $bgDark;
 }

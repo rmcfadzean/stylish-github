@@ -118,8 +118,8 @@ a {
   }
 }
 
-
 // Misc
+
 .border-behind {
   &:before {
     background-color: $foregroundColor;
@@ -128,6 +128,11 @@ a {
 
 hr {
   border-color: $borderColor;
+}
+
+.counter {
+  background-color: $bgLighter;
+  color: $foregroundColor !important; // !imp to override on repo pages
 }
 
 // More important!

@@ -10,22 +10,19 @@
 
 .reponav-item {
   color: $foregroundColor;
+
   &:hover, &:focus {
     color: $fgDarkest;
   }
+
   &.selected {
     background-color: $backgroundColor;
     color: $foregroundColor;
-    border-color: $borderColor;
+    border-color: $accentBorderColor;
     border-bottom-color: $backgroundColor;
   }
 
   .octicon {
-    color: $foregroundColor;
-  }
-
-  .counter {
-    background-color: $bgLighter;
     color: $foregroundColor;
   }
 }
@@ -34,6 +31,7 @@
 .overall-summary {
   border-color: $borderColor;
 }
+
 .repository-lang-stats-graph {
   border-color: $borderColor;
 }
@@ -73,6 +71,7 @@
 // File viewer
 .file-wrap {
   border-color: $borderColor;
+
   .files {
     background-color: $backgroundColor;
 
@@ -84,6 +83,10 @@
       color: $foregroundColor;
     }
 
+    .message a:hover {
+      color: $fgLightest;
+    }
+
     td {
       border-color: $borderColor;
     }
@@ -93,10 +96,6 @@
 
 // Readme
 .readme {
-  h3 {
-    background-color: $readmeHeaderBg;
-    border-color: $readmeBorder;
-  }
   .markdown-body, .plain {
     background-color: $readmeBg;
     border-color: $readmeBorder;
@@ -108,17 +107,19 @@
     background-color: transparent;
   }
 
-  h1,h2,h3,h4,h5 {
-    border-color: $readmeBorder;
-  }
-
   pre, code {
     background-color: $codeBg;
   }
-}
 
-.markdown-body h1 .octicon-link, .markdown-body h2 .octicon-link, .markdown-body h3 .octicon-link, .markdown-body h4 .octicon-link, .markdown-body h5 .octicon-link, .markdown-body h6 .octicon-link {
-  color: $foregroundColor;
+  @for $i from 1 through 6 {
+    h#{$i} {
+      border-color: $readmeBorder;
+
+      .octicon-link {
+        color: $foregroundColor;
+      }
+    }
+  }
 }
 
 // Select Menu
