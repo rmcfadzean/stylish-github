@@ -2,6 +2,7 @@
 
 // Mixins
 @import 'mixins/card';
+@import 'mixins/activated';
 
 // Globals
 @import 'page';
@@ -12,3 +13,4 @@
 @import 'pages/homepage';
 @import 'pages/login';
 @import 'pages/repo';
+@import 'pages/issues';

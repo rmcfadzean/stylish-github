@@ -1,0 +1,5 @@
+@mixin activated() {
+  &:hover, &:focus, &.selected, &.selected:hover, &.selected:focus {
+    @content;
+  }
+}

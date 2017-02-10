@@ -1,0 +1,34 @@
+// Technically on PRs and others too...
+.table-list-header {
+  background-color: $bgDark;
+  color: $fgLighter;
+  border-color: $borderColor;
+}
+
+.table-list-header-toggle {
+  .btn-link {
+    color: $fgLighter;
+
+    @include activated {
+      color: $fgLightest;
+    }
+  }
+}
+
+
+.subnav-item {
+  color: $foregroundColor;
+  border-color: $borderColor;
+}
+
+.Box-row {
+  color: $foregroundColor;
+  border-color: $borderColor;
+}
+
+.Box-row--focus-gray {
+  background-color: $backgroundColor;
+  &.navigation-focus {
+    background-color: $bgLighter;
+  }
+}
