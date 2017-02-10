@@ -2,6 +2,7 @@
 
 A dark theme for github
 
+![WIP Screenshot](screenshots/blindingstars-riptide.jpg?raw=true)
 
 ## Installation
 
