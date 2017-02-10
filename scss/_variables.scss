@@ -21,7 +21,7 @@ $borderColor: lighten($backgroundColor, 15%);
 $primary: darken($ghPrimary, 10%);
 $darkPrimary: darken($ghDarkPrimary, 10%);
 
-
+$bgLightest: lighten($backgroundColor, 10%);
 $bgLighter: lighten($backgroundColor, 5%);
 $bgLight: lighten($backgroundColor, 2%);
 $bgDark: darken($backgroundColor, 2%);

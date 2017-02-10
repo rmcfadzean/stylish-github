@@ -1,0 +1,62 @@
+.user-profile-nav,
+.user-profile-sticky-bar::after {
+  background: $backgroundColor;
+  border-color: $borderColor;
+}
+
+// Timeline
+
+.profile-timeline.discussion-timeline .profile-timeline-month-heading::after,
+.profile-timeline.discussion-timeline::before {
+  background: $borderColor;
+}
+
+.discussion-item-icon {
+  border-color: $borderColor;
+  background: $bgDark;
+  color: $fgDarker;
+}
+
+// Profile Info "Vcard"
+
+.vcard {
+  &-fullname {
+    color: $fgLightest;
+  }
+
+  &-username,
+  &-detail .octicon {
+    color: $fgDarkest;
+  }
+}
+
+.user-profile-bio {
+  color: $fgDarkest;
+}
+
+// Contribution Graph
+
+.calendar-graph {
+  text.month,
+  text.wday {
+    fill: $fgDarkest;
+  }
+}
+
+$contribColorMap: (
+  #eee: $bgDark,
+  #d6e685: $bgLightest,
+  #8cc665: $fgDarkest,
+  #44a340: $foregroundColor,
+  #1e6823: $fgLightest
+);
+
+@each $gh-color, $replacement-color in $contribColorMap {
+  .calendar-graph .day[fill^="#{$gh-color}"] {
+    fill: #{$replacement-color};
+  }
+
+  .contrib-legend .legend li[style="background-color: #{$gh-color}"] {
+    background-color: #{$replacement-color} !important;
+  }
+}
