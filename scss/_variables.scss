@@ -1,9 +1,11 @@
 // GitHub colors
+
 $ghBrand: #4078c0;
 $ghPrimary: #6cc644;
 $ghDarkPrimary: #5aad35;
 
 // Base Color Assignments
+
 $backgroundColor: #22313f;
 $foregroundColor: #7b96a3;
 $brandColor: lighten($ghBrand, 10%);
@@ -30,6 +32,7 @@ $fgDarker: darken($foregroundColor, 5%);
 $fgDarkest: darken($foregroundColor, 10%);
 
 // Nav
+
 $headerBackgroundColor: $bgDarker;
 
 $navItemColor: $foregroundColor;
@@ -39,6 +42,7 @@ $logoColor: $navItemColor;
 $logoHoverColor: lighten($ghBrand, 20%);
 
 // Inputs
+
 $inputBackgroundColor: $bgLighter;
 $inputBorderColor: $borderColor;
 $inputColor: $fgLighter;
@@ -47,8 +51,13 @@ $inputColor: $fgLighter;
 $repoheadBg: $bgDark;
 
 // Readme
+
 $readmeHeaderBg: $bgDark;
 $readmeBg: $backgroundColor;
 $readmeBorder: $borderColor;
 
 $codeBg: $bgDark;
+
+// Buttons
+
+$disabledDesaturateAmount: 5%;

@@ -171,3 +171,17 @@
 .select-menu-text-filter:first-child:last-child {
   border-color: $borderColor;
 }
+
+// Languages
+
+.repository-lang-stats ol.repository-lang-stats-numbers li {
+  .lang {
+    color: $fgLighter;
+    font-weight: bold;
+  }
+
+  & > a, & > span {
+    color: $fgDarkest;
+    font-weight: normal;
+  }
+}
