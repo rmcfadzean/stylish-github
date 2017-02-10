@@ -32,3 +32,67 @@
     background-color: $bgLighter;
   }
 }
+
+.gh-header-number {
+  color: $fgLighter;
+}
+
+.gh-header-meta {
+  border-color: $borderColor;
+  color: $foregroundColor;
+
+  .author {
+    color: $fgLighter;
+  }
+}
+
+
+// Discussion
+
+.discussion-sidebar-item {
+  color: $foregroundColor;
+
+  .discussion-sidebar-heading {
+    color: $foregroundColor;
+  }
+  &+.discussion-sidebar-item {
+    border-color: $borderColor;
+  }
+}
+
+// Timeline
+
+.timeline-comment-wrapper {
+  border-color: $backgroundColor;
+}
+
+.timeline-comment {
+  border-color: $borderColor;
+  background-color: $backgroundColor;
+}
+
+.timeline-comment-wrapper>.timeline-comment::before, .timeline-new-comment .timeline-comment::before,
+.timeline-comment-wrapper>.timeline-comment::after, .timeline-new-comment .timeline-comment::after {
+  border-right-color: $borderColor !important;
+}
+
+.timeline-comment-header {
+  border-color: $borderColor;
+  background-color: $backgroundColor;
+}
+
+.discussion-timeline {
+  &:before {
+    background-color: $borderColor;
+  }
+}
+
+.discussion-timeline-actions {
+  background-color: transparent;
+  border-color: $borderColor;
+
+  .signed-out-comment {
+    background-color: $backgroundColor;
+    border-color: $borderColor;
+  }
+}
