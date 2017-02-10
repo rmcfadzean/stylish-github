@@ -166,3 +166,7 @@
 .select-menu-text-filter input {
   border: $borderColor;
 }
+
+.select-menu-text-filter:first-child:last-child {
+  border-color: $borderColor;
+}
