@@ -1,0 +1,15 @@
+.muted-link {
+  color: $fgDarker !important;
+
+  &:hover {
+    color: $fgDarkest !important;
+  }
+}
+
+.link-gray-dark {
+  color: $fgLightest !important;
+
+  &:hover {
+    color: $fgLighter !important;
+  }
+}

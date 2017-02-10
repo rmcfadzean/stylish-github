@@ -33,6 +33,7 @@ body {
   &.is-stuck {
     background-color: $headerBackgroundColor;
   }
+
   .nav-item, .muted-link {
     color: $navItemColor !important;
 
@@ -60,7 +61,7 @@ body {
 }
 
 .tile,
-.border-top, .border-bottom, .border-left, .border-right {
+.border, .border-top, .border-bottom, .border-left, .border-right {
   border-color: $borderColor !important;
 }
 
@@ -74,6 +75,7 @@ a {
 
 .illflow-item {
   border: 1px solid transparent;
+
   &:not(.selected):hover {
     background-color: $bgLight;
   }
@@ -85,12 +87,15 @@ a {
       color: $fgDark;
     }
   }
+
   .selected {
     background-color: $bgDark;
     border: 1px solid $borderColor;
+
     &::after {
       border-color: transparent transparent $borderColor;
     }
+
     .illflow-item-heading {
       color: $fgDark;
     }
@@ -112,11 +117,15 @@ hr {
 // More important!
 
 .text-gray {
-  color: $fgLightest !important;
-}
+  color: $fgLight !important;
 
-.text-gray-dark {
-  color: $fgDarkest !important;
+  &-dark {
+    color: $fgLightest !important;
+  }
+
+  &-light {
+    color: $fgDarkest !important;
+  }
 }
 
 .text-emphasized {
