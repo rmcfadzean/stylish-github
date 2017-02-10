@@ -27,7 +27,17 @@
   }
 }
 
+.header-search-scope {
+  background: $bgLightest;
+  color: $fgLighter;
+}
+
+.commit-tease-sha {
+  @extend a;
+}
+
 // Top Widgets
+
 .overall-summary {
   border-color: $borderColor;
 }
@@ -49,26 +59,33 @@
 .numbers-summary {
   a {
     color: $fgLighter;
+
     &:hover {
       color: $fgLightest;
     }
   }
+
+  .octicon {
+    color: $bgLightest;
+  }
 }
 
 // Repo tags
+
 .topic-tag {
   border-color: $borderColor;
-  background-color: $bgDark;
+  background-color: mix($brandColor, $bgDark, 25%);
   color: $fgLighter;
 
   &:hover {
     border-color: $borderColor;
-    background-color: $bgDarker;
-    color: $fgLighter;
+    background-color: mix($brandColor, $bgDark, 50%);
+    color: $fgLightest;
   }
 }
 
-// File viewer
+// File Viewer
+
 .file-wrap {
   border-color: $borderColor;
 
@@ -88,13 +105,13 @@
     }
 
     td {
-      border-color: $borderColor;
+      border-color: rgba($borderColor, 0.125);
     }
   }
 }
 
-
 // Readme
+
 .readme {
   .markdown-body, .plain {
     background-color: $readmeBg;
@@ -109,6 +126,8 @@
 
   pre, code {
     background-color: $codeBg;
+    border: 1px solid rgba($borderColor, 0.4);
+    color: mix($fgDark, $brandColor, 50%);
   }
 
   @for $i from 1 through 6 {
@@ -123,6 +142,7 @@
 }
 
 // Select Menu
+
 .select-menu-modal, .select-menu-filters, .select-menu-item, .select-menu-tabs {
   background-color: $backgroundColor;
   border-color: $borderColor;
