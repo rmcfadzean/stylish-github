@@ -12,7 +12,7 @@ body {
     color: $navItemColor;
 
     &:hover {
-      color: $navItemHoverColor;
+      color: $navItemHoverColor !important;
     }
   }
 }
@@ -22,24 +22,6 @@ body {
 
   &:hover {
     color: $logoHoverColor;
-  }
-}
-
-// Business header
-
-.site-subheader-business {
-  background-color: $headerBackgroundColor;
-
-  &.is-stuck {
-    background-color: $headerBackgroundColor;
-  }
-
-  .nav-item, .muted-link {
-    color: $navItemColor !important;
-
-    &:hover {
-      color: $navItemHoverColor  !important;
-    }
   }
 }
 
@@ -77,12 +59,14 @@ body {
 
 // General Treatments
 
-.shade-gray {
-  background-color: $bgDarker !important; // Needs !imp to override an inline !imp
-}
+.shade {
+  &-gray {
+    background-color: $bgDarker !important; // Needs !imp to override an inline !imp
+  }
 
-.shade-gradient {
-  background-image: linear-gradient($bgDarker, $backgroundColor);
+  &-gradient {
+    background-image: linear-gradient($bgDarker, $backgroundColor);
+  }
 }
 
 .tile,
@@ -94,6 +78,11 @@ body {
   color: $foregroundColor;
 }
 
+.pullquote {
+  border-color: mix($brandColor, $borderColor, 50%) !important;
+  color: $foregroundColor;
+}
+
 // Links
 
 a {
@@ -101,7 +90,7 @@ a {
   transition: all 0.1s ease-in-out;
 }
 
-// Filters (/personal)
+// Filters (/username)
 
 .filter-item {
   color: $fgDarkest;
@@ -116,43 +105,22 @@ a {
   }
 }
 
-// Flow (/personal & /business)
-
-.illflow-item {
-  border: 1px solid transparent;
-
-  &:not(.selected):hover {
-    background-color: $bgLight;
-  }
-}
-
-.illflow-purple {
-  .illflow-item {
-    .illflow-item-heading {
-      color: $fgDark;
-    }
-  }
-
-  .selected {
-    background-color: $bgDark;
-    border: 1px solid $borderColor;
-
-    &::after {
-      border-color: transparent transparent $borderColor;
-    }
-
-    .illflow-item-heading {
-      color: $fgDark;
-    }
-  }
-}
-
 // Misc
 
 .border-behind {
   &:before {
     background-color: $foregroundColor;
   }
+}
+
+.callout-box {
+  border-color: $borderColor !important;
+
+  &-icon {
+    background: $backgroundColor;
+    outline: 10px solid $backgroundColor;
+  }
+
 }
 
 hr {
@@ -166,29 +134,48 @@ hr {
 
 // More important!
 
-.text-gray {
-  color: $fgLight !important;
+.text {
+  &-gray {
+    color: $fgLight !important;
 
-  &-dark {
-    color: $fgLightest !important;
+    &-dark {
+      color: $fgLightest !important;
+    }
+
+    &-light {
+      color: $fgDarkest !important;
+    }
   }
 
-  &-light {
+  &-emphasized {
+    color: $fgLighter !important;
+  }
+}
+
+.site-text {
+  &-black {
     color: $fgDarkest !important;
   }
-}
 
-.text-emphasized {
-  color: $fgLighter !important;
-}
+  &-purple {
+    color: $accent-purple !important;
+  }
 
-.site-text-black {
-  color: $fgDarkest !important;
-}
+  &-orange {
+    color: $accent-orange !important;
+  }
 
-.site-text-purple {
-  // ???
-  // Currently: #7a3497 !important
+  &-blue {
+    color: $accent-blue !important;
+  }
+
+  &-green {
+    color: $accent-green !important;
+  }
+
+  &-blue-purple {
+    color: $accent-blue-purple !important;
+  }
 }
 
 .bg-white {
