@@ -1,0 +1,23 @@
+.blog {
+  &-post-body {
+    color: $foregroundColor;
+  }
+
+  &-post-meta {
+    &, a {
+      color: $fgDarkest;
+    }
+  }
+
+  &-aside .rss {
+    color: $foregroundColor;
+
+    .octicon {
+      color: $accent-orange;
+    }
+  }
+
+  &-search .octicon-search {
+    color: $foregroundColor;
+  }
+}

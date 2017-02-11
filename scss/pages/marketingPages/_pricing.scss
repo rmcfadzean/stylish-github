@@ -1,0 +1,8 @@
+.bg-bubble {
+  background-blend-mode: overlay;
+  background-color: $backgroundColor;
+}
+
+div[role="main"] > .shade-gradient {
+  background: transparent !important;
+}
