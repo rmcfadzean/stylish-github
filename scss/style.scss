@@ -11,9 +11,9 @@
 @import 'page';
 
 // Page-Specific
-@import 'pages/explore';
 @import 'pages/homepage';
 @import 'pages/issues';
 @import 'pages/login';
+@import 'pages/marketingPages'; // @imports the individual marketing pages
 @import 'pages/profile';
 @import 'pages/repo';

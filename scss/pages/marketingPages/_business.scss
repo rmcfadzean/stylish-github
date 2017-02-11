@@ -1,0 +1,25 @@
+.site-subheader-business {
+  background-color: $headerBackgroundColor;
+
+  &.is-stuck {
+    background-color: $headerBackgroundColor;
+  }
+
+  .nav-item, .muted-link {
+    color: $navItemColor !important;
+
+    &:hover {
+      color: $navItemHoverColor !important;
+    }
+  }
+}
+
+.logo-img-greyscale {
+  filter: grayscale(100%) invert(1);
+  // Better contrast on a dark background, and because they're monochrome,
+  // the flipped brand colors won't be a problem
+}
+
+.callout-box-business .iconlist-item-icon {
+  color: $accent-green;
+}

@@ -1,0 +1,58 @@
+@import 'marketingPages/business';
+@import 'marketingPages/explore';
+
+$marketingColors: (
+  opensource: $accent-orange,
+  explore: $accent-green,
+  business: $accent-purple,
+  personal: $accent-blue
+);
+
+@each $page, $color in $marketingColors {
+  .site-header-nav-main .selected.nav-item-#{$page} {
+    color: $color;
+
+    &:after {
+      background-color: $color;
+    }
+  }
+}
+
+.sn-jumbotron { // Add a curtain effect to large Jumbotron headers
+  box-shadow: inset 0 0 999em 999em rgba($backgroundColor, 0.7);
+}
+
+// Flow (/personal & /business)
+
+$illflowThemes: blue, purple;
+
+@each $theme in $illflowThemes {
+  .illflow-#{$theme} {
+    .illflow-item-heading {
+      @extend .site-text-#{$theme};
+    }
+  }
+}
+
+.illflow-item {
+  border: 1px solid transparent;
+
+  &:not(.selected):hover {
+    background-color: $bgLight;
+  }
+}
+
+.illflow {
+  .selected {
+    background-color: $bgDark;
+    border: 1px solid $borderColor;
+
+    &::after {
+      border-color: transparent transparent $borderColor;
+    }
+
+    .illflow-item-heading {
+      color: $fgDark;
+    }
+  }
+}

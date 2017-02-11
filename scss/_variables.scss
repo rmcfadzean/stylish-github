@@ -31,6 +31,14 @@ $fgDark: darken($foregroundColor, 2%);
 $fgDarker: darken($foregroundColor, 5%);
 $fgDarkest: darken($foregroundColor, 10%);
 
+// Color Accents
+
+$accent-green: #6fa858;
+$accent-blue: #55a8c9;
+$accent-blue-purple: #7052c5;
+$accent-purple: #a272a9;
+$accent-orange: #ec7063;
+
 // Nav
 
 $headerBackgroundColor: $bgDarker;
