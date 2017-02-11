@@ -1,0 +1,74 @@
+.exploregrid-item {
+  @include card;
+
+  &-meta {
+    color: $borderColor;
+  }
+}
+
+.explore-section {
+  border-color: $borderColor;
+
+  &:nth-child(even) {
+    background: $bgLight;
+  }
+}
+
+.explore-collection h2 {
+  color: $fgLightest;
+}
+
+.explore-signup-entice {
+  background: $bgDarker;
+  border-color: $borderColor;
+
+  img {
+    mix-blend-mode: multiply;
+    opacity: 0.3;
+  }
+
+  &-inner, &-wrapper {
+    background: transparent;
+  }
+}
+
+.repo-collection > ul {
+  background: transparent;
+  border-color: transparent;
+}
+
+.collection-item {
+  &:first-of-type,
+  &:nth-of-type(2) {
+    padding-top: 0;
+  }
+
+  &:last-of-type,
+  &:nth-last-of-type(2) {
+    padding-bottom: 0;
+  }
+
+  &:nth-of-type(odd) {
+    padding-left: 0;
+  }
+
+  &:nth-of-type(even) {
+    padding-right: 0;
+  }
+}
+
+.collection-stat {
+  color: $fgDarkest;
+
+  .octicon {
+    color: $borderColor;
+  }
+}
+
+.thread-subscription-status {
+  @include card;
+
+  .octicon {
+    color: $borderColor;
+  }
+}
