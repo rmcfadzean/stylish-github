@@ -139,6 +139,18 @@
       }
     }
   }
+
+  blockquote {
+    @extend .pullquote;
+    color: $fgDarkest;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+    & + blockquote {
+      padding-bottom: 16px;
+      margin-bottom: 0;
+    }
+  }
 }
 
 // Select Menu

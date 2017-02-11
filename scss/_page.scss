@@ -105,11 +105,76 @@ a {
   }
 }
 
+// Pagination
+
+.pagination {
+  a {
+    @extend a;
+    background: transparent;
+
+    &:hover {
+      background: rgba($foregroundColor, 0.25);
+    }
+  }
+
+  a, span, em, .disabled {
+    &, &:hover {
+      border-color: rgba($borderColor, 0.5);
+    }
+  }
+
+  .current, .current:hover {
+    background: $foregroundColor;
+    border-color: $foregroundColor;
+  }
+
+  .disabled, .gap {
+    &, &:hover {
+      background: transparent;
+      color: $borderColor;
+      font-style: italic;
+      cursor: not-allowed;
+    }
+  }
+}
+
+// Menu
+
+.menu {
+  background: transparent;
+  border-color: $borderColor;
+
+  &-item {
+    color: $foregroundColor;
+    border-color: $borderColor;
+
+    &.selected {
+      background: transparent;
+      color: $fgLightest;
+      font-weight: bold;
+
+      &:before {
+        background-color: $accentBorderColor;
+      }
+    }
+
+    &:hover {
+      background: rgba($foregroundColor, 0.25);
+    }
+  }
+}
+
 // Misc
 
 .border-behind {
   &:before {
-    background-color: $foregroundColor;
+    background-color: $borderColor;
+    z-index: 1;
+  }
+
+  & > * {
+    position: relative;
+    z-index: 5;
   }
 }
 
