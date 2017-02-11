@@ -1,8 +1,8 @@
-# Dark Theme for Github
-
-A dark theme for github
+# Dark Theme for GitHub
 
 ![WIP Screenshot](screenshots/blindingstars-riptide.jpg?raw=true)
+
+A dark theme for GitHub
 
 ## Installation
 
