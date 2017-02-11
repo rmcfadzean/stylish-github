@@ -63,6 +63,18 @@ body {
   }
 }
 
+// Subnav
+
+.subnav-item {
+  color: $foregroundColor;
+  border-color: $borderColor;
+
+  @include activated {
+    background-color: $bgLightest;
+    border-color: $borderColor;
+  }
+}
+
 // General Treatments
 
 .shade-gray {
@@ -76,6 +88,10 @@ body {
 .tile,
 .border, .border-top, .border-bottom, .border-left, .border-right {
   border-color: $borderColor !important;
+}
+
+.lead {
+  color: $foregroundColor;
 }
 
 // Links

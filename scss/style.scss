@@ -1,18 +1,19 @@
 @import 'variables';
 
 // Mixins
+@import 'mixins/activated';
 @import 'mixins/card';
 @import 'mixins/links';
-@import 'mixins/activated';
 
 // Globals
-@import 'page';
-@import 'inputs';
 @import 'buttons';
+@import 'inputs';
+@import 'page';
 
 // Page-Specific
+@import 'pages/explore';
 @import 'pages/homepage';
+@import 'pages/issues';
 @import 'pages/login';
 @import 'pages/profile';
 @import 'pages/repo';
-@import 'pages/issues';

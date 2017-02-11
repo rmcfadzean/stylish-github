@@ -1,4 +1,9 @@
 @mixin card {
   background-color: $bgDarker;
   border-color: $borderColor;
+  color: $foregroundColor;
+
+  h3 {
+    color: $fgLightest !important;
+  }
 }
