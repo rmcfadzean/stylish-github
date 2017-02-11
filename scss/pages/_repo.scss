@@ -126,7 +126,7 @@
 
   pre, code {
     background-color: $codeBg;
-    border: 1px solid rgba($borderColor, 0.4);
+    border: 1px solid $mutedBorderColor;
     color: mix($fgDark, $brandColor, 50%);
   }
 
