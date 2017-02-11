@@ -96,7 +96,7 @@ a {
   color: $fgDarkest;
 
   &:hover {
-    background: $bgLight;
+    background: $menuHoverColor;
   }
 
   &.selected {
@@ -113,13 +113,13 @@ a {
     background: transparent;
 
     &:hover {
-      background: rgba($foregroundColor, 0.25);
+      background: $menuHoverColor;
     }
   }
 
   a, span, em, .disabled {
     &, &:hover {
-      border-color: rgba($borderColor, 0.5);
+      border-color: $mutedBorderColor;
     }
   }
 
@@ -159,7 +159,15 @@ a {
     }
 
     &:hover {
-      background: rgba($foregroundColor, 0.25);
+      background: $menuHoverColor;
+    }
+
+    .octicon {
+      color: $borderColor;
+    }
+
+    .counter {
+      line-height: inherit;
     }
   }
 }
@@ -195,6 +203,14 @@ hr {
 .counter {
   background-color: $bgLighter;
   color: $foregroundColor !important; // !imp to override on repo pages
+}
+
+.codesearch-aside .filter-list li span.bar { // Sidebar language filter in search results
+  background: $bgLight;
+}
+
+.sort-bar {
+  border-color: $borderColor;
 }
 
 // More important!

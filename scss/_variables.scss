@@ -9,8 +9,10 @@ $ghDarkPrimary: #5aad35;
 $backgroundColor: #22313f;
 $foregroundColor: #7b96a3;
 $brandColor: lighten($ghBrand, 10%);
+
 $borderColor: lighten($backgroundColor, 15%);
 $accentBorderColor: lighten($borderColor, 15%);
+$mutedBorderColor: rgba($borderColor, 0.5);
 
 $primary: darken($ghPrimary, 10%);
 $darkPrimary: darken($ghDarkPrimary, 10%);
@@ -48,6 +50,10 @@ $navItemHoverColor: lighten($foregroundColor, 10%);
 
 $logoColor: $navItemColor;
 $logoHoverColor: lighten($ghBrand, 20%);
+
+// Menus
+
+$menuHoverColor: mix($foregroundColor, $backgroundColor, 12.5%); // Not rgba() to prevent transparency issues
 
 // Inputs
 
