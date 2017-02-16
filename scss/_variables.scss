@@ -14,6 +14,8 @@ $borderColor: lighten($backgroundColor, 15%);
 $accentBorderColor: lighten($borderColor, 15%);
 $mutedBorderColor: rgba($borderColor, 0.5);
 
+$linkColor: $brandColor;
+
 $primary: darken($ghPrimary, 10%);
 $darkPrimary: darken($ghDarkPrimary, 10%);
 

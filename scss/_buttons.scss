@@ -30,6 +30,10 @@
     border-color: desaturate($bgLighter, $disabledDesaturateAmount);
     cursor: not-allowed;
   }
+
+  &-octicon {
+    color: $borderColor;
+  }
 }
 
 .ellipsis-expander, .timeline-commits .hidden-text-expander .ellipsis-expander {

@@ -21,7 +21,6 @@ body {
   }
 }
 
-
 .site-header {
   .header-logo-invertocat {
     color: $logoColor;
@@ -93,7 +92,7 @@ body {
 // Links
 
 a {
-  color: $brandColor;
+  color: $linkColor;
   transition: all 0.1s ease-in-out;
 }
 

@@ -81,6 +81,15 @@
 
 // File Viewer
 
+.file {
+  border-color: $borderColor;
+}
+
+.file-header {
+  background-color: $bgDark;
+  border-color: $borderColor;
+}
+
 .file-wrap {
   border-color: $borderColor;
 
@@ -102,6 +111,21 @@
     td {
       border-color: rgba($borderColor, 0.125);
     }
+  }
+}
+
+.blob-num {
+  background: $bgLight;
+  color: darken($foregroundColor, 20%);
+}
+
+.blob-code {
+  &[style="background-color: rgb(248, 238, 199);"] { // Highlighted lines
+    background: $bgDarker !important;
+  }
+
+  &-inner {
+    color: $fgDark;
   }
 }
 
@@ -211,4 +235,10 @@
     color: $fgDarkest;
     font-weight: normal;
   }
+}
+
+// Breadcrumbs
+
+.breadcrumb strong.final-path { // Filename for individual files
+  color: $foregroundColor;
 }
