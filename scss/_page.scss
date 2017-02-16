@@ -394,3 +394,16 @@ hr {
 .typeahead-result:hover, .typeahead-result.navigation-focus {
   background: $bgLight;
 }
+
+
+.flash {
+  &-error {
+    @include flash($accent-red);
+  }
+  &-success {
+    @include flash($accent-green);
+  }
+  &-warn {
+    @include flash($accent-blue);
+  }
+}
