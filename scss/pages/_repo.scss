@@ -2,6 +2,10 @@
   &.experiment-repo-nav {
     background-color: $repoheadBg;
   }
+
+  h1 {
+    color: $borderColor;
+  }
 }
 
 .pagehead {
@@ -127,6 +131,28 @@
   &-inner {
     color: $fgDark;
   }
+
+  &-deletion {
+    background: $repoDeletion;
+  }
+
+  &-addition {
+    background: $repoAddition;
+  }
+
+  &-hunk, &-expandable {
+    background: $bgLight;
+  }
+
+  &-addition .x {
+    background: $accent-green;
+    color: $repoAddition;
+  }
+
+  &-deletion .x {
+    background: $accent-red;
+    color: $repoDeletion;
+  }
 }
 
 // Readme
@@ -241,4 +267,29 @@
 
 .breadcrumb strong.final-path { // Filename for individual files
   color: $foregroundColor;
+}
+
+// Recent Branches
+
+.RecentBranches {
+  @include cardLight;
+
+  &-item {
+    color: $foregroundColor;
+  }
+
+  &-item-link {
+    color: $linkColor;
+  }
+}
+
+// Labels
+
+.repohead h1.private .octicon {
+  color: $accentBorderColor;
+}
+
+.label-private {
+  background: $accentBorderColor;
+  color: $bgDarker;
 }

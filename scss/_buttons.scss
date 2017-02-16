@@ -31,6 +31,12 @@
     cursor: not-allowed;
   }
 
+  &-outline {
+    background-image: none;
+    color: $linkColor;
+    border-color: inherit !important;
+  }
+
   &-octicon {
     color: $borderColor;
   }

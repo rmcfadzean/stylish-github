@@ -250,6 +250,14 @@ hr {
     }
   }
 
+  &-green {
+    color: $accent-green !important;
+  }
+
+  &-red {
+    color: $accent-red !important;
+  }
+
   &-emphasized {
     color: $fgLighter !important;
   }

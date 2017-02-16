@@ -7,6 +7,7 @@
 
   .tabnav-tab {
     color: $foregroundColor;
+
     @include activated() {
       background-color: $backgroundColor;
       border-color: $borderColor;
@@ -15,10 +16,10 @@
   }
 }
 
-
 .timeline-comment {
   &.current-user {
     border-color: $borderColor;
+
     .timeline-comment-header {
       border-color: $borderColor;
       background-color: $backgroundColor;
@@ -43,7 +44,6 @@
   color: $foregroundColor;
 }
 
-
 .branch-action-body {
   background-color: $backgroundColor;
   border-color: $borderColor;
@@ -63,7 +63,6 @@
   }
 }
 
-
 .commit-icon {
   color: $fgLight;
   .octicon {
@@ -71,13 +70,99 @@
   }
 }
 
+.discussion-topic-header {
+  background: $bgDark;
+}
+
 .discussion-item-header {
   color: $foregroundColor;
+
   .author {
     color: $foregroundColor;
   }
 }
 
-.discussion-item+.discussion-item, .discussion-item-review+.discussion-item {
+.discussion-item + .discussion-item,
+.discussion-item-review + .discussion-item {
   border-color: $borderColor;
+}
+
+.commit-id {
+  @extend a;
+}
+
+.commit-ref {
+  @extend .counter;
+}
+
+.full-commit { // Header box for individual commits
+  border-color: $borderColor;
+  background: $bgDark;
+  color: $foregroundColor;
+
+  p.commit-title {
+    color: inherit;
+  }
+
+  .commit-branches, .branches-list li {
+    color: $fgDarkest !important;
+  }
+
+  .commit-meta {
+    background: $backgroundColor;
+    color: $foregroundColor;
+    border-color: $borderColor;
+
+    a {
+      @extend a;
+    }
+
+    span {
+      color: $borderColor;
+    }
+  }
+
+  .sha-block > .sha {
+    color: $foregroundColor !important;
+    border-color: inherit;
+  }
+
+  .full-commit .btn-outline,
+  .full-commit .btn-outline:disabled {
+    color: inherit;
+  }
+}
+
+.timeline-commits .author {
+  color: $borderColor;
+}
+
+.range-editor { // "Able to merge" box
+  @include cardLight;
+}
+
+.block-diff-neutral {
+  background: $bgLighter;
+}
+
+.state {
+  color: $backgroundColor;
+}
+
+// "This branch has no conflicts with the base branch" at bottom of PR
+
+.branch-action-state-clean {
+  .branch-action-body {
+    border-color: $accent-green;
+
+    &:before {
+      border-right-color: $accent-green;
+    }
+  }
+}
+
+.state-open, .state-proposed, .state-reopened,
+.completeness-indicator-success,
+.branch-action-state-clean .branch-action-icon {
+  background-color: $accent-green;
 }

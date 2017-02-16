@@ -77,8 +77,7 @@ a.branch-name {
 // Jobs
 
 .github-jobs-promotion p {
-  border-color: $borderColor;
-  background: $bgLighter;
+  @include cardLight;
 
   a {
     color: $foregroundColor;

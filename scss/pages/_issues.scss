@@ -53,6 +53,16 @@
   }
 }
 
+.discussion-sidebar-toggle {
+  .octicon {
+    color: $borderColor;
+  }
+}
+
+.lock-toggle-link {
+  color: $borderColor;
+}
+
 // Timeline
 
 .timeline-comment-wrapper {
@@ -81,7 +91,7 @@
 }
 
 .discussion-timeline-actions {
-  background-color: transparent;
+  background-color: $backgroundColor;
   border-color: $borderColor;
 
   .signed-out-comment {
@@ -113,7 +123,7 @@
   color: $fgLighter;
 
   @include activated() {
-    background-color: $bgLighter;
+    background-color: $backgroundColor;
     border-color: $borderColor;
     color: $foregroundColor;
     border-top-left-radius: 3px;

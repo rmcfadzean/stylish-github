@@ -5,7 +5,9 @@
 // Licensed under MIT (https://github.com/primer/github-syntax-theme-generator/blob/master/LICENSE)
 
 .pl-c /* comment, punctuation.definition.comment, string.comment */ {
-  color: $borderColor;
+  color: rgba(255, 255, 255, 0.5); // Neutral color; blends well for additions and deletions
+  font-style: italic;
+  mix-blend-mode: overlay;
 }
 
 .pl-c1 /* constant, entity.name.constant, variable.other.constant, variable.language, support, meta.property-name, support.constant, support.variable, meta.module-reference, markup.raw, meta.diff.header */,
@@ -38,7 +40,7 @@
 .pl-sr .pl-cce /* string.regexp constant.character.escape */,
 .pl-sr .pl-sre /* string.regexp source.ruby.embedded */,
 .pl-sr .pl-sra /* string.regexp string.regexp.arbitrary-repitition */ {
-  color: #3c66e2;
+  color: $accent-blue;
 }
 
 .pl-v /* variable */,

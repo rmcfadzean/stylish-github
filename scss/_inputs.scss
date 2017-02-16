@@ -57,3 +57,10 @@
 :-moz-placeholder { // FF 18-
   color: $fgColor;
 }
+
+// Misc
+
+.input-contrast:focus {
+  background: $bgLightest;
+}
+
