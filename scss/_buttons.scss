@@ -34,6 +34,10 @@
   &-octicon {
     color: $borderColor;
   }
+
+  &-link {
+    color: $linkColor;
+  }
 }
 
 .ellipsis-expander, .timeline-commits .hidden-text-expander .ellipsis-expander {

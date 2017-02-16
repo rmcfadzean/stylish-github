@@ -12,14 +12,15 @@
 @import 'syntax';
 
 // Page-Specific
+@import 'pages/commits';
+@import 'pages/dashboard';
 @import 'pages/homepage';
 @import 'pages/issues';
 @import 'pages/login';
 @import 'pages/marketingPages'; // @imports the individual marketing pages
 @import 'pages/profile';
-@import 'pages/repo';
-@import 'pages/commits';
 @import 'pages/pullRequests';
+@import 'pages/repo';
 
 // Add-Ons
 @import 'addons/octotree';

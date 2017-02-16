@@ -1,0 +1,91 @@
+.news .alert {
+  border-color: $mutedBorderColor;
+
+  .gravatar, .commits li img {
+    background-color: transparent;
+    // Default avatars get a white bg, which makes for ugly artifacts at the corners due to border-radius
+  }
+
+  .octicon {
+    color: inherit;
+  }
+
+  .time, .simple .title {
+    color: rgba($foregroundColor, 0.4);
+  }
+
+  .details {
+    margin-top: 0.5rem;
+  }
+
+  .markdown-body blockquote {
+    padding: 0;
+  }
+
+  .branch-link, .pull-info {
+    background: $bgLighter;
+    color: $foregroundColor;
+  }
+}
+
+.news blockquote {
+  color: rgba($foregroundColor, 0.4);
+}
+
+.news div.message, .news li blockquote {
+  color: $fgDarkest;
+}
+
+a.branch-name {
+  color: $linkColor;
+  background: $bgLighter;
+}
+
+// Repo List Sidebar
+
+.mini-repo-list {
+  &-item {
+    border-color: $mutedBorderColor;
+
+    .repo-icon {
+      color: $borderColor;
+    }
+
+    .stars {
+      color: $borderColor;
+    }
+  }
+
+  .private .mini-repo-list-item {
+    background: $bgDark;
+
+    .repo-icon {
+      color: $linkColor;
+    }
+  }
+}
+
+.more-repos {
+  box-shadow: inset 0 1px 0 $mutedBorderColor;
+  background: transparent;
+}
+
+.repo-filterer .repo-filter.filter-selected {
+  border-color: $accentBorderColor;
+}
+
+// Jobs
+
+.github-jobs-promotion p {
+  border-color: $borderColor;
+  background: $bgLighter;
+
+  a {
+    color: $foregroundColor;
+  }
+}
+
+.github-jobs-promotion a.jobs-logo strong {
+  filter: invert(1);
+  mix-blend-mode: overlay;
+}

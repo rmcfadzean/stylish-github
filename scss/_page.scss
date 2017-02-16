@@ -38,6 +38,16 @@ body {
     border-color: $borderColor;
     background: $bgDarker;
   }
+
+  &-inner {
+    background: transparent;
+    border-color: $borderColor;
+  }
+
+  .filter-bar {
+    background: $bgDark;
+    border-color: $borderColor;
+  }
 }
 
 // Footer
@@ -207,7 +217,7 @@ hr {
 }
 
 .counter {
-  background-color: $bgLighter;
+  background-color: $bgLighter !important;
   color: $foregroundColor !important; // !imp to override on repo pages
 }
 
@@ -217,6 +227,12 @@ hr {
 
 .sort-bar {
   border-color: $borderColor;
+}
+
+.bot-identifier {
+  color: $accent-purple;
+  background: rgba($accent-purple, 0.125);
+  border-color: inherit !important;
 }
 
 // More important!
