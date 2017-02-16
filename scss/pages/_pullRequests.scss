@@ -87,6 +87,10 @@
   border-color: $borderColor;
 }
 
+.discussion-item .renamed-was, .discussion-item .renamed-is {
+  color: $fgLightest;
+}
+
 .commit-id {
   @extend a;
 }
