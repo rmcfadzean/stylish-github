@@ -1,0 +1,40 @@
+.commits-listing {
+  &:before {
+    background-color: $borderColor;
+  }
+
+  .commit-group-title {
+    .octicon-git-commit {
+      background-color: transparent;
+      color: $fgDarkest;
+    }
+  }
+}
+
+.table-list {
+  border-color: $borderColor;
+
+  .table-list-item {
+    &.navigation-focus {
+      background-color: $bgLighter;
+    }
+  }
+  .table-list-cell {
+    border-color: $borderColor;
+    &:first-child, &:last-child {
+      border-color: $borderColor;
+    }
+  }
+}
+
+.commits-list-item {
+  .commit-title {
+    a {
+      color: $foregroundColor;
+    }
+  }
+
+  .commit-author, .commit-author-section {
+    color: $fgLight;
+  }
+}
