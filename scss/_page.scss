@@ -3,12 +3,16 @@ body {
   color: $foregroundColor;
 }
 
+* {
+  outline: none;
+}
+
 // Header
 
-.site-header {
+.site-header, .header {
   background: $headerBackgroundColor;
 
-  &-nav .nav-item {
+  &-nav .nav-item, &-nav-link {
     color: $navItemColor;
 
     &:hover {
@@ -264,4 +268,34 @@ hr {
 
 .bg-white {
   background-color: $backgroundColor !important;
+}
+
+
+// Dropdowns
+
+.dropdown-menu {
+  background-color: $backgroundColor;
+  border-color: $borderColor;
+  color: $foregroundColor;
+
+  &:after {
+    border-bottom-color: $borderColor;
+  }
+
+  .dropdown-header {
+    color: $foregroundColor;
+  }
+
+  .dropdown-divider {
+    background-color: $borderColor;
+  }
+
+  .dropdown-item {
+    color: $foregroundColor;
+
+    @include activated {
+      color: $fgDarker;
+      background-color: $bgLighter;
+    }
+  }
 }

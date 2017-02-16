@@ -89,3 +89,55 @@
     border-color: $borderColor;
   }
 }
+
+// Comments
+.new-discussion-timeline {
+  .previewable-comment-form {
+    textarea {
+      border-color: $borderColor;
+      &:focus {
+        background-color: $inputBackgroundColor;
+      }
+    }
+    .comment-form-head.tabnav {
+      background-color: $bgDark;
+      border-color: $borderColor;
+    }
+    .comment-body {
+      border-color: $borderColor;
+    }
+  }
+}
+
+.tabnav-tab {
+  color: $fgLighter;
+
+  @include activated() {
+    background-color: $bgLighter;
+    border-color: $borderColor;
+    color: $foregroundColor;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+}
+
+.tabnav-extra {
+  color: $foregroundColor;
+}
+
+// Toolbar
+.toolbar-item, .toolbar-item .menu-target {
+  color: $foregroundColor;
+}
+
+.drag-and-drop {
+  background-color: $backgroundColor;
+  color: $foregroundColor;
+  border-color: $borderColor;
+}
+
+.focused {
+  .drag-and-drop {
+    border-color: $borderColor;
+  }
+}
