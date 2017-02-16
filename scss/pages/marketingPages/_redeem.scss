@@ -1,0 +1,12 @@
+.coupons {
+  .coupon-form-body {
+    background-image: linear-gradient($backgroundColor, $bgDark);
+    border-color: $borderColor;
+    box-shadow: none;
+  }
+
+  .coupon-icon {
+    border-color: $borderColor;
+    color: $brandColor;
+  }
+}
