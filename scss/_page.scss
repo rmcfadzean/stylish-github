@@ -42,6 +42,7 @@ body {
   &-inner {
     background: transparent;
     border-color: $borderColor;
+    color: $foregroundColor;
   }
 
   .filter-bar {

@@ -1,0 +1,94 @@
+.pulse-graph, .Subhead, .summary-stats li {
+  border-color: $borderColor !important;
+}
+
+.pulse-section {
+  color: $foregroundColor;
+}
+
+.summary-stats li {
+  a {
+    color: $borderColor;
+
+    &:hover {
+      background: $bgDark;
+    }
+  }
+
+  .num {
+    color: $foregroundColor;
+  }
+}
+
+.diffstat-summary {
+  color: $foregroundColor;
+
+  a {
+    color: inherit;
+  }
+
+  strong {
+    color: $fgLightest;
+  }
+}
+
+.authors-and-code .insertions,
+.summary-stats li .octicon-git-branch,
+.summary-stats li .octicon-issue-opened {
+  color: $accent-green;
+}
+
+.authors-and-code .deletions {
+  color: $accent-red;
+}
+
+.axis {
+  fill: $borderColor;
+
+  line {
+    stroke: $mutedBorderColor;
+  }
+}
+
+.pulse-authors-graph .bar rect {
+  fill: $brandColor;
+}
+
+.simple-stacked-bar {
+  background-color: $bgLight;
+}
+
+.simple-conversation-list {
+   & > li {
+    border-color: $mutedBorderColor;
+  }
+}
+
+.conversation-list-heading {
+  border-color: $borderColor;
+  color: $foregroundColor;
+
+  .inner {
+    background: $backgroundColor;
+  }
+}
+
+.state-merged, .bar-section-alt {
+  background: $accent-purple;
+}
+
+.summary-stats li .octicon-git-pull-request {
+  color: $accent-purple;
+}
+
+.bar-section-positive {
+  background: $accent-green
+}
+
+.summary-stats li .octicon-issue-closed {
+  color: $accent-red;
+}
+
+.bar-section:nth-of-type(n+2) {
+  border-left: 1px solid $backgroundColor;
+}
