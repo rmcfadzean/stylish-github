@@ -40,29 +40,6 @@
   }
 }
 
-// Discussion
-
-.discussion-sidebar-item {
-  color: $foregroundColor;
-
-  .discussion-sidebar-heading {
-    color: $foregroundColor;
-  }
-  &+.discussion-sidebar-item {
-    border-color: $borderColor;
-  }
-}
-
-.discussion-sidebar-toggle {
-  .octicon {
-    color: $borderColor;
-  }
-}
-
-.lock-toggle-link {
-  color: $borderColor;
-}
-
 // Timeline
 
 .timeline-comment-wrapper {
@@ -82,22 +59,6 @@
 .timeline-comment-header {
   border-color: $borderColor;
   background-color: $backgroundColor;
-}
-
-.discussion-timeline {
-  &:before {
-    background-color: $borderColor;
-  }
-}
-
-.discussion-timeline-actions {
-  background-color: $backgroundColor;
-  border-color: $borderColor;
-
-  .signed-out-comment {
-    background-color: $backgroundColor;
-    border-color: $borderColor;
-  }
 }
 
 // Comments

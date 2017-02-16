@@ -1,0 +1,66 @@
+// Applies to commits, issues, PRs...
+
+.discussion-topic-header {
+  background: $bgDark;
+}
+
+.discussion-sidebar-item {
+  color: $foregroundColor;
+
+  .discussion-sidebar-heading {
+    color: $foregroundColor;
+  }
+  &+.discussion-sidebar-item {
+    border-color: $borderColor;
+  }
+}
+
+.discussion-sidebar-toggle {
+  .octicon {
+    color: $borderColor;
+  }
+}
+
+.lock-toggle-link {
+  color: $borderColor;
+}
+
+.discussion-item {
+  & + &,
+  &-review + .discussion-item {
+    border-color: $borderColor;
+  }
+
+  &-header {
+    color: $foregroundColor;
+
+    .author {
+      color: $foregroundColor;
+    }
+  }
+
+  .renamed-was, .renamed-is,
+  &-entity {
+    color: $fgLightest;
+  }
+
+  &-merged .discussion-item-icon {
+    background-color: $accent-purple;
+  }
+}
+
+.discussion-timeline {
+  &:before {
+    background-color: $borderColor;
+  }
+
+  &-actions {
+    background-color: $backgroundColor;
+    border-color: $borderColor;
+
+    .signed-out-comment {
+      background-color: $backgroundColor;
+      border-color: $borderColor;
+    }
+  }
+}

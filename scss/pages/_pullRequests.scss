@@ -1,3 +1,9 @@
+.gh-header-edit .edit-issue-title {
+  &, &:focus {
+    background: $bgLightest;
+  }
+}
+
 .tabnav-pr {
   border-color: $borderColor;
 
@@ -17,17 +23,20 @@
 }
 
 .timeline-comment {
+  border-color: $borderColor;
+
   &.current-user {
     border-color: $borderColor;
+  }
 
-    .timeline-comment-header {
-      border-color: $borderColor;
-      background-color: $backgroundColor;
+  .timeline-comment-header,
+  &.current-user .timeline-comment-header {
+    border-color: $borderColor;
+    background-color: $backgroundColor;
+    color: $foregroundColor;
+
+    .author {
       color: $foregroundColor;
-
-      .author {
-        color: $foregroundColor;
-      }
     }
   }
 }
@@ -68,27 +77,6 @@
   .octicon {
     background-color: transparent;
   }
-}
-
-.discussion-topic-header {
-  background: $bgDark;
-}
-
-.discussion-item-header {
-  color: $foregroundColor;
-
-  .author {
-    color: $foregroundColor;
-  }
-}
-
-.discussion-item + .discussion-item,
-.discussion-item-review + .discussion-item {
-  border-color: $borderColor;
-}
-
-.discussion-item .renamed-was, .discussion-item .renamed-is {
-  color: $fgLightest;
 }
 
 .commit-id {
@@ -175,8 +163,25 @@
   background: $backgroundColor;
 }
 
-.gh-header-edit .edit-issue-title {
-  &, &:focus {
-    background: $bgLightest;
+.new-discussion-timeline .closed-banner {
+  border-color: $backgroundColor;
+  background-color: $backgroundColor;
+}
+
+.merge-branch-heading, .merge-branch-description {
+  color: $foregroundColor;
+}
+
+.branch-action-state-merged {
+  .branch-action-icon {
+    background-color: $accent-purple;
+  }
+
+  .branch-action-body {
+    border-color: $accent-purple;
+
+    &:before, &:after {
+      border-right-color: $accent-purple;
+    }
   }
 }

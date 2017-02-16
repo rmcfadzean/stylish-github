@@ -11,6 +11,9 @@
 @import 'page';
 @import 'syntax';
 
+// Components: Larger objects that are still used in multiple places
+@import 'components/discussion';
+
 // Page-Specific
 @import 'pages/commits';
 @import 'pages/dashboard';
