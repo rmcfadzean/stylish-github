@@ -170,3 +170,9 @@
 .diffbar, .pr-toolbar {
   background: $backgroundColor;
 }
+
+.gh-header-edit .edit-issue-title {
+  &, &:focus {
+    background: $bgLightest;
+  }
+}
