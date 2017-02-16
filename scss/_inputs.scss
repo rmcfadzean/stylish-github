@@ -10,14 +10,34 @@
 }
 
 // Search
-.header-search-scope {
-  border-color: $inputBorderColor;
-}
 
 .scoped-search .form-control.focus .header-search-scope {
   background-color: lighten($inputBackgroundColor, 5%);
   border-color: $inputBorderColor;
   color: $inputColor;
+}
+
+.site-header {
+  .header-search-wrapper {
+    background-color: $headerBackgroundColor;
+    border: none;
+    &.focus {
+      background-color: transparent;
+    }
+  }
+
+  .header-search-input {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border: 1px solid $inputBorderColor;
+    border-left: none;
+  }
+
+  .header-search-scope {
+    border: 1px solid $inputBorderColor;
+    background: $bgLightest;
+    color: $fgLighter;
+  }
 }
 
 // Placeholders
