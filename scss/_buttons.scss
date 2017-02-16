@@ -32,11 +32,12 @@
   }
 }
 
-.ellipsis-expander {
-  background-color: $backgroundColor;
+.ellipsis-expander, .timeline-commits .hidden-text-expander .ellipsis-expander {
+  background-color: mix($brandColor, $bgDark, 25%);
+  color: $foregroundColor;
 
   @include activated() {
-    background-color: $bgDark;
+    background-color: mix($brandColor, $bgDark, 50%);
   }
 }
 

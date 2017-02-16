@@ -77,3 +77,7 @@
     color: $foregroundColor;
   }
 }
+
+.discussion-item+.discussion-item, .discussion-item-review+.discussion-item {
+  border-color: $borderColor;
+}
