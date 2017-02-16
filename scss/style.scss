@@ -9,6 +9,7 @@
 @import 'buttons';
 @import 'inputs';
 @import 'page';
+@import 'syntax';
 
 // Page-Specific
 @import 'pages/homepage';
@@ -19,3 +20,7 @@
 @import 'pages/repo';
 @import 'pages/commits';
 @import 'pages/pullRequests';
+
+// Add-Ons
+@import 'addons/octotree';
+@import 'addons/npmhub';

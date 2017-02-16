@@ -1,0 +1,71 @@
+// https://github.com/buunguyen/octotree
+
+// This is !important-heavy to account for specificity when userscripts are injected
+
+.octotree_github_sidebar {
+  background: $bgDarker !important;
+  border-color: $borderColor !important;
+  padding-top: 60px !important; // More room between sidebar header and content
+
+  &:before {
+    content: '';
+    width: 0.75rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(90deg, transparent, rgba($bgDarkest, 0.75));
+    z-index: 1234567;
+    pointer-events: none;
+  }
+
+  a.octotree_toggle {
+    top: 12px; // Better alignment with GH header bar
+
+    &:not(.octotree_loading) > span::after {
+      // TODO: Replace inline SVG with appropriate colors
+    }
+  }
+
+  .octotree_views {
+    .octotree_view .octotree_view_header {
+      border: 0 !important;
+      background: $bgDarkest;
+      text-shadow: none !important;
+
+      // Adjust padding and height to be equal with GH header bar
+      padding-top: 5px;
+      padding-bottom: 5px;
+      height: auto !important;
+    }
+  }
+
+  .octotree_treeview .jstree {
+    &-anchor {
+      color: $linkColor;
+    }
+
+    &-icon.blob::before {
+      // TODO: Replace inline SVG with appropriate colors
+      opacity: 0.5;
+    }
+
+    &-wholerow-clicked {
+      background: rgba($borderColor, 0.3) !important;
+
+      &.jstree-wholerow-hovered {
+        background: rgba($borderColor, 0.5) !important;
+      }
+    }
+
+    &-wholerow-hovered {
+      background: rgba($borderColor, 0.125) !important;
+    }
+  }
+
+  input, textarea {
+    @extend .form-control;
+    border: 1px solid $borderColor;
+    border-radius: 3px;
+  }
+}
