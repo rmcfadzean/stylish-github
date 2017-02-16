@@ -68,6 +68,8 @@
 .thread-subscription-status {
   @include card;
 
+  background-color: transparent;
+
   .octicon {
     color: $borderColor;
   }

@@ -1,0 +1,83 @@
+.tabnav-pr {
+  border-color: $borderColor;
+
+  @include activated() {
+    background-color: $backgroundColor;
+  }
+
+  .tabnav-tab {
+    color: $foregroundColor;
+    @include activated() {
+      background-color: $backgroundColor;
+      border-color: $borderColor;
+      color: $foregroundColor;
+    }
+  }
+}
+
+
+.timeline-comment {
+  &.current-user {
+    border-color: $borderColor;
+    .timeline-comment-header {
+      border-color: $borderColor;
+      background-color: $backgroundColor;
+      color: $foregroundColor;
+
+      .author {
+        color: $foregroundColor;
+      }
+    }
+  }
+}
+
+.timeline-commits {
+  .commit-message {
+    code a {
+      color: $foregroundColor;
+    }
+  }
+}
+
+.merge-pr-more-commits {
+  color: $foregroundColor;
+}
+
+
+.branch-action-body {
+  background-color: $backgroundColor;
+  border-color: $borderColor;
+
+  .merge-message {
+    border-color: $borderColor;
+    background-color: $bgDark;
+  }
+}
+
+.branch-action-state-clean {
+  .branch-action-body {
+    border-color: $accent-green;
+    &:after {
+      border-right-color: $accent-green;
+    }
+  }
+}
+
+
+.commit-icon {
+  color: $fgLight;
+  .octicon {
+    background-color: transparent;
+  }
+}
+
+.discussion-item-header {
+  color: $foregroundColor;
+  .author {
+    color: $foregroundColor;
+  }
+}
+
+.discussion-item+.discussion-item, .discussion-item-review+.discussion-item {
+  border-color: $borderColor;
+}
