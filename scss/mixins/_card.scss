@@ -7,3 +7,8 @@
     color: $fgLightest !important;
   }
 }
+
+@mixin cardLight {
+  border-color: $borderColor;
+  background: $bgLighter;
+}

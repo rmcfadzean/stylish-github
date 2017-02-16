@@ -30,6 +30,25 @@
     border-color: desaturate($bgLighter, $disabledDesaturateAmount);
     cursor: not-allowed;
   }
+
+  &-outline {
+    background: transparent;
+    color: $linkColor;
+    border-color: inherit !important;
+
+    &[disabled], &.disabled {
+      color: desaturate(darken($foregroundColor, 30%), $disabledDesaturateAmount) !important;
+      background: transparent !important;
+    }
+  }
+
+  &-octicon {
+    color: $borderColor;
+  }
+
+  &-link {
+    color: $linkColor;
+  }
 }
 
 .ellipsis-expander, .timeline-commits .hidden-text-expander .ellipsis-expander {

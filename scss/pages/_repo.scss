@@ -2,6 +2,10 @@
   &.experiment-repo-nav {
     background-color: $repoheadBg;
   }
+
+  h1 {
+    color: $borderColor;
+  }
 }
 
 .pagehead {
@@ -81,6 +85,15 @@
 
 // File Viewer
 
+.file {
+  border-color: $borderColor;
+}
+
+.file-header {
+  background-color: $bgDark;
+  border-color: $borderColor;
+}
+
 .file-wrap {
   border-color: $borderColor;
 
@@ -102,6 +115,43 @@
     td {
       border-color: rgba($borderColor, 0.125);
     }
+  }
+}
+
+.blob-num {
+  background: $bgLight;
+  color: darken($foregroundColor, 20%);
+}
+
+.blob-code {
+  &[style="background-color: rgb(248, 238, 199);"] { // Highlighted lines
+    background: $bgDarker !important;
+  }
+
+  &-inner {
+    color: $fgDark;
+  }
+
+  &-deletion {
+    background: $repoDeletion;
+  }
+
+  &-addition {
+    background: $repoAddition;
+  }
+
+  &-hunk, &-expandable {
+    background: $bgLight;
+  }
+
+  &-addition .x {
+    background: $accent-green;
+    color: $repoAddition;
+  }
+
+  &-deletion .x {
+    background: $accent-red;
+    color: $repoDeletion;
   }
 }
 
@@ -146,6 +196,10 @@
       margin-bottom: 0;
     }
   }
+}
+
+.subnav-search-context .btn { // Filter on PR tab
+  color: inherit;
 }
 
 // Select Menu
@@ -211,4 +265,35 @@
     color: $fgDarkest;
     font-weight: normal;
   }
+}
+
+// Breadcrumbs
+
+.breadcrumb strong.final-path { // Filename for individual files
+  color: $foregroundColor;
+}
+
+// Recent Branches
+
+.RecentBranches {
+  @include cardLight;
+
+  &-item {
+    color: $foregroundColor;
+  }
+
+  &-item-link {
+    color: $linkColor;
+  }
+}
+
+// Labels
+
+.repohead h1.private .octicon {
+  color: $accentBorderColor;
+}
+
+.label-private {
+  background: $accentBorderColor;
+  color: $bgDarker;
 }

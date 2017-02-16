@@ -14,6 +14,8 @@ $borderColor: lighten($backgroundColor, 15%);
 $accentBorderColor: lighten($borderColor, 15%);
 $mutedBorderColor: rgba($borderColor, 0.5);
 
+$linkColor: $brandColor;
+
 $primary: darken($ghPrimary, 10%);
 $darkPrimary: darken($ghDarkPrimary, 10%);
 
@@ -36,10 +38,12 @@ $fgDarkest: darken($foregroundColor, 10%);
 // Color Accents
 
 $accent-green: #6fa858;
+$accent-yellow: #fb3;
 $accent-blue: #55a8c9;
 $accent-blue-purple: #7052c5;
 $accent-purple: #a272a9;
 $accent-orange: #ec7063;
+$accent-red: #c15a62;
 
 // Nav
 
@@ -64,6 +68,8 @@ $inputColor: $fgLighter;
 // Repos
 
 $repoheadBg: $bgDark;
+$repoAddition: #173d40;
+$repoDeletion: #352835;
 
 // Readme
 
