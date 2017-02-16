@@ -1,6 +1,6 @@
 # Dark Theme for GitHub
 
-![WIP Screenshot](screenshots/blindingstars-riptide.jpg?raw=true)
+![WIP Screenshot](screenshots/screenshot.png?raw=true)
 
 A dark theme for GitHub
 
