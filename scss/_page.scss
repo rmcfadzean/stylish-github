@@ -18,20 +18,43 @@ body {
     &:hover {
       color: $navItemHoverColor !important;
     }
-  }
-}
 
-.site-header {
-  .header-logo-invertocat {
-    color: $logoColor;
-
-    &:hover {
-      color: $logoHoverColor;
+    .octicon, .dropdown-caret {
+      color: $borderColor;
     }
   }
 }
 
+.header-logo-invertocat {
+  color: $logoColor;
+
+  &:hover {
+    color: $logoHoverColor;
+  }
+}
+
+.notification-indicator .mail-status {
+  background-image: none;
+  background-color: $fgLightest;
+}
+
+.notification-indicator:hover .mail-status {
+  background-color: $brandColor;
+}
+
 // Boxed Groups
+
+.Box {
+  @include cardLight;
+
+  &.bg-gray-light {
+    background: inherit !important
+  }
+
+  &--danger {
+    border-color: $accent-red;
+  }
+}
 
 .boxed-group {
   & > h3, .heading {
@@ -47,6 +70,21 @@ body {
 
   .filter-bar {
     background: $bgDark;
+    border-color: $borderColor;
+  }
+
+  &-table {
+    th {
+      background: $bgDarker;
+      border-color: $borderColor;
+    }
+
+    td {
+      border-color: $borderColor;
+    }
+  }
+
+  &-list > li {
     border-color: $borderColor;
   }
 }
@@ -98,6 +136,10 @@ body {
 .pullquote {
   border-color: mix($brandColor, $borderColor, 50%) !important;
   color: $foregroundColor;
+}
+
+.note, .form-checkbox .note {
+  color: $borderColor;
 }
 
 // Links
@@ -164,6 +206,12 @@ a {
   background: transparent;
   border-color: $borderColor;
 
+  &-heading {
+    background-color: $bgDarker;
+    color: $foregroundColor;
+    border-color: $borderColor;
+  }
+
   &-item {
     color: $foregroundColor;
     border-color: $borderColor;
@@ -213,7 +261,6 @@ a {
     background: $backgroundColor;
     outline: 10px solid $backgroundColor;
   }
-
 }
 
 hr {
@@ -237,6 +284,10 @@ hr {
   color: $accent-purple;
   background: rgba($accent-purple, 0.125);
   border-color: inherit !important;
+}
+
+.upload-enabled textarea {
+  border-color: $borderColor;
 }
 
 // More important!
@@ -301,7 +352,6 @@ hr {
   background-color: $backgroundColor !important;
 }
 
-
 // Dropdowns
 
 .dropdown-menu {
@@ -329,4 +379,18 @@ hr {
       background-color: $bgLighter;
     }
   }
+}
+
+.autocomplete-results {
+  background-color: $bgDark;
+  border-color: $borderColor;
+  color: $foregroundColor;
+}
+
+.typeahead-result {
+  color: $foregroundColor;
+}
+
+.typeahead-result:hover, .typeahead-result.navigation-focus {
+  background: $bgLight;
 }

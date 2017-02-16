@@ -4,24 +4,6 @@
   }
 }
 
-.tabnav-pr {
-  border-color: $borderColor;
-
-  @include activated() {
-    background-color: $backgroundColor;
-  }
-
-  .tabnav-tab {
-    color: $foregroundColor;
-
-    @include activated() {
-      background-color: $backgroundColor;
-      border-color: $borderColor;
-      color: $foregroundColor;
-    }
-  }
-}
-
 .timeline-comment {
   border-color: $borderColor;
 

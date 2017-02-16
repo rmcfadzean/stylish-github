@@ -13,6 +13,7 @@
 
 // Components: Larger objects that are still used in multiple places
 @import 'components/discussion';
+@import 'components/tabnav';
 
 // Page-Specific
 @import 'pages/commits';
@@ -21,10 +22,12 @@
 @import 'pages/issues';
 @import 'pages/login';
 @import 'pages/marketingPages'; // @imports the individual marketing pages
+@import 'pages/prerelease';
 @import 'pages/profile';
 @import 'pages/pullRequests';
 @import 'pages/pulse';
 @import 'pages/repo';
+@import 'pages/settings';
 
 // Add-Ons
 @import 'addons/octotree';

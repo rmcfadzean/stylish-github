@@ -9,6 +9,25 @@
   border-color: $inputBorderColor;
 }
 
+.form-group .form-control {
+  background: inherit;
+
+  &:focus {
+    background: inherit;
+  }
+}
+
+// Radio
+
+.radio-label {
+  border-color: $mutedBorderColor;
+  color: $foregroundColor;
+}
+
+:checked + .radio-label {
+  border-color: $accentBorderColor;
+}
+
 // Search
 
 .scoped-search .form-control.focus .header-search-scope {
@@ -27,10 +46,7 @@
   }
 
   .header-search-input {
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
     border: 1px solid $inputBorderColor;
-    border-left: none;
   }
 
   .header-search-scope {

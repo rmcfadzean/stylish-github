@@ -1,0 +1,103 @@
+.user-key-email, .user-key-badge {
+  border-color: $borderColor;
+}
+
+// Access Tokens
+
+.access-token {
+  border-color: $borderColor;
+
+  .token-description {
+    color: $fgLightest;
+  }
+}
+
+.flash-warn {
+  @include cardLight;
+}
+
+.token-scope {
+  color: $fgLightest;
+}
+
+// Listgroup
+// This does not appear to be used elsewhere, so it will live in settings for now
+
+.listgroup {
+  border-color: $borderColor;
+
+  &-item {
+    color: $borderColor;
+
+    + .listgroup-item {
+      border-color: $borderColor;
+    }
+  }
+}
+
+// Modals
+
+.facebox-popup {
+  background: $backgroundColor;
+}
+
+.facebox-header {
+  border-color: $borderColor;
+}
+
+// Misc
+
+.Subhead-heading--danger {
+  color: $accent-red;
+}
+
+.session-device .session-icon {
+  color: $borderColor;
+}
+
+// Security
+
+.security-history .security-history-timestamp {
+  color: $borderColor;
+}
+
+.session-device.session-current {
+  background: $bgLighter;
+
+  .octicon {
+    color: $fgLightest;
+  }
+
+  .sessions-more-info {
+    color: inherit;
+  }
+}
+
+// Payment
+
+.payment-history .succeeded .status {
+  color: $accent-green;
+}
+
+.payment-history .failed .status {
+  color: $accent-red;
+}
+
+.payment-history .currency, .payment-history .status {
+  color: $foregroundColor;
+}
+
+.payment-history .refunded, .payment-history .failed {
+  background-color: $bgLight;
+}
+
+// Saved Replies
+
+.saved-reply-form {
+  border-color: $borderColor;
+}
+
+// Applications {
+.oauth-border {
+  border-color: $borderColor;
+}

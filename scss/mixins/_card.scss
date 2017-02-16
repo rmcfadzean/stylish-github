@@ -11,4 +11,5 @@
 @mixin cardLight {
   border-color: $borderColor;
   background: $bgLighter;
+  color: $foregroundColor;
 }

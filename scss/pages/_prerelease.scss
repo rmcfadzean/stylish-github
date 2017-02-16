@@ -1,0 +1,11 @@
+.setup-info-module {
+  @include card;
+
+  h2 {
+    border-color: $borderColor;
+  }
+}
+
+.setup-header {
+  border-color: $borderColor;
+}
