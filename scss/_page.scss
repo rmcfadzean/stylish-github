@@ -17,11 +17,14 @@ body {
   }
 }
 
-.header-logo-invertocat {
-  color: $logoColor;
 
-  &:hover {
-    color: $logoHoverColor;
+.site-header {
+  .header-logo-invertocat {
+    color: $logoColor;
+
+    &:hover {
+      color: $logoHoverColor;
+    }
   }
 }
 
@@ -260,5 +263,5 @@ hr {
 }
 
 .bg-white {
-  background-color: $backgroundColor !important; 
+  background-color: $backgroundColor !important;
 }
