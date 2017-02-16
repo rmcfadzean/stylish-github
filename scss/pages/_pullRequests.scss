@@ -166,3 +166,7 @@
 .branch-action-state-clean .branch-action-icon {
   background-color: $accent-green;
 }
+
+.diffbar, .pr-toolbar {
+  background: $backgroundColor;
+}

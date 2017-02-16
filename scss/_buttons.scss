@@ -32,9 +32,14 @@
   }
 
   &-outline {
-    background-image: none;
+    background: transparent;
     color: $linkColor;
     border-color: inherit !important;
+
+    &[disabled], &.disabled {
+      color: desaturate(darken($foregroundColor, 30%), $disabledDesaturateAmount) !important;
+      background: transparent !important;
+    }
   }
 
   &-octicon {
