@@ -33,6 +33,14 @@
   color: $fgDarker;
 }
 
+.profile-timeline-card-wrapper {
+  border-color: transparent;
+}
+
+.profile-rollup-wrapper+.profile-rollup-wrapper {
+  border-color: $borderColor;
+}
+
 // Profile Info "Vcard"
 
 .vcard {
