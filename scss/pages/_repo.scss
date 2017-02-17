@@ -91,6 +91,20 @@
 
 .file {
   border-color: $borderColor;
+
+  .image {
+    background: transparent;
+
+    .border-wrap {
+      background: transparent;
+      border: 0;
+    }
+
+    img, canvas {
+      border: 0;
+      background: transparent;
+    }
+  }
 }
 
 .file-header {
@@ -121,6 +135,8 @@
     }
   }
 }
+
+// Code
 
 .blob-num {
   background: $bgLight;
@@ -274,6 +290,10 @@
 // Breadcrumbs
 
 .breadcrumb strong.final-path { // Filename for individual files
+  color: $foregroundColor;
+}
+
+.repository-meta {
   color: $foregroundColor;
 }
 
