@@ -7,6 +7,14 @@ body {
   outline: none;
 }
 
+kbd {
+  background-color: $bgDark;
+  color: $foregroundColor;
+  border-color: $borderColor;
+  border-bottom-color: $mutedBorderColor;
+  box-shadow: inset 0 -1px 0 $mutedBorderColor;
+}
+
 // Header
 
 .site-header, .header {
