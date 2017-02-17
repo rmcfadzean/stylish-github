@@ -68,6 +68,10 @@ table.capped-list {
   .area {
     fill: $accent-green;
   }
+
+  .label {
+    fill: $foregroundColor;
+  }
 }
 
 .dot {
@@ -82,6 +86,33 @@ table.capped-list {
 
 .cdel {
   color: $accent-red;
+}
+
+.a {
+  color: $accent-green; // Really? This is apparently for 'additions'
+}
+
+.d {
+  color: $accent-red; // And yup this means delete!
+}
+
+.day-name {
+  fill: $foregroundColor;
+}
+
+circle.day {
+  fill: $foregroundColor;
+
+  &:hover {
+     fill: saturate(lighten($foregroundColor, 10%), 10%);
+  }
+}
+
+line.axis {
+  stroke: $borderColor;
+  &.even {
+    stroke: $mutedBorderColor;
+  }
 }
 
 // Graphs
