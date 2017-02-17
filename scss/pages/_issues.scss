@@ -1,4 +1,5 @@
 // Technically on PRs and others too...
+
 .table-list-header {
   background-color: $bgDark;
   color: $fgLighter;
@@ -12,18 +13,6 @@
     @include activated {
       color: $fgLightest;
     }
-  }
-}
-
-.Box-row {
-  color: $foregroundColor;
-  border-color: $borderColor;
-}
-
-.Box-row--focus-gray {
-  background-color: $backgroundColor;
-  &.navigation-focus {
-    background-color: $bgLighter;
   }
 }
 
@@ -103,4 +92,12 @@
 .blankslate {
   background-color: $backgroundColor;
   border-color: $borderColor;
+}
+
+// Break up titles
+
+a.muted-link.h4 {
+  font-weight: 300 !important;
+  display: block;
+  margin-bottom: 0.25rem;
 }

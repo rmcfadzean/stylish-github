@@ -54,6 +54,19 @@ body {
   &--danger {
     border-color: $accent-red;
   }
+
+  &-row {
+    color: $foregroundColor;
+    border-color: $borderColor;
+
+    &--focus-gray {
+      background-color: $backgroundColor;
+
+      &.navigation-focus {
+        background-color: $bgLighter;
+      }
+    }
+  }
 }
 
 .boxed-group {
@@ -271,7 +284,7 @@ hr {
   border-color: $borderColor;
 }
 
-.counter {
+.counter, .protip code {
   background-color: $bgLighter !important;
   color: $foregroundColor !important; // !imp to override on repo pages
 }
@@ -398,7 +411,6 @@ hr {
 .typeahead-result:hover, .typeahead-result.navigation-focus {
   background: $bgLight;
 }
-
 
 .flash {
   &-error {
