@@ -25,11 +25,26 @@ body {
   }
 }
 
-.header-logo-invertocat {
+.header-logo-invertocat, .site-header .header-logo-invertocat {
   color: $logoColor;
 
   &:hover {
     color: $logoHoverColor;
+  }
+}
+
+#header {
+  background: $headerBackgroundColor;
+  border: 0;
+  box-shadow: none;
+
+  ul.top-nav > li >a,
+  ul.top-nav > li > button {
+    color: $navItemColor;
+  }
+
+  .site-logo a {
+    filter: invert(1);
   }
 }
 
@@ -40,6 +55,18 @@ body {
 
 .notification-indicator:hover .mail-status {
   background-color: $brandColor;
+}
+
+// Sidebar
+
+.sidebar {
+  border-color: $borderColor;
+
+  li.muted {
+    &, a {
+      color: $borderColor;
+    }
+  }
 }
 
 // Boxed Groups
@@ -113,6 +140,17 @@ body {
   }
 }
 
+.footer-mark {
+  color: $bgDarker;
+}
+
+.footer, #footer {
+  border-color: $borderColor;
+  background: transparent;
+  text-shadow: none;
+  color: $fgLight;
+}
+
 // Subnav
 
 .subnav-item {
@@ -167,6 +205,10 @@ a {
               color 0.1s ease-in-out,
               border-color 0.1s ease-in-out,
               box-shadow 0.1s ease-in-out;
+
+  &:active, &:hover {
+    color: saturate(lighten($linkColor, 10%), 10%);
+  }
 }
 
 // Filters (/username)
@@ -307,6 +349,10 @@ hr {
   border-color: $borderColor;
 }
 
+.card {
+  @include card;
+}
+
 // Gists
 
 .gist-snippet-meta {
@@ -369,6 +415,10 @@ hr {
     }
   }
 
+  &-black {
+    color: $fgLightest !important;
+  }
+
   &-green {
     color: $accent-green !important;
   }
@@ -380,6 +430,10 @@ hr {
   &-emphasized {
     color: $fgLighter !important;
   }
+}
+
+.text-alpha, .text-beta, .text-delta, .text-gamma, h1, h2, h3, h4, h5 {
+  color: $fgLight;
 }
 
 .status-meta {
@@ -412,8 +466,22 @@ hr {
   }
 }
 
-.bg-white {
-  background-color: $backgroundColor !important;
+.bg {
+  &-white {
+    background-color: $backgroundColor !important;
+  }
+
+  &-blue {
+    background-color: $accent-blue !important;
+  }
+
+  &-gray-light {
+    background-color: $bgLight !important;
+  }
+
+  &-custom-gradient {
+    background: linear-gradient($bgLight, $backgroundColor) !important;
+  }
 }
 
 // Dropdowns
