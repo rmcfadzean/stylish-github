@@ -54,6 +54,18 @@
   }
 }
 
+.branch-action-item {
+  & + &,
+  & + .mergeability-details {
+    border-color: $borderColor;
+  }
+}
+
+.discussion-item + .discussion-item-review,
+.merge-status-list {
+  border-color: $borderColor;
+}
+
 .commit-icon {
   color: $fgLight;
   .octicon {
@@ -119,8 +131,20 @@
   background: $bgLighter;
 }
 
+.block-diff-added, .text-green .block-diff-neutral {
+  background: $accent-green;
+}
+
+.block-diff-deleted, .text-red .block-diff-neutral {
+  background: $accent-red;
+}
+
 .state {
   color: $backgroundColor;
+}
+
+.sidebar-assignee .assignee {
+  color: $foregroundColor;
 }
 
 // "This branch has no conflicts with the base branch" at bottom of PR
