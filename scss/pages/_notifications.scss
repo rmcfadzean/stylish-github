@@ -1,0 +1,42 @@
+.list-group-item-link {
+  color: $foregroundColor;
+}
+
+.list-group-item {
+  border-color: $borderColor;
+  @include activated() {
+    background-color: $bgDark;
+  }
+}
+
+.notification-actions {
+  .btn-link {
+    color: $foregroundColor;
+  }
+
+  .age {
+    color: $foregroundColor;
+  }
+}
+
+.notifications-list {
+  .mark-all-as-read {
+    color: $foregroundColor;
+  }
+}
+
+.notifications {
+  .read {
+    @include activated() {
+      background-color: $bgDark;
+    }
+    .type-icon {
+      color: $foregroundColor;
+    }
+    .list-group-item-name {
+      >a {
+        color: $foregroundColor;
+      }
+    }
+  }
+}
