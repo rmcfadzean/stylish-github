@@ -21,10 +21,13 @@
 // Page-Specific
 @import 'pages/commits';
 @import 'pages/dashboard';
+@import 'pages/footerPages/developer';
+@import 'pages/footerPages/terms';
 @import 'pages/homepage';
 @import 'pages/issues';
 @import 'pages/login';
 @import 'pages/marketingPages'; // @imports the individual marketing pages
+@import 'pages/notifications';
 @import 'pages/organizations';
 @import 'pages/prerelease';
 @import 'pages/profile';
@@ -32,7 +35,6 @@
 @import 'pages/pulse';
 @import 'pages/repo';
 @import 'pages/settings';
-@import 'pages/notifications';
 
 // Add-Ons
 @import 'addons/octotree';

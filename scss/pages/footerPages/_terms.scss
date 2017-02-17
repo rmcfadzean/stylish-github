@@ -1,0 +1,64 @@
+div.content-header {
+  border-color: $borderColor;
+}
+
+.markdown-format {
+  .alert {
+    @include cardLight;
+    text-shadow: none;
+  }
+
+  h3 {
+    color: $fgDarker;
+    border-color: $borderColor;
+
+    .octicon-link {
+      color: $linkColor;
+    }
+  }
+
+  ol > li:before {
+    border-color: inherit;
+    color: $borderColor;
+  }
+}
+
+.minibutton {
+  @extend .btn;
+  text-shadow: none;
+}
+
+.button-nav, .button-nav li a {
+  color: $linkColor;
+}
+
+div.search-form {
+  input {
+    @extend .form-control;
+  }
+
+  .autocomplete-results {
+    .header a {
+      color: $foregroundColor;
+    }
+
+    a {
+      background: $bgLight;
+      color: $foregroundColor;
+      border-color: $borderColor;
+
+      &:hover {
+        background: $bgLightest;
+      }
+    }
+  }
+
+  &.small button {
+    background: $bgLight;
+    border-color: $borderColor;
+  }
+
+  button span {
+    color: $fgColor;
+  }
+}

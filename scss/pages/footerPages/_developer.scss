@@ -1,0 +1,13 @@
+// API page
+
+a.card.bg-gray-light {
+  color: $foregroundColor;
+
+  &:hover {
+    background: $bgDarker !important;
+  }
+}
+
+.bg-shade-gradient + .bg-blue {
+  background: mix($bgDarker, $accent-blue, 80%) !important;
+}
