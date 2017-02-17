@@ -1,0 +1,127 @@
+// Contributors
+
+.graph-filter .info {
+  color: $foregroundColor;
+}
+
+.capped-card {
+  border-color: $borderColor;
+
+  h3 {
+    border-color: $borderColor;
+  }
+
+  .cmt {
+    color: $foregroundColor;
+  }
+}
+
+.contributors-graph .capped-card {
+  .cmt, .ameta {
+    color: $foregroundColor;
+  }
+  path {
+    fill: $accent-orange;
+  }
+}
+
+.capped-card-content {
+  background-color: $backgroundColor;
+}
+
+.tint-box {
+  background-color: $backgroundColor;
+}
+
+// Traffic
+
+.traffic-graph-stats {
+  border-color: $borderColor;
+}
+
+.summary-stats li {
+  color: $foregroundColor;
+}
+
+table.capped-list {
+  th {
+    background-color: $bgDark;
+    border-color: $borderColor;
+  }
+  td {
+    background-color: $backgroundColor;
+    border-color: $borderColor;
+  }
+
+  .octicon {
+    color: $foregroundColor;
+  }
+}
+
+
+// General
+
+.graphs {
+  .dir {
+    color: $foregroundColor;
+  }
+  .area {
+    fill: $accent-green;
+  }
+}
+
+.dot {
+  text {
+    fill: $foregroundColor;
+  }
+}
+
+.cadd {
+  color: $accent-green;
+}
+
+.cdel {
+  color: $accent-red;
+}
+
+// Graphs
+
+.code-frequency {
+  .addition {
+    fill: $accent-green;
+  }
+  .deletion {
+    fill: $accent-red;
+  }
+}
+
+.traffic-graph {
+  path {
+    &.total {
+      stroke: $accent-green;
+    }
+    &.unique {
+      stroke: $accent-blue;
+    }
+  }
+
+  .y {
+    &.unique line {
+      stroke: $accent-blue;
+    }
+    line {
+      stroke: $accent-green;
+    }
+  }
+
+  .axis {
+    .tick{
+      &:first-child line {
+        stroke: $accent-green;
+      }
+      &:nth-child(14) line {
+        stroke: $accent-blue;
+      }
+    }
+  }
+}
