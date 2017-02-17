@@ -36,6 +36,17 @@
   color: $inputColor;
 }
 
+.scoped-search .header-search-scope {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+
+  & + .header-search-input {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: 0;
+  }
+}
+
 .site-header, .header {
   .header-search-wrapper {
     background-color: $headerBackgroundColor;
