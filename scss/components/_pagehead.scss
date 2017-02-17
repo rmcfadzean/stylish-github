@@ -1,0 +1,24 @@
+.pagehead {
+  border-color: $borderColor;
+}
+
+.reponav, .pagehead-tabs {
+  &-item {
+    color: $foregroundColor;
+
+    &:hover, &:focus {
+      color: $fgDarkest;
+    }
+
+    &.selected {
+      background-color: $backgroundColor;
+      color: $foregroundColor;
+      border-color: $accentBorderColor;
+      border-bottom-color: $backgroundColor;
+    }
+
+    .octicon {
+      color: $foregroundColor;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.orghead {
+  background: $repoheadBg;
+  border-color: $borderColor;
+  color: $foregroundColor;
+}
+
+.org-name {
+  color: $fgLightest;
+}
+
+.simple-box {
+  border-color: $borderColor;
+  background: $backgroundColor;
+  color: $foregroundColor;
+}
+
+.member-row {
+  color: $foregroundColor;
+  border-color: $borderColor;
+}
+
+.member-fullname {
+  color: $borderColor;
+}

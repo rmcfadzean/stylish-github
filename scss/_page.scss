@@ -142,6 +142,10 @@ body {
   color: $borderColor;
 }
 
+rect[style*="mask: url(#sparkline"] { // Repos, org pages
+  fill: $accent-green !important;
+}
+
 // Links
 
 a {
