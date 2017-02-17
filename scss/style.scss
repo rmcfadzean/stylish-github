@@ -13,9 +13,10 @@
 @import 'syntax';
 
 // Components: Larger objects that are still used in multiple places
+@import 'components/codemirror';
 @import 'components/discussion';
-@import 'components/tabnav';
 @import 'components/pagehead';
+@import 'components/tabnav';
 
 // Page-Specific
 @import 'pages/commits';

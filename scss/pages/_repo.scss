@@ -4,7 +4,11 @@
   }
 
   h1 {
-    color: $borderColor;
+    color: $foregroundColor;
+
+    .octicon {
+      color: $borderColor;
+    }
   }
 }
 

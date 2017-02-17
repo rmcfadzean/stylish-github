@@ -1,0 +1,18 @@
+// See repo > .blob-code to match
+
+.CodeMirror {
+  background: $backgroundColor;
+}
+
+.cm-s-github .CodeMirror {
+
+  &-gutters {
+    background: $bgLight;
+    color: darken($foregroundColor, 20%);
+  }
+
+  &-lines {
+    background: transparent;
+    color: $fgDark;
+  }
+}
