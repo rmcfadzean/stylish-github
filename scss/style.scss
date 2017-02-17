@@ -4,6 +4,7 @@
 @import 'mixins/activated';
 @import 'mixins/card';
 @import 'mixins/links';
+@import 'mixins/flash';
 
 // Globals
 @import 'buttons';
@@ -30,6 +31,7 @@
 @import 'pages/pulse';
 @import 'pages/repo';
 @import 'pages/settings';
+@import 'pages/notifications';
 
 // Add-Ons
 @import 'addons/octotree';

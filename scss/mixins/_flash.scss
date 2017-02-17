@@ -1,0 +1,5 @@
+@mixin flash($baseColor) {
+  color: lighten($baseColor, 25%);
+  background-color: darken($baseColor, 10%);
+  border-color: darken($baseColor, 5%);
+}
