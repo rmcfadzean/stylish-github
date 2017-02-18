@@ -68,3 +68,13 @@
   border-color: $borderColor !important;
   color: $foregroundColor;
 }
+
+
+.release-label {
+  &.latest {
+    background-color: $accent-green;
+    a:hover {
+      color: #fff;
+    }
+  }
+}

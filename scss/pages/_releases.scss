@@ -1,0 +1,46 @@
+.release-timeline {
+  border-color: $borderColor;
+}
+
+.release-body {
+  border-color: $borderColor;
+}
+
+.release-downloads {
+  border-color: $borderColor;
+  li {
+    border-color: $borderColor;
+  }
+}
+
+.tag-references {
+  >li {
+    a {
+      color: $foregroundColor;
+    }
+  }
+}
+
+.release-authorship {
+  color: $foregroundColor;
+  a {
+    color: $foregroundColor;
+  }
+}
+
+
+// Tags
+
+.releases-tag-list {
+  border-color: $borderColor;
+  tr {
+    border-color: $borderColor;
+  }
+  td.date a, p a {
+    color: $foregroundColor;
+  }
+}
+
+.tag-info h3 a .tag-name {
+  color: $foregroundColor;
+}
