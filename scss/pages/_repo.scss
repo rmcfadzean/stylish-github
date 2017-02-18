@@ -218,6 +218,22 @@
   }
 }
 
+.markdown-body {
+  table {
+    th, tr, td {
+      border-color: $borderColor;
+    }
+
+    tr {
+      background: $backgroundColor;
+
+      &:nth-child(2n) {
+        background: $bgDark;
+      }
+    }
+  }
+}
+
 .subnav-search-context .btn { // Filter on PR tab
   color: inherit;
 }
@@ -257,8 +273,10 @@
 
 .select-menu-item {
   &.navigation-focus {
-    background-color: $brandColor;
+    background-color: $brandColor !important; // to override .label-select-menu .select-menu-item
+    color: #fff !important;
   }
+
   &.selected {
     background-color: $bgDarker;
     color: $brandColor;
@@ -271,6 +289,10 @@
 
 .select-menu-text-filter:first-child:last-child {
   border-color: $borderColor;
+}
+
+.select-menu-no-results {
+  color: $borderColor;
 }
 
 // Languages
@@ -320,4 +342,16 @@
 .label-private {
   background: $accentBorderColor;
   color: $bgDarker !important;
+}
+
+.deployment-status-label.is-active {
+  background: $accent-green;
+  color: $bgDarker !important;
+  border-color: $accent-green;
+}
+
+// Mentions
+
+.user-mention, .team-mention {
+  @extend a;
 }

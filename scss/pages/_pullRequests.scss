@@ -4,33 +4,6 @@
   }
 }
 
-.timeline-comment {
-  border-color: $borderColor;
-
-  &.current-user {
-    border-color: $borderColor;
-  }
-
-  .timeline-comment-header,
-  &.current-user .timeline-comment-header {
-    border-color: $borderColor;
-    background-color: $backgroundColor;
-    color: $foregroundColor;
-
-    .author {
-      color: $foregroundColor;
-    }
-  }
-}
-
-.timeline-commits {
-  .commit-message {
-    code a {
-      color: $foregroundColor;
-    }
-  }
-}
-
 .merge-pr-more-commits {
   color: $foregroundColor;
 }

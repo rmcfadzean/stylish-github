@@ -1,0 +1,41 @@
+.timeline-comment {
+  border-color: $borderColor;
+  background-color: $backgroundColor;
+
+  &-wrapper {
+    border-color: $backgroundColor;
+  }
+
+  &.current-user {
+    border-color: $borderColor;
+  }
+
+  &-header,
+  &.current-user .timeline-comment-header {
+    border-color: $borderColor;
+    background-color: $backgroundColor;
+    color: $foregroundColor;
+
+    .author {
+      color: $foregroundColor;
+    }
+  }
+
+  &-label {
+    border-color: $mutedBorderColor;
+    background: $bgDark;
+  }
+}
+
+.timeline-comment-wrapper > .timeline-comment::before, .timeline-new-comment .timeline-comment::before,
+.timeline-comment-wrapper > .timeline-comment::after, .timeline-new-comment .timeline-comment::after {
+  border-right-color: $borderColor !important;
+}
+
+.timeline-commits {
+  .commit-message {
+    code a {
+      color: $foregroundColor;
+    }
+  }
+}
