@@ -102,7 +102,7 @@ gulp.task('git:tag', function (cb) {
 });
 
 gulp.task('git:release', function(done) {
-  gulp.src('./dist/some-file.exe')
+  gulp.src('./css/style.css')
     .pipe(release({
       token: process.env.GITHUB_TOKEN,
       manifest: require('./package.json')
