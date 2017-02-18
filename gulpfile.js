@@ -112,7 +112,9 @@ gulp.task('git:release', function(done) {
 });
 
 gulp.task('release', function (callback) {
+  config.environment = 'production';
   runSequence(
+    'sass',
     'bump',
     'git:commit',
     'git:push',
