@@ -3,6 +3,7 @@ var gutil       = require('gulp-util');
 var gulpIf      = require('gulp-if');
 var git         = require('gulp-git');
 var bump        = require('gulp-bump');
+var release     = require('gulp-github-release');
 var fs          = require('fs');
 var runSequence = require('run-sequence');
 var argv        = require('minimist')(process.argv.slice(2));
@@ -93,7 +94,7 @@ gulp.task('git:push', function (cb) {
 });
 
 gulp.task('git:tag', function (cb) {
-  git.tag(config.currentVersion(), 'Created Tag for version: ' + version, function (error) {
+  git.tag(config.currentVersion(), 'Created Tag for version: ' + config.currentVersion(), function (error) {
     if (error) {
       return cb(error);
     }
@@ -105,6 +106,8 @@ gulp.task('git:release', function(done) {
   gulp.src('./css/style.css')
     .pipe(release({
       token: process.env.GITHUB_TOKEN,
+      owner: 'rmcfadzean',
+      repo: 'stylish-github',
       manifest: require('./package.json')
     }));
 });
