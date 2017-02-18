@@ -94,15 +94,6 @@ gulp.task('git:push', function (cb) {
   git.push('origin', 'master', cb);
 });
 
-gulp.task('git:tag', function (cb) {
-  git.tag(config.currentVersion(), 'Created Tag for version: ' + config.currentVersion(), function (error) {
-    if (error) {
-      return cb(error);
-    }
-    git.push('origin', 'master', {args: '--tags'}, cb);
-  });
-});
-
 gulp.task('git:release', function(done) {
   gulp.src('./css/style.css')
     .pipe(release({
@@ -118,7 +109,6 @@ gulp.task('release', function (callback) {
     'bump',
     'git:commit',
     'git:push',
-    'git:tag',
     'git:release',
     function (error) {
       if (error) {
