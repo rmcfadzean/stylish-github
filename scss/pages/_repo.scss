@@ -273,8 +273,10 @@
 
 .select-menu-item {
   &.navigation-focus {
-    background-color: $brandColor;
+    background-color: $brandColor !important; // to override .label-select-menu .select-menu-item
+    color: #fff !important;
   }
+
   &.selected {
     background-color: $bgDarker;
     color: $brandColor;
@@ -287,6 +289,10 @@
 
 .select-menu-text-filter:first-child:last-child {
   border-color: $borderColor;
+}
+
+.select-menu-no-results {
+  color: $borderColor;
 }
 
 // Languages
