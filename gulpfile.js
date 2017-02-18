@@ -1,4 +1,5 @@
 var gulp        = require('gulp');
+var dotenv      = require('dotenv').config();
 var gutil       = require('gulp-util');
 var gulpIf      = require('gulp-if');
 var git         = require('gulp-git');
@@ -106,8 +107,6 @@ gulp.task('git:release', function(done) {
   gulp.src('./css/style.css')
     .pipe(release({
       token: process.env.GITHUB_TOKEN,
-      owner: 'rmcfadzean',
-      repo: 'stylish-github',
       manifest: require('./package.json')
     }));
 });

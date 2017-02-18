@@ -3,12 +3,13 @@
   "version": "0.1.1",
   "repository": {
     "type": "git",
-    "url": "rmcfadzean/stylish-github"
+    "url": "https://github.com/rmcfadzean/stylish-github.git"
   },
   "main": "",
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.18.7",
+    "dotenv": "^4.0.0",
     "gulp": "^3.9.1",
     "gulp-bump": "^2.7.0",
     "gulp-clean-css": "^3.0.2",
