@@ -29,28 +29,8 @@
   }
 }
 
-// Timeline
-
-.timeline-comment-wrapper {
-  border-color: $backgroundColor;
-}
-
-.timeline-comment {
-  border-color: $borderColor;
-  background-color: $backgroundColor;
-}
-
-.timeline-comment-wrapper>.timeline-comment::before, .timeline-new-comment .timeline-comment::before,
-.timeline-comment-wrapper>.timeline-comment::after, .timeline-new-comment .timeline-comment::after {
-  border-right-color: $borderColor !important;
-}
-
-.timeline-comment-header {
-  border-color: $borderColor;
-  background-color: $backgroundColor;
-}
-
 // Comments
+
 .new-discussion-timeline {
   .previewable-comment-form {
     textarea {
@@ -72,7 +52,20 @@
   }
 }
 
+.discussion-item-ref-title .title-link {
+  color: $fgDark;
+}
+
+.discussion-item-ref-title .issue-num {
+  color: $fgDarkest;
+}
+
+.comment-reactions.has-reactions, .reaction-summary-item, .discussion-item-deployed {
+  border-color: $borderColor;
+}
+
 // Toolbar
+
 .toolbar-item, .toolbar-item .menu-target {
   color: $foregroundColor;
 }

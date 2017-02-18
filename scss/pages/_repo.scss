@@ -218,6 +218,22 @@
   }
 }
 
+.markdown-body {
+  table {
+    th, tr, td {
+      border-color: $borderColor;
+    }
+
+    tr {
+      background: $backgroundColor;
+
+      &:nth-child(2n) {
+        background: $bgDark;
+      }
+    }
+  }
+}
+
 .subnav-search-context .btn { // Filter on PR tab
   color: inherit;
 }
@@ -320,4 +336,16 @@
 .label-private {
   background: $accentBorderColor;
   color: $bgDarker !important;
+}
+
+.deployment-status-label.is-active {
+  background: $accent-green;
+  color: $bgDarker !important;
+  border-color: $accent-green;
+}
+
+// Mentions
+
+.user-mention, .team-mention {
+  @extend a;
 }
