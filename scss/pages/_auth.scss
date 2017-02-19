@@ -1,0 +1,25 @@
+.oauth-wrapper .setup-wrapper .oauth-permissions-details {
+  background-color: $backgroundColor;
+}
+
+.oauth-permissions-details {
+  .octicon {
+    color: $foregroundColor;
+  }
+  .permission-title {
+    color: $foregroundColor;
+  }
+  .oauth-permissions-details {
+    background-color: $backgroundColor;;
+  }
+}
+
+.oauth-review-wrapper .setup-info-module  {
+  border-color: $borderColor;
+}
+
+
+.oauth-connection-illustration .oauth-image {
+  background-color: $backgroundColor;
+  border: $borderColor;
+}
