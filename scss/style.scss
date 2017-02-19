@@ -3,8 +3,8 @@
 // Mixins
 @import 'mixins/activated';
 @import 'mixins/card';
-@import 'mixins/links';
 @import 'mixins/flash';
+@import 'mixins/links';
 
 // Globals
 @import 'buttons';
@@ -16,6 +16,7 @@
 @import 'components/codemirror';
 @import 'components/discussion';
 @import 'components/pagehead';
+@import 'components/repoColors';
 @import 'components/tabnav';
 @import 'components/timeline';
 
@@ -24,6 +25,7 @@
 @import 'pages/dashboard';
 @import 'pages/footerPages/developer';
 @import 'pages/footerPages/terms';
+@import 'pages/graphs';
 @import 'pages/homepage';
 @import 'pages/issues';
 @import 'pages/jobs';
@@ -35,11 +37,10 @@
 @import 'pages/profile';
 @import 'pages/pullRequests';
 @import 'pages/pulse';
+@import 'pages/releases';
 @import 'pages/repo';
 @import 'pages/settings';
-@import 'pages/graphs';
-@import 'pages/releases';
 
 // Add-Ons
-@import 'addons/octotree';
 @import 'addons/npmhub';
+@import 'addons/octotree';

@@ -1,0 +1,17 @@
+$colors: (
+  #563d7c: $accent-purple,      // CSS
+  #f1e05a: $accent-yellow,      // JavaScript
+  #701516: $accent-red,         // Ruby
+  #4F5D95: $accent-blue-purple, // PHP
+  #89e051: #7dbd45,          // Shell
+  #e44b23: #ab663c,          // HTML
+  #3572A5: $accent-blue,        // Python
+  #b07219: #61492b           // Java
+);
+
+@each $base, $replacement in $colors {
+  .repo-language-color[style="background-color:#{$base};"],
+  .language-color[style$="background-color:#{$base};"] {
+    background-color: $replacement !important;
+  }
+}
