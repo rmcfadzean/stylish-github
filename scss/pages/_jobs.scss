@@ -1,3 +1,6 @@
+// These inherit a different stylesheet than the GH default
+
+// Header
 #header a {
   color: $navItemColor;
 }
@@ -5,6 +8,46 @@
 ul#gnav li {
   text-shadow: none;
 }
+
+// Inputs & Forms
+
+#search {
+  h3 {
+    color: $foregroundColor;
+  }
+
+  .field {
+    background: transparent;
+    padding: 2px 0 0;
+
+    input {
+      @extend .form-control;
+    }
+
+    .placeholder {
+      color: $foregroundColor;
+    }
+  }
+
+  .description .field .placeholder, 
+  .location .field .placeholder {
+    // Background image spritesheet
+    background-color: $inputBackgroundColor;
+    background-blend-mode: multiply;
+  }
+
+  .simplefield {
+    color: $foregroundColor;
+  }
+
+  button {
+    border-width: 1px;
+    border-style: solid;
+    @extend .btn;
+  }
+}
+
+// Overall Job Styles
 
 #wrap #page {
   background-image: linear-gradient($bgDarker, $backgroundColor);
@@ -16,8 +59,10 @@ ul#gnav li {
   overflow: hidden;
 }
 
-.supertitle {
-  color: $fgDarkest;
+a.button {
+  border-width: 1px;
+  border-style: solid;
+  @extend .btn;
 }
 
 .module {
@@ -35,5 +80,56 @@ ul#gnav li {
   h2 {
     color: $fgLightest;
     border-bottom-color: $borderColor;
+
+    a.seemore { // Styled like .timeline-comment-label
+      border-color: $mutedBorderColor;
+      background: $bgDark;
+    }
   }
+}
+
+.sidebar {
+  .tweet, .feed {
+    border-color: $borderColor;
+  }
+}
+
+// Index Page
+
+table.positionlist {
+  tr {
+    &:hover td {
+      background-color: $bgLight;
+    }
+
+    td {
+      border-color: $borderColor;
+    }
+  }
+
+  p.source {
+    .fulltime {
+      @extend .text-green;
+    }
+
+    a.company {
+      color: $foregroundColor;
+    }
+  }
+
+  .meta {
+    span {
+      color: $borderColor;
+    }
+
+    .when {
+      color: $foregroundColor;
+    }
+  }
+}
+
+// Individual Listing
+
+.supertitle {
+  color: $fgDarkest;
 }
