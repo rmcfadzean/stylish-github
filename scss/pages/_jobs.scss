@@ -1,0 +1,39 @@
+#header a {
+  color: $navItemColor;
+}
+
+ul#gnav li {
+  text-shadow: none;
+}
+
+#wrap #page {
+  background-image: linear-gradient($bgDarker, $backgroundColor);
+  background-size: 100% 305px;
+  background-position: 0 0;
+  margin: 0;
+  padding: 0;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.supertitle {
+  color: $fgDarkest;
+}
+
+.module {
+  @include card;
+
+  &.highlighted {
+    background-color: $accentBorderColor;
+  }
+
+  & > .inner { // !imp to override .highlighted > .inner
+    border-color: $borderColor !important;
+    background-color: $bgLight !important;
+  }
+
+  h2 {
+    color: $fgLightest;
+    border-bottom-color: $borderColor;
+  }
+}
