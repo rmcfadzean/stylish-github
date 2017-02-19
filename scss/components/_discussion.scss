@@ -39,6 +39,12 @@
     }
   }
 
+  &-body {
+    .file-header {
+      border-color: $borderColor !important; // !imp because it gets overly specific
+    }
+  }
+
   .renamed-was, .renamed-is,
   &-entity {
     color: $fgLightest;
@@ -46,6 +52,21 @@
 
   &-merged .discussion-item-icon {
     background-color: $accent-purple;
+  }
+
+  &-closed .discussion-item-icon,
+  &-review.is-rejected .discussion-item-icon {
+    background-color: $accent-red !important;
+  }
+
+  &-review {
+    .file-header {
+      @include cardLight;
+    }
+
+    .blob-wrapper {
+      border-color: $borderColor;
+    }
   }
 }
 

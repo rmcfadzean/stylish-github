@@ -21,6 +21,7 @@
 .branch-action-state-clean {
   .branch-action-body {
     border-color: $accent-green;
+
     &:after {
       border-right-color: $accent-green;
     }
@@ -138,13 +139,17 @@
   background-color: $accent-green;
 }
 
+.state-closed {
+  background-color: $accent-red;
+}
+
 .diffbar, .pr-toolbar {
   background: $backgroundColor;
 }
 
 .new-discussion-timeline .closed-banner {
   border-color: $backgroundColor;
-  background-color: $backgroundColor;
+  background-color: $borderColor;
 }
 
 .merge-branch-heading, .merge-branch-description {
@@ -162,5 +167,137 @@
     &:before, &:after {
       border-right-color: $accent-purple;
     }
+  }
+}
+
+.branch-action-state-dirty,
+.branch-action-state-closed-dirty {
+  .branch-action-icon {
+    background-color: $accent-purple;
+  }
+
+  .branch-action-body {
+    border-color: $accent-purple;
+
+    &:before, &:after {
+      border-right-color: $accent-purple;
+    }
+  }
+}
+
+.branch-action-state-dirty,
+.branch-action-state-closed-dirty {
+  .branch-action-icon {
+    background-color: $accent-red;
+  }
+
+  .branch-action-body {
+    border-color: $accent-red;
+
+    &:before, &:after {
+      border-right-color: $accent-red;
+    }
+  }
+}
+
+.branch-action-state-unknown,
+.branch-action-state-unstable {
+  .branch-action-icon {
+    background-color: $accent-yellow;
+  }
+
+  .branch-action-body {
+    border-color: $accent-yellow;
+
+    &:before, &:after {
+      border-right-color: $accent-yellow;
+    }
+  }
+}
+
+.is-rebasing .branch-action-state-dirty-if-rebasing,
+.branch-action-state-closed {
+  .branch-action-icon {
+    background-color: #888;
+  }
+
+  .branch-action-body {
+    border-color: #888;
+
+    &:before, &:after {
+      border-right-color: #888;
+    }
+  }
+}
+
+.merge-status-item {
+  background-color: $bgLight;
+  border-color: $borderColor;
+}
+
+// Progress
+
+.completeness-indicator-problem,
+.completeness-indicator-error {
+  background-color: $accent-red;
+}
+
+.donut-chart {
+  & > .error, & > .failure {
+    fill: $accent-red;
+  }
+
+  & > .success {
+    fill: $accent-green;
+  }
+
+  & > .expected, & > .pending {
+    fill: $accent-yellow;
+  }
+}
+
+.progress-bar,
+.task-progress .progress-bar {
+  background-color: $bgLight;
+}
+
+.task-progress .octicon,
+.issue-meta-section .octicon {
+  color: $borderColor;
+}
+
+.task-progress {
+  color: $fgDarker;
+}
+
+.reorderable-task-lists .markdown-body .task-list-item {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+
+  @include activated() {
+    background-color: $bgDarker;
+    border-color: $mutedBorderColor;
+  }
+
+  .drag-handle {
+    fill: $borderColor;
+  }
+}
+
+// Reviews
+
+.review {
+  &-thread-reply {
+    background: $bgDark;
+    border-color: $borderColor;
+  }
+
+  &-comment-contents:after,
+  &-comment.is-comment-editing:after {
+    background-color: $borderColor;
+  }
+
+  &-comment .reaction-summary-item:not(.add-reaction-btn) {
+    border-color: $borderColor;
   }
 }
