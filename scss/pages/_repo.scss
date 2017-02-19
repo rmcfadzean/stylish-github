@@ -36,7 +36,7 @@
 }
 
 .commit-tease-sha {
-  @extend a;
+  @extend %link;
 }
 
 // Top Widgets
@@ -232,6 +232,10 @@
       }
     }
   }
+
+  hr {
+    background-color: $borderColor;
+  }
 }
 
 .subnav-search-context .btn { // Filter on PR tab
@@ -353,5 +357,5 @@
 // Mentions
 
 .user-mention, .team-mention {
-  @extend a;
+  @extend %link;
 }

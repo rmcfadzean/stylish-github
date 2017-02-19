@@ -4,21 +4,21 @@
   border-color: $borderColor;
   text-shadow: 1px 1px 2px rgba(#000, 0.5);
 
-  &:hover, &:hover:focus, &.selected, &:focus, &.selected:focus {
-    background-image: linear-gradient(darken($backgroundColor, 2%), $bgDarker);
+  @include activated() {
+    background-image: linear-gradient($bgDark, $bgDarker);
     color: $foregroundColor;
     border-color: $borderColor;
   }
 
   &-primary {
-    background-image: linear-gradient($primary, $darkPrimary);
-    border-color: $ghDarkPrimary;
+    background-image: linear-gradient(darken($accent-green, 10%), mix($accent-green, $bgDarker, 30%));
+    border-color: darken($accent-green, 5%);
     color: #fff;
 
     &:hover, &:active,
     &.zeroclipboard-is-hover, &.zeroclipboard-is-active {
-      background-image: linear-gradient($ghPrimary, $ghDarkPrimary);
-      border-color: $ghPrimary;
+      background-image: linear-gradient(mix($accent-green, $bgDarker, 50%), mix($accent-green, $bgDarker, 30%));
+      border-color: darken($accent-green, 5%);
       color: #fff;
     }
   }

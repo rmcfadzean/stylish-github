@@ -14,11 +14,6 @@ $borderColor: lighten($backgroundColor, 15%);
 $accentBorderColor: lighten($borderColor, 15%);
 $mutedBorderColor: rgba($borderColor, 0.5);
 
-$linkColor: $brandColor;
-
-$primary: darken($ghPrimary, 10%);
-$darkPrimary: darken($ghDarkPrimary, 10%);
-
 $bgLightest: lighten($backgroundColor, 10%);
 $bgLighter: lighten($backgroundColor, 5%);
 $bgLight: lighten($backgroundColor, 2%);
@@ -38,12 +33,16 @@ $fgDarkest: darken($foregroundColor, 10%);
 // Color Accents
 
 $accent-green: #6fa858;
-$accent-yellow: #fb3;
+$accent-yellow: #d8c641;
 $accent-blue: #55a8c9;
 $accent-blue-purple: #7052c5;
 $accent-purple: #a272a9;
 $accent-orange: #ec7063;
 $accent-red: #c15a62;
+
+// Assignments
+
+$linkColor: $brandColor;
 
 // Nav
 

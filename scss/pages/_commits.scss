@@ -44,3 +44,37 @@
   background: $backgroundColor;
   border-color: $borderColor;
 }
+
+.commit-sha {
+  @extend .counter;
+  border-color: $borderColor;
+}
+
+.commit-desc {
+  pre {
+    color: $foregroundColor;
+  }
+
+  & + .commit-branches {
+    border-color: $borderColor;
+  }
+}
+
+.file-diff-split {
+  .empty-cell {
+    background-color: $bgDark;
+    border-color: $borderColor;
+  }
+
+  .blob-code + .blob-num {
+    border-color: $borderColor;
+  }
+}
+
+path.js-diff-placeholder {
+  fill: $mutedBorderColor !important;
+}
+
+span.no-nl-marker {
+  @extend .text-red;
+}
