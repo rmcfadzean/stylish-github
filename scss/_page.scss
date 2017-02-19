@@ -211,7 +211,7 @@ rect[style*="mask: url(#sparkline"] { // Repos, org pages
 
 // Links
 
-a {
+%link {
   color: $linkColor;
   transition: background 0.1s ease-in-out,
               color 0.1s ease-in-out,
@@ -221,6 +221,10 @@ a {
   &:active, &:hover {
     color: saturate(lighten($linkColor, 10%), 10%);
   }
+}
+
+a {
+  @extend %link;
 }
 
 // Filters (/username)
@@ -446,6 +450,7 @@ hr {
 
 .text-alpha, .text-beta, .text-delta, .text-gamma, h1, h2, h3, h4, h5 {
   color: $fgLight;
+  border-color: $borderColor;
 }
 
 .status-meta {

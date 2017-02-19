@@ -47,7 +47,7 @@
 }
 
 .commit-id {
-  @extend a;
+  @extend %link;
 }
 
 .commit-ref {
@@ -73,7 +73,7 @@
     border-color: $borderColor;
 
     a {
-      @extend a;
+      @extend %link;
     }
 
     span {

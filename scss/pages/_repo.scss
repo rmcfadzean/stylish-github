@@ -36,7 +36,7 @@
 }
 
 .commit-tease-sha {
-  @extend a;
+  @extend %link;
 }
 
 // Top Widgets
@@ -353,5 +353,5 @@
 // Mentions
 
 .user-mention, .team-mention {
-  @extend a;
+  @extend %link;
 }
