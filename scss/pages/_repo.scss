@@ -236,6 +236,14 @@
   hr {
     background-color: $borderColor;
   }
+
+  h5 {
+    color: $fgDarkest;
+  }
+
+  h6 {
+    color: $borderColor;
+  }
 }
 
 .subnav-search-context .btn { // Filter on PR tab

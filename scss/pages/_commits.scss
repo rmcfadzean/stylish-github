@@ -60,6 +60,12 @@
   }
 }
 
+.commit-form {
+  &:before, &:after {
+    border-right-color: $borderColor;
+  }
+}
+
 .file-diff-split {
   .empty-cell {
     background-color: $bgDark;

@@ -2,17 +2,53 @@
 
 .CodeMirror {
   background: $backgroundColor;
+
+  &-gutter-wrapper + .CodeMirror-line {
+    padding: 0 0.75rem;
+  }
 }
 
-.cm-s-github .CodeMirror {
+.cm-s-github {
+  .CodeMirror {
+    &-gutters {
+      background: $bgLight;
+      color: darken($foregroundColor, 20%);
+    }
 
-  &-gutters {
-    background: $bgLight;
-    color: darken($foregroundColor, 20%);
+    &-lines {
+      background: transparent;
+      color: $fgDark;
+    }
   }
 
-  &-lines {
-    background: transparent;
-    color: $fgDark;
+  .cm { // These classes should NOT be alphabetized; some need to take precedence
+    &-header {
+      color: $fgLight;
+
+      &-1 {
+        color: $fgLightest;
+      }
+    }
+
+    &-variable-2 {
+      color: $foregroundColor;
+    }
+
+    &-string {
+      color: $accent-blue;
+    }
+
+    &-link {
+      color: $accent-purple;
+
+      & + .cm-url {
+        color: rgba($accent-purple, 0.5);
+        font-style: italic;
+      }
+    }
+
+    &-error {
+      color: $accent-red;
+    }
   }
 }
