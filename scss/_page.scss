@@ -80,7 +80,9 @@ kbd {
 // Boxed Groups
 
 .Box {
-  @include cardLight;
+  background-color: $bgDark;
+  border-color: $borderColor;
+  color: $foregroundColor;
 
   &.bg-gray-light {
     background: inherit !important
@@ -88,6 +90,11 @@ kbd {
 
   &--danger {
     border-color: $accent-red;
+  }
+
+  &-header {
+    background: $bgDarker;
+    border-color: $borderColor;
   }
 
   &-row {
@@ -445,6 +452,10 @@ hr {
 
   &-orange {
     color: $accent-orange !important;
+  }
+
+  &-purple {
+    color: $accent-purple !important;
   }
 
   &-emphasized {

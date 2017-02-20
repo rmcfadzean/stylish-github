@@ -40,3 +40,25 @@
     }
   }
 }
+
+.type-icon-state {
+  &-open {
+    @extend .text-green;
+  }
+
+  &-closed {
+    @extend .text-red;
+  }
+
+  &-none {
+    color: $borderColor;
+  }
+
+  &-merged {
+    @extend .text-purple;
+  }
+}
+
+.subscriptions-content .repo-icon {
+  color: $borderColor;
+}
