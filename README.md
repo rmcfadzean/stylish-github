@@ -41,7 +41,7 @@ This is useful for testing logged-in styles as we can't do this locally.
 
 ## Issues/Bugs
 
-Please open a new issue. Provide a screenshot, link (if you can) and css selector if possible.
+Please open a new issue. Provide a screenshot, link (if you can), and CSS selector if possible.
 
 Pull Requests also accepted :)
 
