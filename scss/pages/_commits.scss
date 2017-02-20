@@ -84,3 +84,15 @@ path.js-diff-placeholder {
 span.no-nl-marker {
   @extend .text-red;
 }
+
+.signed-commit-badge {
+  &.verified {
+    color: $accent-green;
+    border-color: $accent-green;
+
+    @include activated {
+      color: darken($accent-green, 10%);
+      border-color: darken($accent-green, 10%);
+    }
+  }
+}
