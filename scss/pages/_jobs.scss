@@ -43,7 +43,7 @@ ul#gnav li {
   button {
     border-width: 1px;
     border-style: solid;
-    @extend .btn;
+    @extend %baseBtn;
   }
 }
 

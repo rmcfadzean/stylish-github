@@ -24,7 +24,7 @@ div.content-header {
 }
 
 .minibutton {
-  @extend .btn;
+  @extend %baseBtn;
   text-shadow: none;
 }
 

@@ -1,14 +1,18 @@
-.btn {
+%baseBtn {
   background-image: linear-gradient($backgroundColor, $bgDarker);
   color: $foregroundColor;
   border-color: $borderColor;
   text-shadow: 1px 1px 2px rgba(#000, 0.5);
 
   @include activated() {
-    background-image: linear-gradient($bgDark, $bgDarker);
+    background-image: linear-gradient($bgDark, $bgDarkest);
     color: $foregroundColor;
     border-color: $borderColor;
   }
+}
+
+.btn {
+  @extend %baseBtn;
 
   &-primary {
     background-image: linear-gradient(darken($accent-green, 10%), mix($accent-green, $bgDarker, 30%));
@@ -39,6 +43,10 @@
     &[disabled], &.disabled {
       color: desaturate(darken($foregroundColor, 30%), $disabledDesaturateAmount) !important;
       background: transparent !important;
+    }
+
+    @include activated() {
+      background: $mutedBorderColor !important;
     }
   }
 
