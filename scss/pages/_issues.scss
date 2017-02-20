@@ -29,6 +29,11 @@
   }
 }
 
+.avatar,
+.avatar-stack .avatar {
+  background-color: transparent; // Hide overflow at corners
+}
+
 // Comments
 
 .new-discussion-timeline {
