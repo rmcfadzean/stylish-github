@@ -221,27 +221,6 @@ rect[style*="mask: url(#sparkline"] { // Repos, org pages
   fill: $accent-green !important;
 }
 
-// Labels
-
-.label {
-  color: $bgDarker;
-
-  &-private {
-    background-color: $accentBorderColor;
-    color: $bgDarker !important;
-  }
-
-  &-neutral {
-    background-color: $bgLightest;
-  }
-}
-
-.deployment-status-label.is-active {
-  background: $accent-green;
-  color: $bgDarker !important;
-  border-color: $accent-green;
-}
-
 // Links
 
 %link {
@@ -552,6 +531,27 @@ hr {
   &-custom-gradient {
     background: linear-gradient($bgLight, $backgroundColor) !important;
   }
+}
+
+// Labels
+
+.label {
+  color: $bgDarker;
+
+  &-private {
+    background-color: $accentBorderColor;
+    color: $bgDarker !important;
+  }
+
+  &-neutral {
+    background-color: $bgLightest;
+  }
+}
+
+.deployment-status-label.is-active {
+  background: $accent-green;
+  color: $bgDarker !important;
+  border-color: $accent-green;
 }
 
 // Dropdowns
