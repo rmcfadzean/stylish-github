@@ -117,6 +117,12 @@
   color: $backgroundColor;
 }
 
+.pr-details .state {
+  &:hover {
+    color: $bgDarker
+  }
+}
+
 .sidebar-assignee .assignee {
   color: $foregroundColor;
 }

@@ -176,6 +176,11 @@ kbd {
     background-color: $bgLightest;
     border-color: $borderColor;
   }
+
+  &:hover { // Only a little lighter on :hover; less confusion with active items
+    color: $fgLight;
+    background-color: $bgLight;
+  }
 }
 
 .subnav-bordered {
@@ -214,6 +219,27 @@ kbd {
 
 rect[style*="mask: url(#sparkline"] { // Repos, org pages
   fill: $accent-green !important;
+}
+
+// Labels
+
+.label {
+  color: $bgDarker;
+
+  &-private {
+    background-color: $accentBorderColor;
+    color: $bgDarker !important;
+  }
+
+  &-neutral {
+    background-color: $bgLightest;
+  }
+}
+
+.deployment-status-label.is-active {
+  background: $accent-green;
+  color: $bgDarker !important;
+  border-color: $accent-green;
 }
 
 // Links
@@ -456,6 +482,10 @@ hr {
 
   &-purple {
     color: $accent-purple !important;
+  }
+
+  &-pending {
+    color: $accent-yellow !important;
   }
 
   &-emphasized {

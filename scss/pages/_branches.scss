@@ -1,0 +1,61 @@
+.branch {
+  &-group {
+    &-heading {
+      background-color: $bgDark;
+      border-color: $borderColor;
+
+      .text-shadow-light {
+        text-shadow: none;
+      }
+    }
+
+    &-name {
+      color: $foregroundColor;
+    }
+  }
+
+  &-summary {
+    color: $fgDarker;
+    border-color: $borderColor !important;
+  }
+
+  &-name { // styled like a label
+    background-color: $bgLightest;
+    color: $bgDarker;
+  }
+
+  &-meta {
+    color: $foregroundColor;
+  }
+
+  &-a-b-count {
+    .meter {
+      background-color: $borderColor;
+    }
+
+    .bar-ahead.even,
+    .bar-behind.even,
+    .bar-ahead .meter {
+      background-color: $fgDark;
+    }
+
+    .count-half:last-child {
+      border-color: $borderColor;
+    }
+  }
+}
+
+.more-branches {
+  @extend %baseBtn;
+}
+
+// Likely on other pages, but I've only found it here so far; move as needed
+
+.subnav-search-icon {
+  color: $borderColor;
+
+  input:focus + & {
+    color: $foregroundColor;
+  }
+}
+

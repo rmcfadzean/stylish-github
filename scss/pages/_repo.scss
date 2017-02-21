@@ -345,21 +345,8 @@
   }
 }
 
-// Labels
-
 .repohead h1.private .octicon {
   color: $accentBorderColor;
-}
-
-.label-private {
-  background: $accentBorderColor;
-  color: $bgDarker !important;
-}
-
-.deployment-status-label.is-active {
-  background: $accent-green;
-  color: $bgDarker !important;
-  border-color: $accent-green;
 }
 
 // Mentions
