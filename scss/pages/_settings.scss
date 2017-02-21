@@ -41,6 +41,10 @@
   border-color: $borderColor;
 }
 
+.facebox-alert {
+  @include flash($accent-red);
+}
+
 // Misc
 
 .Subhead-heading--danger {
