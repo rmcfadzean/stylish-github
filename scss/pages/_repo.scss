@@ -136,6 +136,16 @@
   }
 }
 
+table.files {
+  td.message a { // Links inside the .file-wrap .message
+    color: $fgLightest;
+  }
+
+  td.icon {
+    color: $borderColor;
+  }
+}
+
 // Code
 
 .blob-num {
