@@ -37,7 +37,8 @@
   border-color: transparent;
 }
 
-.profile-rollup-wrapper+.profile-rollup-wrapper {
+.profile-rollup-wrapper + .profile-rollup-wrapper,
+.profile-rollup-summarized + .profile-rollup-summarized {
   border-color: $borderColor;
 }
 
@@ -89,4 +90,8 @@ $contribColorMap: (
 
 .pinned-repo-item {
   background: $bgDark;
+
+  &.is-dragging {
+    background: $bgDarker;
+  }
 }

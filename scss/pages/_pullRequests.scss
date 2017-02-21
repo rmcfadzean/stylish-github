@@ -114,12 +114,28 @@
 }
 
 .state {
-  color: $backgroundColor;
+  color: $bgDarker !important;
+
+  &-merged, &-open, &-closed {
+    color: $bgDarker !important;
+  }
+
+  &-open {
+    background-color: $accent-green;
+  }
+
+  &-closed {
+    background-color: $accent-red;
+  }
+
+  &-merged {
+    background-color: $accent-purple;
+  }
 }
 
 .pr-details .state {
   &:hover {
-    color: $bgDarker
+    color: $bgDarker;
   }
 }
 
@@ -143,10 +159,6 @@
 .completeness-indicator-success,
 .branch-action-state-clean .branch-action-icon {
   background-color: $accent-green;
-}
-
-.state-closed {
-  background-color: $accent-red;
 }
 
 .diffbar, .pr-toolbar {
