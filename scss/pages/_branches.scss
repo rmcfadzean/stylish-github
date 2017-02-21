@@ -43,6 +43,16 @@
       border-color: $borderColor;
     }
   }
+
+  &-infobar {
+    background: $bgDarker;
+    color: $fgLightest;
+    border-color: $borderColor;
+
+    .muted-link .octicon {
+      color: $borderColor !important;
+    }
+  }
 }
 
 .more-branches {

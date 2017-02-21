@@ -137,12 +137,18 @@
 }
 
 table.files {
-  td.message a { // Links inside the .file-wrap .message
-    color: $fgLightest;
-  }
+  td {
+    &.message a { // Links inside the .file-wrap .message
+      color: $fgLightest;
+    }
 
-  td.icon {
-    color: $borderColor;
+    &.icon {
+      color: $borderColor;
+    }
+
+    .simplified-path {
+      color: $borderColor;
+    }
   }
 }
 
