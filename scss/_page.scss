@@ -598,6 +598,8 @@ hr {
 }
 
 .flash {
+  @include flash($accent-blue); // blends in too much with one of the normal bg colors
+
   &-error {
     @include flash($accent-red);
   }
