@@ -537,8 +537,16 @@ hr {
     background-color: $accent-blue !important;
   }
 
-  &-gray-light {
-    background-color: $bgLight !important;
+  &-gray {
+    background-color: $bgDark !important;
+
+    &-dark {
+      background-color: $bgLight !important;
+    }
+
+    &-light {
+      background-color: $bgLight !important;
+    }
   }
 
   &-custom-gradient {

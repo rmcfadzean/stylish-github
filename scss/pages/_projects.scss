@@ -1,0 +1,39 @@
+.project-columns {
+  background: $bgDarkest;
+
+  .bg-gray-light {
+    background: $bgDarker !important; // Card headers
+  }
+}
+
+.js-project-column-cards {
+  background: $bgDark;
+}
+
+.project-pane-menu .bg-gray {
+  background: $bgDark !important;
+}
+
+.new-project-column {
+  border-color: $borderColor;
+  opacity: 0.5;
+  transition: opacity 0.2s ease-in-out;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.octicon {
+  &.closed {
+    @extend .text-red;
+  }
+
+  &.open {
+    @extend .text-green;
+  }
+
+  &.merged {
+    @extend .text-purple;
+  }
+}
