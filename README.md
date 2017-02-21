@@ -6,10 +6,10 @@ A dark theme for GitHub
 
 ## Installation
 
-Install a userstyle manager for our browser such as [Stylish for Chrome](https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en) or
+Install a userstyle manager for your browser such as [Stylish for Chrome](https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en) or
 [Stylish for Firefox](https://addons.mozilla.org/en-US/firefox/addon/stylish/)
 
-Install [Stylish Dark Github](https://userstyles.org/styles/139123/stylish-dark-github) from Userstyles.org
+Install [Stylish Dark GitHub](https://userstyles.org/styles/139123/stylish-dark-github) from Userstyles.org
 
 Alternatively, manually install it by copy-pasting the [latest release](https://github.com/rmcfadzean/stylish-github/releases/latest) into a new style in your userstyle manager.
 
@@ -33,15 +33,17 @@ Alternatively, manually install it by copy-pasting the [latest release](https://
 
 ### Setup Testing Theme
 
-This is useful for testing logged-in styles as we can't do this locally.
+This is useful for testing logged-in styles, as we can't do this locally.
 
 * Create a new Userstyle in your manager for `domain: github.com`
 * Set the Style to `@import url('https://localhost:3000/custom/style.css');`
-* Browser logged in github as normal
+* Log into GitHub and browse the site normally
 
 ## Issues/Bugs
 
-Please open a new issue. Provide a screenshot, link (if you can), and CSS selector if possible.
+**Found a bug? Please open a new issue.**
+
+Provide a screenshot, link (if you can), and CSS selector if possible.
 
 Pull Requests also accepted :)
 
