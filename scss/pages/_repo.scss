@@ -370,3 +370,18 @@ table.files {
 .user-mention, .team-mention {
   @extend %link;
 }
+
+// Milestones
+
+.progress-bar-inline .progress-bar {
+  border-color: $borderColor;
+
+  .progress { // Maybe a little overkill, but milestone completion is exciting!
+    background: linear-gradient(90deg, $accent-yellow, $accent-green, $accent-blue, $accent-purple);
+    background-size: 980px 100%; // Since GH isn't responsive, we can base this on the container width
+  }
+}
+
+.task-progress .progress-bar .progress {
+  background: $borderColor;
+}
