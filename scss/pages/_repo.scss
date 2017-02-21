@@ -150,6 +150,10 @@ table.files {
       color: $borderColor;
     }
   }
+
+  tr.up-tree a:hover {
+    background-color: $bgLightest;
+  }
 }
 
 // Code
