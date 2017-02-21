@@ -59,8 +59,14 @@
 }
 
 .simple-conversation-list {
-   & > li {
+  color: $fgDarker;
+
+  & > li {
     border-color: $mutedBorderColor;
+
+    .num {
+      color: inherit;
+    }
   }
 }
 
