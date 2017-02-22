@@ -20,8 +20,10 @@
   .cmt, .ameta, .rank {
     color: $foregroundColor;
   }
+
   path {
-    fill: $accent-orange;
+    fill: $accentBorderColor;
+    opacity: 0.5;
   }
 }
 
@@ -155,4 +157,52 @@ line.axis {
       }
     }
   }
+}
+
+g {
+  &.mini {
+    fill: $mutedBorderColor;
+  }
+
+  .active rect {
+    fill: $accentBorderColor;
+  }
+}
+
+.graphs {
+  .path {
+    stroke: $accent-green;
+  }
+
+  .dot {
+    fill: $backgroundColor;
+    stroke: $accent-green;
+  }
+}
+
+// Errors
+
+.graph-canvas .error {
+  @include flash($accent-red);
+}
+
+// Network
+
+.network .current-repository {
+  @extend .counter;
+  padding: 2px 10px;
+  display: inline-block;
+  border-radius: 3px;
+}
+
+img.network-tree {
+  filter: invert(1);
+  mix-blend-mode: screen;
+  opacity: 0.5;
+}
+
+// Misc
+
+.blankslate-icon { // "Couldn't load network graph" icon
+  color: $borderColor;
 }
