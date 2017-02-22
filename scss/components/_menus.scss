@@ -1,0 +1,68 @@
+// Menu
+
+.menu {
+  background: transparent;
+  border-color: $borderColor;
+
+  &-heading {
+    background-color: $bgDarker;
+    color: $foregroundColor;
+    border-color: $borderColor;
+  }
+
+  &-item {
+    color: $foregroundColor;
+    border-color: $borderColor;
+
+    &.selected {
+      background: transparent;
+      color: $fgLightest;
+      font-weight: bold;
+
+      &:before {
+        background-color: $accentBorderColor;
+      }
+    }
+
+    &:hover {
+      background: $menuHoverColor;
+    }
+
+    .octicon {
+      color: $borderColor;
+    }
+
+    .counter {
+      line-height: inherit;
+    }
+  }
+}
+
+// Dropdowns
+
+.dropdown-menu {
+  background-color: $backgroundColor;
+  border-color: $borderColor;
+  color: $foregroundColor;
+
+  &:after {
+    border-bottom-color: $borderColor;
+  }
+
+  .dropdown-header {
+    color: $foregroundColor;
+  }
+
+  .dropdown-divider {
+    background-color: $borderColor;
+  }
+
+  .dropdown-item {
+    color: $foregroundColor;
+
+    @include activated {
+      color: $fgDarker;
+      background-color: $bgLighter;
+    }
+  }
+}

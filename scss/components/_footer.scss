@@ -1,0 +1,19 @@
+.site-footer {
+  border-color: $borderColor;
+  color: $fgLight;
+
+  .octicon-mark-github {
+    color: $bgDarker;
+  }
+}
+
+.footer-mark {
+  color: $bgDarker;
+}
+
+.footer, #footer {
+  border-color: $borderColor;
+  background: transparent;
+  text-shadow: none;
+  color: $fgLight;
+}

@@ -1,0 +1,48 @@
+.gist {
+  &-timestamp {
+    color: $borderColor;
+  }
+
+  &-snippet {
+    .link-overlay .link {
+      background: $accentBorderColor;
+      border-bottom-left-radius: 3px;
+    }
+
+    .file-box:hover .file {
+      border-color: $accentBorderColor;
+    }
+
+    &-meta {
+      .gist-count-links > li > a {
+        color: $fgDarker;
+
+        .octicon {
+          color: $borderColor;
+        }
+
+        &:hover {
+          background: transparent;
+          color: $linkColor;
+        }
+      }
+
+      .creator, .description {
+        color: $foregroundColor;
+      }
+
+      .description {
+        display: block;
+        margin-top: 0.5rem;
+      }
+
+      .extra-info {
+        color: $fgDarkest;
+
+        .text {
+          color: $borderColor;
+        }
+      }
+    }
+  }
+}

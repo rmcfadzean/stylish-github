@@ -1,0 +1,109 @@
+// This file should only be used for stylistic classes like "text-green",
+// NOT color overrides as a whole
+
+.text {
+  // Specific Colors
+  &-black {
+    color: $fgLightest !important;
+  }
+
+  &-gray {
+    color: $fgLight !important;
+
+    &-dark {
+      color: $fgLightest !important;
+    }
+
+    &-light {
+      color: $fgDarkest !important;
+    }
+  }
+
+  &-purple {
+    color: $accent-purple !important;
+  }
+
+  &-red {
+    color: $accent-red !important;
+  }
+
+  &-orange {
+    color: $accent-orange !important;
+  }
+
+  &-green {
+    color: $accent-green !important;
+  }
+
+  // States
+
+  &-pending {
+    color: $accent-yellow !important;
+  }
+
+  &-emphasized {
+    color: $fgLighter !important;
+  }
+}
+
+.site-text {
+  &-black {
+    color: $fgDarkest !important;
+  }
+
+  &-purple {
+    color: $accent-purple !important;
+  }
+
+  &-orange {
+    color: $accent-orange !important;
+  }
+
+  &-blue {
+    color: $accent-blue !important;
+  }
+
+  &-green {
+    color: $accent-green !important;
+  }
+
+  &-blue-purple {
+    color: $accent-blue-purple !important;
+  }
+}
+
+.bg {
+  &-white {
+    background-color: $backgroundColor !important;
+  }
+
+  &-blue {
+    background-color: $accent-blue !important;
+  }
+
+  &-gray {
+    background-color: $bgDark !important;
+
+    &-dark {
+      background-color: $bgLight !important;
+    }
+
+    &-light {
+      background-color: $bgLight !important;
+    }
+  }
+
+  &-custom-gradient {
+    background: linear-gradient($bgLight, $backgroundColor) !important;
+  }
+}
+
+.shade {
+  &-gray {
+    background-color: $bgDarker !important; // Needs !imp to override an inline !imp
+  }
+
+  &-gradient {
+    background-image: linear-gradient($bgDarker, $backgroundColor);
+  }
+}

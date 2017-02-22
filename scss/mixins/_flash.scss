@@ -3,3 +3,17 @@
   background-color: darken($baseColor, 10%);
   border-color: darken($baseColor, 5%);
 }
+
+.flash {
+  @include flash($accent-blue); // blends in too much with one of the normal bg colors
+
+  &-error {
+    @include flash($accent-red);
+  }
+  &-success {
+    @include flash($accent-green);
+  }
+  &-warn {
+    @include flash($accent-blue);
+  }
+}

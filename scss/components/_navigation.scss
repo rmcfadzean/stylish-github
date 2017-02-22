@@ -1,0 +1,93 @@
+// Tab Nav
+
+.tabnav {
+  border-color: $borderColor;
+
+  &-tab {
+    color: $fgLighter;
+
+    @include activated() {
+      background-color: $backgroundColor;
+      border-color: $borderColor;
+      color: $foregroundColor;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+    }
+  }
+
+  &-extra {
+    color: $foregroundColor;
+  }
+
+  &-pr {
+    border-color: $borderColor;
+
+    @include activated() {
+      background-color: $backgroundColor;
+    }
+
+    .tabnav-tab {
+      color: $foregroundColor;
+
+      @include activated() {
+        background-color: $backgroundColor;
+        border-color: $borderColor;
+        color: $foregroundColor;
+      }
+    }
+  }
+}
+
+// Subnav
+
+.subnav-item {
+  color: $foregroundColor;
+  border-color: $borderColor;
+
+  @include activated {
+    background-color: $bgLightest;
+    border-color: $borderColor;
+  }
+
+  &:hover { // Only a little lighter on :hover; less confusion with active items
+    color: $fgLight;
+    background-color: $bgLight;
+  }
+}
+
+.subnav-bordered {
+  border-color: $borderColor;
+}
+
+// Pagination
+
+.pagination {
+  a {
+    @extend a;
+    background: transparent;
+
+    &:hover {
+      background: $menuHoverColor;
+    }
+  }
+
+  a, span, em, .disabled {
+    &, &:hover {
+      border-color: $mutedBorderColor;
+    }
+  }
+
+  .current, .current:hover {
+    background: $foregroundColor;
+    border-color: $foregroundColor;
+  }
+
+  .disabled, .gap {
+    &, &:hover {
+      background: transparent;
+      color: $borderColor;
+      font-style: italic;
+      cursor: not-allowed;
+    }
+  }
+}

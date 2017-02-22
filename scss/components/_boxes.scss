@@ -1,0 +1,64 @@
+.Box {
+  background-color: $bgDark;
+  border-color: $borderColor;
+  color: $foregroundColor;
+
+  &.bg-gray-light {
+    background: inherit !important
+  }
+
+  &--danger {
+    border-color: $accent-red;
+  }
+
+  &-header {
+    background: $bgDarker;
+    border-color: $borderColor;
+  }
+
+  &-row {
+    color: $foregroundColor;
+    border-color: $borderColor;
+
+    &--focus-gray {
+      background-color: $backgroundColor;
+
+      &.navigation-focus {
+        background-color: $bgLighter;
+      }
+    }
+  }
+}
+
+.boxed-group {
+  & > h3, .heading {
+    border-color: $borderColor;
+    background: $bgDarker;
+  }
+
+  &-inner {
+    background: transparent;
+    border-color: $borderColor;
+    color: $foregroundColor;
+  }
+
+  .filter-bar {
+    background: $bgDark;
+    border-color: $borderColor;
+  }
+
+  &-table {
+    th {
+      background: $bgDarker;
+      border-color: $borderColor;
+    }
+
+    td {
+      border-color: $borderColor;
+    }
+  }
+
+  &-list > li {
+    border-color: $borderColor;
+  }
+}

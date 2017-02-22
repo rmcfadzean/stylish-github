@@ -1,0 +1,67 @@
+.border-behind {
+  &:before {
+    background-color: $borderColor;
+    z-index: 1;
+  }
+
+  & > * {
+    position: relative;
+    z-index: 5;
+  }
+}
+
+.callout-box {
+  border-color: $borderColor !important;
+
+  &-icon {
+    background: $backgroundColor;
+    outline: 10px solid $backgroundColor;
+  }
+}
+
+hr {
+  border-color: $borderColor;
+}
+
+.counter, .protip code {
+  background-color: $bgLighter !important;
+  color: $foregroundColor !important; // !imp to override on repo pages
+}
+
+.codesearch-aside .filter-list li span.bar { // Sidebar language filter in search results
+  background: $bgLight;
+}
+
+.sort-bar {
+  border-color: $borderColor;
+}
+
+.bot-identifier {
+  color: $accent-purple;
+  background: rgba($accent-purple, 0.125);
+  border-color: inherit !important;
+}
+
+.upload-enabled textarea {
+  border-color: $borderColor;
+}
+
+.card {
+  @include card;
+}
+
+.status-meta {
+  color: $fgLight !important;
+}
+
+kbd {
+  background-color: $bgDark;
+  color: $foregroundColor;
+  border-color: $borderColor;
+  border-bottom-color: $mutedBorderColor;
+  box-shadow: inset 0 -1px 0 $mutedBorderColor;
+}
+
+rect[style*="mask: url(#sparkline"] { // Repos, org pages
+  fill: $accent-green !important;
+}

@@ -1,0 +1,9 @@
+.sidebar {
+  border-color: $borderColor;
+
+  li.muted {
+    &, a {
+      color: $borderColor;
+    }
+  }
+}

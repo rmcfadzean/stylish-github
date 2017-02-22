@@ -1,0 +1,50 @@
+.site-header, .header {
+  background: $headerBackgroundColor;
+
+  &-nav .nav-item, &-nav-link {
+    color: $navItemColor;
+
+    &:hover {
+      color: $navItemHoverColor !important;
+    }
+
+    .octicon, .dropdown-caret {
+      color: $borderColor;
+    }
+  }
+}
+
+.header-logo-invertocat,
+.site-header .header-logo-invertocat {
+  color: $logoColor;
+
+  &:hover {
+    color: $logoHoverColor;
+  }
+}
+
+#header {
+  background: $headerBackgroundColor;
+  border: 0;
+  box-shadow: none;
+
+  ul.top-nav > li >a,
+  ul.top-nav > li > button {
+    color: $navItemColor;
+  }
+
+  .site-logo a {
+    filter: invert(1);
+  }
+}
+
+.notification-indicator {
+  .mail-status {
+    background-image: none;
+    background-color: $fgLightest;
+  }
+
+  &:hover .mail-status {
+    background-color: $brandColor;
+  }
+}

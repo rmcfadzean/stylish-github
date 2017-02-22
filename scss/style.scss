@@ -9,26 +9,31 @@
 // Globals
 @import 'buttons';
 @import 'inputs';
+@import 'misc';
 @import 'page';
 @import 'syntax';
 
 // Components: Larger objects that are still used in multiple places
+@import 'components/boxes';
 @import 'components/codemirror';
+@import 'components/colorOverrides';
 @import 'components/discussion';
+@import 'components/footer';
+@import 'components/header';
+@import 'components/menus';
+@import 'components/navigation';
 @import 'components/pagehead';
 @import 'components/repoColors';
-@import 'components/tabnav';
+@import 'components/sidebar';
 @import 'components/timeline';
 
 // Page-Specific
-@import 'pages/branches';
-@import 'pages/commits';
+@import 'pages/auth';
 @import 'pages/dashboard';
 @import 'pages/footerPages/developer';
 @import 'pages/footerPages/terms';
-@import 'pages/graphs';
+@import 'pages/gists';
 @import 'pages/homepage';
-@import 'pages/issues';
 @import 'pages/jobs';
 @import 'pages/login';
 @import 'pages/marketingPages'; // @imports the individual marketing pages
@@ -36,15 +41,16 @@
 @import 'pages/organizations';
 @import 'pages/prerelease';
 @import 'pages/profile';
-@import 'pages/projects';
-@import 'pages/pullRequests';
-@import 'pages/pulse';
-@import 'pages/releases';
-@import 'pages/repo';
+@import 'pages/repos/branches';
+@import 'pages/repos/commits';
+@import 'pages/repos/graphs';
+@import 'pages/repos/issues';
+@import 'pages/repos/projects';
+@import 'pages/repos/pullRequests';
+@import 'pages/repos/pulse';
+@import 'pages/repos/releases';
+@import 'pages/repos/repo';
 @import 'pages/settings';
-@import 'pages/graphs';
-@import 'pages/releases';
-@import 'pages/auth';
 
 // Add-Ons
 @import 'addons/npmhub';
