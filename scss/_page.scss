@@ -623,6 +623,18 @@ hr {
   background: $bgLight;
 }
 
+// Loading Content
+
+.activity {
+  color: $foregroundColor !important; // Because .activity is often under a page-specific selector
+
+  .dots {
+    mix-blend-mode: overlay; // Loading img
+  }
+}
+
+// Flashes
+
 .flash {
   @include flash($accent-blue); // blends in too much with one of the normal bg colors
 
