@@ -583,6 +583,32 @@ hr {
   }
 }
 
+// Tooltips
+
+.tooltipped {
+  &-s:before, &-se:before, &-sw:before {
+    border-bottom-color: $tooltipColor;
+  }
+
+  &-n:before, &-ne:before, &-nw:before {
+    border-top-color: $tooltipColor;
+  }
+
+  &-e:before {
+    border-right-color: $tooltipColor;
+  }
+
+  &-w:before {
+    border-left-color: $tooltipColor;
+  }
+
+  &:after {
+    background-color: $tooltipColor;
+  }
+}
+
+// Autocomplete
+
 .autocomplete-results {
   background-color: $bgDark;
   border-color: $borderColor;

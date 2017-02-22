@@ -81,3 +81,7 @@ $codeBg: $bgDark;
 // Buttons
 
 $disabledDesaturateAmount: 5%;
+
+// Tooltips
+
+$tooltipColor: rgba(darken($backgroundColor, 12%), 0.8);
