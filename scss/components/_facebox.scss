@@ -1,0 +1,18 @@
+.facebox {
+  &-popup {
+    background: $backgroundColor;
+  }
+
+  &-header {
+    border-color: $borderColor;
+  }
+
+  &-alert {
+    @include flash($accent-red);
+  }
+
+  &-footer {
+    border-color: $borderColor;
+    background-color: $bgDark;
+  }
+}
