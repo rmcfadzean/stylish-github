@@ -22,7 +22,7 @@
   }
 
   &-label {
-    border-color: $mutedBorderColor;
+    border-color: $mutedBorderColor !important; // Overly-specific parent selectors
     background: $bgDark;
   }
 }
