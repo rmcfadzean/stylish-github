@@ -86,6 +86,25 @@ $contribColorMap: (
   }
 }
 
+// Pinned Repo Modal
+
+.pinned-repo-filters {
+  border-color: $borderColor;
+}
+
+.pinned-repos-selection-list-item {
+  color: $foregroundColor;
+
+  &.selected {
+    color: $fgLightest;
+    background-color: $bgLightest;
+  }
+
+  .stars {
+    color: $borderColor;
+  }
+}
+
 // Misc
 
 .pinned-repo-item {
