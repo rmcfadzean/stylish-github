@@ -28,8 +28,24 @@ hr {
   color: $foregroundColor !important; // !imp to override on repo pages
 }
 
-.codesearch-aside .filter-list li span.bar { // Sidebar language filter in search results
-  background: $bgLight;
+.codesearch-aside .filter-list {
+  border-color: $borderColor;
+
+  li span.bar { // Sidebar language filter in search results
+    background: $bgLight;
+  }
+}
+
+.codesearch-results li {
+  h3 em {
+    font-weight: 900;
+    color: saturate(lighten($linkColor, 10%), 25%);
+  }
+
+  p em {
+    font-weight: 500;
+    color: $fgLightest;
+  }
 }
 
 .sort-bar {
