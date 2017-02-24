@@ -70,8 +70,14 @@ a.branch-name {
   background: transparent;
 }
 
-.repo-filterer .repo-filter.filter-selected {
-  border-color: $accentBorderColor;
+.repo-filterer .repo-filter {
+  &.filter-selected {
+    border-color: $accentBorderColor;
+  }
+
+  &:hover {
+    border-bottom-color: $mutedBorderColor;
+  }
 }
 
 // Jobs

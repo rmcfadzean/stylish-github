@@ -75,6 +75,10 @@
   background-color: $backgroundColor;
   border-color: $borderColor !important;
   color: $foregroundColor;
+
+  &:hover, &:focus {
+    background: $mutedBorderColor !important;
+  }
 }
 
 

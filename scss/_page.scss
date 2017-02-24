@@ -36,12 +36,16 @@ h1, h2, h3, h4, h5 {
 
 // Links
 
-%link {
-  color: $linkColor;
+%linkTransition {
   transition: background 0.1s ease-in-out,
               color 0.1s ease-in-out,
               border-color 0.1s ease-in-out,
               box-shadow 0.1s ease-in-out;
+}
+
+%link {
+  color: $linkColor;
+  @extend %linkTransition;
 
   &:active, &:hover {
     color: saturate(lighten($linkColor, 10%), 10%);
@@ -50,6 +54,10 @@ h1, h2, h3, h4, h5 {
 
 a {
   @extend %link;
+}
+
+button {
+  @extend %linkTransition;
 }
 
 // Filters (/username)
