@@ -137,3 +137,15 @@ a {
     mix-blend-mode: overlay; // Loading img
   }
 }
+
+// Selections
+
+::-moz-selection {
+  color: $fgColor; 
+  background: $bgLightest;
+}
+
+::selection {
+  color: $fgColor; 
+  background: $bgLightest;
+}
