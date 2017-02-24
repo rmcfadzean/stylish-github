@@ -332,3 +332,14 @@ table.files {
 .task-progress .progress-bar .progress {
   background: $borderColor;
 }
+
+// Forks
+
+.owner-select-target {
+  background-color: $bgLight;
+  color: $foregroundColor;
+
+  &:focus, &:hover {
+    background-color: $bgLighter;
+  }
+}

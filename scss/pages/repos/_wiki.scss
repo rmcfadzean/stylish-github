@@ -1,0 +1,63 @@
+// Style to match box-group
+
+.wiki-wrapper {
+  .wiki-pages-box h3 {
+    border-color: $borderColor;
+    background: $bgDarker;
+  }
+
+  .wiki-pages {
+    background: transparent;
+    border-color: $borderColor;
+    color: $foregroundColor;
+  }
+
+  .wiki-auxiliary-content {
+    background: transparent !important;
+  }
+
+  .wiki-more-pages-link {
+    box-shadow: inset 0 1px 0 $borderColor;
+
+    a {
+      @extend %link;
+    }
+  }
+}
+
+// New Wiki
+// Likely on other pages, but only spotted here
+
+.gollum-editor {
+  &-help,
+  &-function-bar,
+  &-help-parent,
+  &-help-list {
+    border-color: $borderColor;
+  }
+
+  &-help-parent, &-help-list {
+    li a {
+      text-shadow: none;
+
+      @include activated() {
+        background: $borderColor;
+        color: $foregroundColor;
+        border-color: $borderColor;
+        box-shadow: none;
+      }
+
+      &:hover {
+        background: $mutedBorderColor;
+      }
+    }
+  }
+
+  &-help-list {
+    background-color: $bgDark;
+  }
+
+  &-help-wrapper {
+    background: $backgroundColor;
+  }
+}
