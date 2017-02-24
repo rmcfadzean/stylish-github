@@ -5,6 +5,7 @@
 
   &-tab {
     color: $fgLighter;
+    transition: all 0.1s ease-in-out;
 
     @include activated() {
       background-color: $backgroundColor;
@@ -12,6 +13,11 @@
       color: $foregroundColor;
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
+    }
+
+    &:hover {
+      border-color: $mutedBorderColor;
+      background: rgba($backgroundColor, 0.5);
     }
   }
 
