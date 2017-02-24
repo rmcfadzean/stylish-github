@@ -52,3 +52,15 @@
     }
   }
 }
+
+.js-file-line-container {
+  tr { // Add spacing before and after code lines; this helps a lot for short gists, etc.
+    &:first-of-type td {
+      padding-top: 0.75rem;
+    }
+
+    &:last-of-type td {
+      padding-bottom: 0.75rem;
+    }
+  }
+}
