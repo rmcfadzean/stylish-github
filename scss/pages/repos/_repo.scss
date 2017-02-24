@@ -345,3 +345,60 @@ table.files {
     background-color: $bgLighter;
   }
 }
+
+// New repo
+
+.Subhead-description, .owner-reponame .slash {
+  color: $fgDarker;
+}
+
+.reponame-suggestion {
+  @extend .text-green;
+}
+
+.page-new-repo .octicon {
+  &-repo {
+  color: $borderColor;
+}
+
+  &-lock {
+    color: $linkColor; // Consistent with treatment on Dashboard
+  }
+}
+
+.license-container {
+  border-color: $borderColor;
+}
+
+.copyable-terminal {
+  background-color: $backgroundColor;
+}
+
+.clone-url-button {
+  & > .clone-url-link {
+    color: $borderColor;
+    border-color: inherit;
+    background: $backgroundColor;
+    text-shadow: none;
+
+    &:hover {
+      background: rgba($linkColor, 0.5);
+      color: rgba(#fff, 0.75);
+      text-shadow: none;
+    }
+  }
+
+  &.selected > .clone-url-link {
+    &, &:hover {
+      color: rgba(#fff, 0.75);
+      border-color: $borderColor;
+      background: $linkColor;
+      text-shadow: none;
+    }
+  }
+
+  & + & > .clone-url-link {
+    box-shadow: none;
+    border-left: 0;
+  }
+}
