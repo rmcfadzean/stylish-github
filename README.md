@@ -39,6 +39,20 @@ This is useful for testing logged-in styles, as we can't do this locally.
 * Set the Style to `@import url('https://localhost:3000/custom/style.css');`
 * Log into GitHub and browse the site normally
 
+## Supported GitHub Userscripts/Addons
+
+Stylish Dark GitHub plays nicely with...
+
+| Userscript | Description |
+| :---       | :---        |
+| [lovely-forks](https://github.com/musically-ut/lovely-forks) | Show notable forks of Github repositories under their names |
+| [npmhub](https://github.com/npmhub/npmhub) | A browser extension for exploring npm dependencies on GitHub repos |
+| [octotree](https://github.com/buunguyen/octotree) | Code tree for GitHub and GitLab |
+
+Another integration you'd like to see? Please open an issue (or better yet, submit a pull request).
+
+Overrides for userscripts should **only** affect those with the userscripts installed.
+
 ## Issues/Bugs
 
 **Found a bug? Please open a new issue.**

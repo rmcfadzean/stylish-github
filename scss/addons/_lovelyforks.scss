@@ -1,0 +1,12 @@
+// https://github.com/musically-ut/lovely-forks
+
+.lovely-forks-addon {
+  .opticon {
+    margin-left: 0.25rem;
+    margin-right: 0.125rem;
+    
+    &-flame path {
+      fill: $accent-orange;
+    }
+  }
+}
