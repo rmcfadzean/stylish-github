@@ -105,7 +105,7 @@
 
   &-item {
     &.navigation-focus {
-      background-color: $brandColor !important; // to override .label-select-menu .select-menu-item
+      background-color: $mutedBorderColor !important; // to override .label-select-menu .select-menu-item
       color: #fff !important;
     }
 

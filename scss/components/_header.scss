@@ -12,6 +12,13 @@
       color: $borderColor;
     }
   }
+
+  &-nav-link:hover {
+    .octicon, .dropdown-caret {
+      color: $navItemHoverColor;
+      border-top-color: $navItemHoverColor;
+    }
+  }
 }
 
 .header-logo-invertocat,
