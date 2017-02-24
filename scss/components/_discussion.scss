@@ -68,6 +68,11 @@
       border-color: $borderColor;
     }
   }
+
+  &-reopened .discussion-item-icon,
+  &-review.is-approved .discussion-item-icon {
+    background-color: $accent-green !important;
+  }
 }
 
 .discussion-timeline {

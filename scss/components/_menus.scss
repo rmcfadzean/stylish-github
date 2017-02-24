@@ -66,3 +66,74 @@
     }
   }
 }
+
+// Select Menu
+
+.select-menu {
+  &-modal, &-filters, &-item, &-tabs {
+    background-color: $backgroundColor;
+    border-color: $borderColor;
+    color: $foregroundColor;
+  }
+
+  &-header, &-divider {
+    background-color: $backgroundColor;
+    border-color: $borderColor;
+    color: $foregroundColor;
+    .select-menu-title {
+      color: $foregroundColor;
+    }
+  }
+
+  &-tabs {
+    a, .select-menu-tab-nav {
+      background-color: $backgroundColor;
+      border-color: $borderColor;
+      color: $foregroundColor;
+
+      &:hover {
+        color: $fgDark;
+      }
+
+      &.selected {
+        background-color: $bgLighter;
+        border-color: $borderColor;
+        color: $fgDark;
+      }
+    }
+  }
+
+  &-item {
+    &.navigation-focus {
+      background-color: $brandColor !important; // to override .label-select-menu .select-menu-item
+      color: #fff !important;
+    }
+
+    &.selected {
+      background-color: $bgDarker;
+      color: $brandColor;
+
+      .description {
+        color: $fgDarker;
+      }
+    }
+
+    &-text .description {
+      color: $fgDarker;
+    }
+  }
+
+  &-text-filter {
+    input {
+      border: $borderColor;
+    }
+
+    &:first-child:last-child {
+      border-color: $borderColor;
+    }
+  }
+
+  &-no-results {
+    color: $borderColor;
+  }
+}

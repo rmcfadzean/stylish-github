@@ -270,63 +270,6 @@ table.files {
   color: inherit;
 }
 
-// Select Menu
-
-.select-menu-modal, .select-menu-filters, .select-menu-item, .select-menu-tabs {
-  background-color: $backgroundColor;
-  border-color: $borderColor;
-  color: $foregroundColor;
-}
-
-.select-menu-header, .select-menu-divider {
-  background-color: $backgroundColor;
-  border-color: $borderColor;
-  color: $foregroundColor;
-  .select-menu-title {
-    color: $foregroundColor;
-  }
-}
-
-.select-menu-tabs a, .select-menu-tabs .select-menu-tab-nav {
-  background-color: $backgroundColor;
-  border-color: $borderColor;
-  color: $foregroundColor;
-
-  &:hover {
-    color: $fgDark;
-  }
-
-  &.selected {
-    background-color: $bgLighter;
-    border-color: $borderColor;
-    color: $fgDark;
-  }
-}
-
-.select-menu-item {
-  &.navigation-focus {
-    background-color: $brandColor !important; // to override .label-select-menu .select-menu-item
-    color: #fff !important;
-  }
-
-  &.selected {
-    background-color: $bgDarker;
-    color: $brandColor;
-  }
-}
-
-.select-menu-text-filter input {
-  border: $borderColor;
-}
-
-.select-menu-text-filter:first-child:last-child {
-  border-color: $borderColor;
-}
-
-.select-menu-no-results {
-  color: $borderColor;
-}
-
 // Languages
 
 .repository-lang-stats ol.repository-lang-stats-numbers li {
