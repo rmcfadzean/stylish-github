@@ -20,12 +20,14 @@
   color: $foregroundColor;
 
   &:hover, &:focus {
-    color: $fgDarkest;
+    background-color: rgba($backgroundColor, 0.5);
+    color: inherit;
+    border-color: $mutedBorderColor;
   }
 
   &.selected {
     background-color: $backgroundColor;
-    color: $foregroundColor;
+    color: inherit;
     border-color: $accentBorderColor;
     border-bottom-color: $backgroundColor;
   }
