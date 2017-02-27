@@ -22,12 +22,14 @@
     border-color: $borderColor;
   }
 
-  td.date a, p a {
-    color: $foregroundColor;
-  }
+  &s-tag-list {
+    &, tr {
+      border-color: $borderColor;
+    } 
 
-  &-tag-list {
-    border-color: $borderColor;
+    td.date a, p a {
+      color: $foregroundColor;
+    }
   }
 }
 
