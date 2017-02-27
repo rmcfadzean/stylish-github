@@ -74,8 +74,10 @@ button {
   color: $bgDarker;
 
   &-private {
-    background-color: $accentBorderColor;
-    color: $bgDarker !important;
+    &, &.text-gray { // Specificity wars
+      background-color: $accentBorderColor;
+      color: $bgDarker !important;
+    }
   }
 
   &-neutral {
