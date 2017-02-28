@@ -94,3 +94,15 @@ a.branch-name {
   filter: invert(1);
   mix-blend-mode: overlay;
 }
+
+// Notifications (righthand col)
+
+.octofication {
+  .message p {
+    color: $fgDarker;
+  }
+
+  .close-button {
+    color: $borderColor;
+  }
+}
