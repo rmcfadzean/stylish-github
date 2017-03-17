@@ -1,0 +1,43 @@
+h2.search-title {
+  color: $foregroundColor;
+
+  span {
+    color: $fgLightest;
+    font-weight: 400;
+  }
+}
+
+div.search-form.big button {
+  @extend %baseBtn;
+}
+
+ul#categories li h5 {
+  border-color: $borderColor;
+
+  a {
+    color: $fgLightest;
+  }
+}
+
+ul.chevron li a {
+  font: inherit;
+  background-blend-mode: color-dodge;
+  background-color: $backgroundColor; // required for background-blend-mode
+}
+
+div#common-issues {
+  border-color: $borderColor;
+  box-shadow: none;
+
+  h3 {
+    @extend .menu-heading;
+  }
+
+  ul li {
+    @extend .menu-item;
+
+    a:hover {
+      background-color: $menuHoverColor;
+    }
+  }
+}

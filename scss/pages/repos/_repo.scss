@@ -210,7 +210,9 @@ table.files {
   }
 }
 
-.markdown-body, .markdown-body .highlight {
+.markdown-body,
+.markdown-body .highlight,
+.markdown-format {
   img {
     background-color: transparent;
     border-color: $borderColor;
@@ -270,6 +272,22 @@ table.files {
 
   h6 {
     color: $borderColor;
+  }
+}
+
+.markdown-format {
+  h4 {
+    color: $fgLightest;
+  }
+
+  blockquote,
+  ul li {
+    background-color: $backgroundColor;
+    background-blend-mode: hard-light;
+  }
+
+  .intro {
+    color: $foregroundColor;
   }
 }
 
