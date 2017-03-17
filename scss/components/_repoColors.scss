@@ -1,12 +1,16 @@
 $colors: (
-  #563d7c: $accent-purple, // CSS
-  #f1e05a: $accent-yellow, // JavaScript
-  #701516: $accent-red, // Ruby
+  #6E4C13: #494829,          // Assembly
+  #f34b7d: #bf5b7f,          // C++
+  #563d7c: $accent-purple,      // CSS
+  #e44b23: #ab663c,          // HTML
+  #b07219: #61492b,          // Java
+  #f1e05a: $accent-yellow,      // JavaScript
+  #427819: $accent-green,       // Makefile
+  #ededed: $bgDark,             // Other
   #4F5D95: $accent-blue-purple, // PHP
-  #89e051: #7dbd45, // Shell
-  #e44b23: #ab663c, // HTML
-  #3572A5: $accent-blue, // Python
-  #b07219: #61492b // Java
+  #3572A5: $accent-blue,        // Python
+  #701516: $accent-red,         // Ruby
+  #89e051: #7dbd45           // Shell
 );
 
 @each $base, $replacement in $colors {
