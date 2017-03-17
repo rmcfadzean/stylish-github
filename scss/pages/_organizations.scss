@@ -19,6 +19,30 @@
   border-color: $borderColor;
 }
 
-.member-fullname {
+.member-fullname, {
+  color: $borderColor;
+}
+
+.orgs-help-lead,
+.orgs-help-item-content,
+.table-list-header-meta {
+  color: $fgDarkest;
+}
+
+.orgs-help-shelf,
+.orgs-help-shelf-content .orgs-help-divider {
+  border-color: $borderColor;
+}
+
+.orgs-help-item-octicon {
+  background-color: $bgDark;
+  border-color: $borderColor;
+
+  .octicon {
+    color: $fgLighter;
+  }
+}
+
+.auto-search-group > .octicon {
   color: $borderColor;
 }

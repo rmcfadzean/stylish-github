@@ -107,3 +107,13 @@
     background-image: linear-gradient($bgDarker, $backgroundColor);
   }
 }
+
+.link {
+  &-gray {
+    color: $borderColor !important;
+
+    &:hover {
+      color: $accentBorderColor !important;
+    }
+  }
+}

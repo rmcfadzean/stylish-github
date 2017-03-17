@@ -109,9 +109,13 @@
       color: #fff !important;
     }
 
+    &-heading {
+      color: $fgLightest;
+    }
+
     &.selected {
       background-color: $bgDarker;
-      color: $brandColor;
+      color: $brandColor !important;
 
       .description {
         color: $fgDarker;

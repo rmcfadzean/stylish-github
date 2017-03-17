@@ -58,6 +58,10 @@
 
   &-link {
     color: $linkColor;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
 
