@@ -91,8 +91,13 @@
 .release-label {
   &.latest {
     background-color: $accent-green;
-    a:hover {
-      color: #fff;
+
+    a {
+      color: $backgroundColor;
+
+      &:hover {
+        color: $bgDarkest;
+      }
     }
   }
 }
