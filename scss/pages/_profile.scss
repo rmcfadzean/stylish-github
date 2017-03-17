@@ -69,11 +69,12 @@
 }
 
 $contribColorMap: (
-  #eee: $bgDark,
-  #d6e685: $bgLightest,
-  #8cc665: $fgDarkest,
-  #44a340: $foregroundColor,
-  #1e6823: $fgLightest
+  #eee:    $bgDark,
+  #ebedf0: $bgDark,
+  #c6e48b: $bgLightest,
+  #7bc96f: $fgDarkest,
+  #239a3b: $foregroundColor,
+  #196127: $fgLightest
 );
 
 @each $gh-color, $replacement-color in $contribColorMap {
