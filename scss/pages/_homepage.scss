@@ -10,3 +10,21 @@
     border-color: $borderColor !important;
   }
 }
+
+.integrations-collage-item {
+  background-color: $bgLight;
+}
+
+.featurette {
+  .grayscale {
+    mix-blend-mode: screen;
+  }
+
+  .logo-img {
+    filter: invert(1);
+  }
+}
+
+path.cls-1 { // Icons above section headers
+  fill: $fgLighter;
+}
