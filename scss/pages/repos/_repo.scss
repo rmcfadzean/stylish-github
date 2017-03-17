@@ -406,3 +406,14 @@ table.files {
     border-left: 0;
   }
 }
+
+// Rendered display (image preview)
+// Content is rendered in an iframe, so no fixing that background
+
+.render-container {
+  background-color: $bgLight;
+}
+
+.octospinner {
+  mix-blend-mode: overlay;
+}
