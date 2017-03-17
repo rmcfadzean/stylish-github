@@ -6,6 +6,8 @@
 
   @include activated() {
     background-image: linear-gradient($bgDark, $bgDarkest);
+    background-color: inherit;
+    background-position: inherit;
     color: $foregroundColor;
     border-color: $borderColor;
   }
