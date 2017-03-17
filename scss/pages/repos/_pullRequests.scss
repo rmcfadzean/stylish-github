@@ -53,6 +53,10 @@
 
 .commit-ref {
   @extend .counter;
+
+  .user {
+    color: $fgLightest;
+  }
 }
 
 .full-commit { // Header box for individual commits
