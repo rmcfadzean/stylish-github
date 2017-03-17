@@ -4,65 +4,67 @@
 // Copyright (c) 2012 - 2016 GitHub, Inc.
 // Licensed under MIT (https://github.com/primer/github-syntax-theme-generator/blob/master/LICENSE)
 
+%codeSyntaxWithBackground {
+  border-radius: 3px;
+  padding: 1px 3px;
+}
+
 .pl-c /* comment, punctuation.definition.comment, string.comment */ {
   color: rgba(255, 255, 255, 0.5); // Neutral color; blends well for additions and deletions
   font-style: italic;
   mix-blend-mode: overlay;
 }
 
-.pl-c1 /* constant, entity.name.constant, variable.other.constant, variable.language, support, meta.property-name, support.constant, support.variable, meta.module-reference, markup.raw, meta.diff.header */,
+.pl-c1, /* constant, entity.name.constant, variable.other.constant, variable.language, support, meta.property-name, support.constant, support.variable, meta.module-reference, markup.raw, meta.diff.header */
 .pl-s .pl-v /* string variable */ {
-  color: #0099cd;
+  color: $accent-blue;
 }
 
-.pl-e /* entity */,
+.pl-e, /* entity */
 .pl-en /* entity.name */ {
-  color: #9774cb;
+  color: $accent-purple;
 }
 
-.pl-smi /* variable.parameter.function, storage.modifier.package, storage.modifier.import, storage.type.java, variable.other */,
+.pl-smi, /* variable.parameter.function, storage.modifier.package, storage.modifier.import, storage.type.java, variable.other */
 .pl-s .pl-s1 /* string source */ {
   color: #ddd;
 }
 
 .pl-ent /* entity.name.tag */ {
-  color: #7bcc72;
+  color: $accent-green;
 }
 
 .pl-k /* keyword, storage, storage.type */ {
-  color: #cc2372;
+  color: rgba(#fff, 0.75);
 }
 
-.pl-s /* string */,
-.pl-pds /* punctuation.definition.string, source.regexp, string.regexp.character-class */,
-.pl-s .pl-pse .pl-s1 /* string punctuation.section.embedded source */,
-.pl-sr /* string.regexp */,
-.pl-sr .pl-cce /* string.regexp constant.character.escape */,
-.pl-sr .pl-sre /* string.regexp source.ruby.embedded */,
-.pl-sr .pl-sra /* string.regexp string.regexp.arbitrary-repitition */ {
-  color: $accent-blue;
+.pl-s, /* string */
+.pl-pds, /* punctuation.definition.string, source.regexp, string.regexp.character-class */
+.pl-s .pl-pse .pl-s1, /* string punctuation.section.embedded source */
+.pl-sr, /* string.regexp */
+.pl-sr .pl-cce, /* string.regexp constant.character.escape */
+.pl-sr .pl-sre, /* string.regexp source.ruby.embedded */
+.pl-sr .pl-sra, /* string.regexp string.regexp.arbitrary-repitition */ {
+  color: $accent-seafoam;
 }
 
-.pl-v /* variable */,
+.pl-v, /* variable */
 .pl-smw /* sublimelinter.mark.warning */ {
-  color: #fb8764;
+  color: $accent-orange;
 }
 
 .pl-bu /* invalid.broken, invalid.deprecated, invalid.unimplemented, message.error, brackethighlighter.unmatched, sublimelinter.mark.error */ {
-  color: #e63525;
+  color: $accent-red;
 }
 
-.pl-ii /* invalid.illegal */ {
-  color: #f8f8f8;
-  background-color: #e63525;
-}
-
+.pl-ii, /* invalid.illegal */
 .pl-c2 /* carriage-return */ {
   color: #f8f8f8;
-  background-color: #e63525;
+  background-color: $accent-red;
+  @extend %codeSyntaxWithBackground;
 }
 
-.pl-c2::before /* carriage-return */ {
+.pl-c2:before /* carriage-return */ {
   content: "^M";
 }
 
@@ -75,11 +77,11 @@
   color: #c26b2b;
 }
 
-.pl-mh /* markup.heading */,
-.pl-mh .pl-en /* markup.heading entity.name */,
+.pl-mh, /* markup.heading */
+.pl-mh .pl-en, /* markup.heading entity.name */
 .pl-ms /* meta.separator */ {
   font-weight: bold;
-  color: #264ec5;
+  color: $fgLightest;
 }
 
 .pl-mq /* markup.quote */ {
@@ -97,28 +99,32 @@
 }
 
 .pl-md /* markup.deleted, meta.diff.header.from-file, punctuation.definition.deleted */ {
-  color: #bd2c00;
-  background-color: #ffecec;
+  color: $accent-red;
+  background-color: rgba($accent-red, 0.25);
+  @extend %codeSyntaxWithBackground;
 }
 
 .pl-mi1 /* markup.inserted, meta.diff.header.to-file, punctuation.definition.inserted */ {
-  color: #55a532;
-  background-color: #eaffea;
+  color: $accent-green;
+  background-color: rgba($accent-green, 0.25);
+  @extend %codeSyntaxWithBackground;
 }
 
 .pl-mc /* markup.changed, punctuation.definition.changed */ {
-  color: #ef9700;
-  background-color: #ffe3b4;
+  color: $accent-yellow;
+  background-color: rgba($accent-yellow, 0.25);
+  @extend %codeSyntaxWithBackground;
 }
 
 .pl-mi2 /* markup.ignored, markup.untracked */ {
-  color: #d8d8d8;
-  background-color: #808080;
+  color: rgba(#fff, 0.5);
+  background-color: rgba(#fff, 0.25);
+  @extend %codeSyntaxWithBackground;
 }
 
 .pl-mdr /* meta.diff.range */ {
   font-weight: bold;
-  color: #9774cb;
+  color: $accent-pink;
 }
 
 .pl-mo /* meta.output */ {

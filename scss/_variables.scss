@@ -32,13 +32,15 @@ $fgDarkest: darken($foregroundColor, 10%);
 
 // Color Accents
 
-$accent-green: #6fa858;
-$accent-yellow: #d8c641;
-$accent-blue: #55a8c9;
 $accent-blue-purple: #7052c5;
-$accent-purple: #a272a9;
+$accent-blue: #55a8c9;
+$accent-green: #6fa858;
 $accent-orange: #ec7063;
+$accent-pink: #bf5b7f;
+$accent-purple: #a272a9;
 $accent-red: #c15a62;
+$accent-seafoam: #78d2b6;
+$accent-yellow: #d8c641;
 
 // Assignments
 
@@ -75,7 +77,7 @@ $inputColor: $fgLighter;
 // Repos & Orgs
 
 $repoheadBg: $bgDark;
-$repoAddition: #173d40;
+$repoAddition: #084446;
 $repoDeletion: #352835;
 
 // Readme

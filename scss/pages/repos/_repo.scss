@@ -164,9 +164,18 @@ table.files {
 
 // Code
 
+.add-line-comment {
+  @extend %baseBtn;
+  color: $fgLighter;
+}
+
 .blob-num {
   background: $bgLight;
   color: darken($foregroundColor, 20%);
+
+  &:hover {
+    color: $fgLighter;
+  }
 }
 
 .blob-code {
@@ -184,6 +193,12 @@ table.files {
 
   &-addition {
     background: $repoAddition;
+  }
+
+  &-addition, &-deletion {
+    .x {
+      @extend %codeSyntaxWithBackground;
+    }
   }
 
   &-hunk, &-expandable {
@@ -236,6 +251,10 @@ table.files {
 
 .repository-meta {
   color: $foregroundColor;
+
+  .edit-repository-meta label {
+    color: $fgDarkest;
+  }
 }
 
 // Recent Branches
@@ -354,4 +373,22 @@ table.files {
 
 .octospinner {
   mix-blend-mode: overlay;
+}
+
+// Code Search
+.code-list {
+  em {
+    background-color: $borderColor;
+    color: $fgLightest;
+  }
+
+  .file-box,
+  .code-list-item + .code-list-item {
+    border-color: $borderColor;
+  }
+
+  .divider .blob-code,
+  .divider .blob-num {
+    background-color: $mutedBorderColor;
+  }
 }
