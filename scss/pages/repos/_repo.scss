@@ -146,6 +146,10 @@ table.files {
 
     &.icon {
       color: $borderColor;
+
+      .octicon-file-directory {
+        color: $accentBorderColor;
+      }
     }
 
     .simplified-path {
