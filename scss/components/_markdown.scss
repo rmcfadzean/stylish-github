@@ -1,0 +1,92 @@
+%markdownCode {
+  background-color: $codeBg;
+  border: 1px solid $mutedBorderColor;
+  color: mix($fgDark, $brandColor, 50%);
+}
+
+.markdown-body,
+.markdown-body .highlight,
+.markdown-format {
+  img {
+    background-color: transparent;
+    border-color: $borderColor;
+  }
+
+  pre, code {
+    @extend %markdownCode;
+  }
+
+  @for $i from 1 through 6 {
+    h#{$i} {
+      border-color: $readmeBorder;
+
+      .octicon-link {
+        color: $foregroundColor;
+      }
+    }
+  }
+
+  blockquote {
+    @extend .pullquote;
+    color: $fgDarkest;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+    & + blockquote {
+      padding-bottom: 16px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.markdown-body {
+  table {
+    th, tr, td {
+      border-color: $borderColor;
+    }
+
+    tr {
+      background: $backgroundColor;
+
+      &:nth-child(2n) {
+        background: $bgDark;
+      }
+    }
+  }
+
+  hr {
+    background-color: $borderColor;
+  }
+
+  h5 {
+    color: $fgDarkest;
+  }
+
+  h6 {
+    color: $borderColor;
+  }
+}
+
+.markdown-format { // Used for Help pages
+  h4 {
+    color: $fgLightest;
+  }
+
+  blockquote,
+  ul li {
+    background-color: $backgroundColor;
+    background-blend-mode: hard-light;
+  }
+
+  .intro {
+    color: $foregroundColor;
+  }
+
+  pre.command-line {
+    @extend %markdownCode;
+
+    em { // demo content to replace
+      color: $accent-green;
+    }
+  }
+}
