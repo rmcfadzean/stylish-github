@@ -1,4 +1,8 @@
 .blog {
+  &-title {
+    color: $linkColor;
+  }
+
   &-post-body {
     color: $foregroundColor;
   }

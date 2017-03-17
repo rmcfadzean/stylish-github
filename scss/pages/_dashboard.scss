@@ -98,11 +98,23 @@ a.branch-name {
 // Notifications (righthand col)
 
 .octofication {
-  .message p {
-    color: $fgDarker;
+  .message {
+    border-color: $borderColor;
+
+    p {
+      color: $fgDarker;
+    }
   }
 
   .close-button {
     color: $borderColor;
+  }
+
+  .broadcast-icon {
+    color: $borderColor;
+
+    &-mask {
+      background-color: $backgroundColor;
+    }
   }
 }

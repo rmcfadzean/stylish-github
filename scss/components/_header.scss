@@ -1,5 +1,6 @@
 .site-header, .header {
   background: $headerBackgroundColor;
+  border: 0;
 
   &-nav .nav-item, &-nav-link {
     color: $navItemColor;
@@ -11,6 +12,10 @@
     .octicon, .dropdown-caret {
       color: $borderColor;
     }
+  }
+
+  .site-header-link {
+    color: $linkColor;
   }
 
   &-nav-link:hover {

@@ -213,6 +213,7 @@ table.files {
 .markdown-body, .markdown-body .highlight {
   img {
     background-color: transparent;
+    border-color: $borderColor;
   }
 
   pre, code {
