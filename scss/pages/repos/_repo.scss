@@ -399,3 +399,13 @@ table.files {
   background: $backgroundColor;
   border-color: $borderColor;
 }
+
+.collaborators {
+  .collab-info {
+    color: $fgLight;
+  }
+}
+
+.access-sub-heading {
+  color: $fgLight;
+}
