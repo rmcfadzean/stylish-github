@@ -16,7 +16,7 @@
   border-color: $borderColor;
 }
 
-.reponav-item {
+.reponav-item, .UnderlineNav-item {
   color: $foregroundColor;
 
   &:hover, &:focus {
@@ -29,7 +29,7 @@
     background-color: $backgroundColor;
     color: inherit;
     border-color: $accentBorderColor;
-    border-bottom-color: $backgroundColor;
+    border-bottom-color: $accentBorderColor;
   }
 
   .octicon {

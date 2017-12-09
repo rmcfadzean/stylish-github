@@ -85,6 +85,10 @@ $contribColorMap: (
   .contrib-legend .legend li[style="background-color: #{$gh-color}"] {
     background-color: #{$replacement-color} !important;
   }
+
+  .progress-bar[style="background-color: #{$gh-color}"] {
+    background-color: #{$replacement-color} !important;
+  }
 }
 
 // Pinned Repo Modal

@@ -137,6 +137,20 @@
   }
 }
 
+.State {
+  &--green {
+    background-color: $accent-green;
+  }
+
+  &--red {
+    background-color: $accent-red;
+  }
+
+  &--purple {
+    background-color: $accent-purple;
+  }
+}
+
 .pr-details .state {
   &:hover {
     color: $bgDarker;
