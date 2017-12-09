@@ -35,7 +35,8 @@
 }
 
 .pl-k /* keyword, storage, storage.type */ {
-  color: rgba(#fff, 0.75);
+  //color: rgba(#fff, 0.75);
+  color: $accent-pink;
 }
 
 .pl-s, /* string */
