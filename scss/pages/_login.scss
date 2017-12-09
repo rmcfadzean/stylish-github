@@ -22,3 +22,10 @@
     color: $foregroundColor;
   }
 }
+
+.signup-prompt-bg {
+  background-color: $bgDarker;
+  background-image: none;
+  border: 1px solid $borderColor;
+  margin-bottom: 1rem;
+}

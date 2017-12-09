@@ -77,7 +77,7 @@
 // Placeholders
 
 ::-webkit-input-placeholder { // Chrome/Opera/Safari
-  color: $fgColor;
+  color: $fgColor !important;
 }
 
 ::-moz-placeholder { // FF 19+

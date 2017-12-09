@@ -2,6 +2,20 @@
   color: lighten($baseColor, 25%);
   background-color: darken($baseColor, 10%);
   border-color: darken($baseColor, 5%);
+
+  .btn {
+    background-image: linear-gradient(darken($baseColor, 20%), darken($baseColor, 40%));
+    color: lighten($baseColor, 25%);
+    border-color: darken($baseColor, 5%);
+
+    @include activated() {
+      background-image: linear-gradient(darken($baseColor, 30%), darken($baseColor, 50%));
+      background-color: inherit;
+      background-position: inherit;
+      color: lighten($baseColor, 25%);
+      border-color: darken($baseColor, 5%);
+    }
+  }
 }
 
 .flash {
@@ -10,10 +24,16 @@
   &-error {
     @include flash($accent-red);
   }
+
   &-success {
     @include flash($accent-green);
   }
+
   &-warn {
     @include flash($accent-blue);
+  }
+
+  a {
+    color: #fff;
   }
 }
