@@ -23,7 +23,7 @@ hr {
   border-color: $borderColor;
 }
 
-.counter, .protip code {
+.counter, .Counter, .protip code {
   background-color: $bgLighter !important;
   color: $foregroundColor !important; // !imp to override on repo pages
 }

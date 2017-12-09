@@ -37,6 +37,12 @@
   }
 }
 
+.reponav-item {
+  &.selected {
+    border-bottom-color: $backgroundColor;
+  }
+}
+
 .commit-tease-sha {
   @extend %link;
 }
